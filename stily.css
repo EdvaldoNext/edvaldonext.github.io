@@ -339,7 +339,7 @@ section {
     flex-direction: row;
     gap: 1rem;
     margin: 4rem;
-    font-size: 2vh;
+    font-size: 3vh;
 
   }
 
@@ -379,16 +379,16 @@ section {
   }
 
   #fotoprincipal {
-    height: 35rem ;
-    width: 26rem;
+    height: 45rem ;
+    width: 36rem;
     margin-top: 5vh; 
     margin-left: 0vh;
   }
 
   .slide-container {
   
-    height: 25rem ;
-    width: 30rem ;
+    height: 35rem ;
+    width: 40rem ;
     margin: 1rem;
     padding: 2rem;
 
@@ -417,6 +417,7 @@ section {
     width: auto;
     font-size: 2vh;
     gap: 15px;
+    font-size: 3vh;
     
   }
   .main_03 {
