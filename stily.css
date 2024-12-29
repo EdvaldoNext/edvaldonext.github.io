@@ -382,7 +382,7 @@ section {
     height: 45rem ;
     width: 36rem;
     margin-top: 5vh; 
-    margin-left: 45vh;
+    margin-left: 30vh;
   }
 
   .slide-container {
@@ -391,7 +391,7 @@ section {
     width: 40rem ;
     margin: 1rem;
     padding: 2rem;
-    margin-left: 45vh;
+    margin-left: 30vh;
 
     
    }
@@ -418,7 +418,7 @@ section {
     width: auto;
     font-size: 2vh;
     gap: 15px;
-    font-size: 3vh;
+    font-size: 4vh;
     
   }
   .main_03 {
