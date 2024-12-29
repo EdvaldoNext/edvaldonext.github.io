@@ -526,6 +526,9 @@ section {
 
 .botao {
   margin-right: 27vh;
+    gap: 2vh;
+    padding: 2vh;
+
 }
 #ccontato {
   margin-left: 25vh;
