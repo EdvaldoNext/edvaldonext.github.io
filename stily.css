@@ -379,19 +379,19 @@ section {
   }
 
   #fotoprincipal {
-    height: 32rem ;
-    width: 23rem;
+    height: 22rem ;
+    width: 13rem;
     margin-top: 5vh; 
-    margin-left: 10vh;
+    margin-left: 3vh;
   }
 
   .slide-container {
   
-    height: 22rem ;
-    width: 27rem ;
+    height: 12rem ;
+    width: 17rem ;
     margin: 1rem;
     padding: 2rem;
-    margin-left: 10vh;
+    margin-left: 3vh;
 
     
    }
