@@ -460,7 +460,7 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: 150%;
+    width: 170%;
     margin: auto;
     margin-top: 50vh;
     margin-left: -1vh;
@@ -537,16 +537,19 @@ section {
 }
 #ccontato {
   margin-left: 25vh;
-     font-size: 2.5vh;
+     font-size: 3vh;
   
     
 }
 #hh1 {
-font-size: 6vh;
+font-size: 7vh;
+text-align: center;
   
 }
 #hp1 {
-font-size: 5vh;
+font-size: 6vh;
+text-align: center;
+  
   
 
 }
