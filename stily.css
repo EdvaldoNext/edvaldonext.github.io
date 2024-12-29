@@ -330,7 +330,7 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: auto;
+    width: 150%;
     margin: auto;
 
   }
@@ -458,7 +458,7 @@ section {
     width: 150%;
     margin: auto;
     margin-top: 50vh;
-    margin-left: 3vh;
+    margin-left: -1vh;
     
     
    
