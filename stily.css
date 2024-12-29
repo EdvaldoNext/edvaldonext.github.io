@@ -330,7 +330,7 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: 170%;
+    width: 100%;
     margin: auto;
 
   }
@@ -379,16 +379,16 @@ section {
   }
 
   #fotoprincipal {
-    height: 42rem ;
-    width: 33rem;
+    height: 32rem ;
+    width: 23rem;
     margin-top: 5vh; 
     margin-left: 40vh;
   }
 
   .slide-container {
   
-    height: 32rem ;
-    width: 37rem ;
+    height: 22rem ;
+    width: 27rem ;
     margin: 1rem;
     padding: 2rem;
     margin-left: 40vh;
@@ -460,7 +460,7 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: 170%;
+    width: 100%;
     margin: auto;
     margin-top: 50vh;
     margin-left: -1vh;
