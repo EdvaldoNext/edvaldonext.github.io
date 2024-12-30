@@ -330,7 +330,7 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: 130%;
+    width: 132%;
     margin: auto;
 
   }
@@ -379,16 +379,16 @@ section {
   }
 
   #fotoprincipal {
-    height: 22rem ;
-    width: 13rem;
+    height: 32rem ;
+    width: 23rem;
     margin-top: 5vh; 
     margin-left: 3vh;
   }
 
   .slide-container {
   
-    height: 12rem ;
-    width: 17rem ;
+    height: 22rem ;
+    width: 27rem ;
     margin: 1rem;
     padding: 2rem;
     margin-left: 3vh;
@@ -418,7 +418,7 @@ section {
     width: auto;
     font-size: 2vh;
     gap: 15px;
-    font-size: 3vh;
+    font-size: 3.5vh;
     margin-left: 2vh;
 
     
@@ -448,8 +448,8 @@ section {
     align-items: center;
     margin: 0.5rem;
     padding: 1rem;
-    height: 28rem;
-    width: 15rem;
+    height: 33rem;
+    width: 20rem;
     margin-left: 8vh;
 
   }
@@ -460,7 +460,7 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: 130%;
+    width: 132%;
     margin: auto;
     margin-top: 50vh;
     margin-left: -1vh;
@@ -531,25 +531,25 @@ section {
 
 .botao {
   margin-right: 27vh;
-    gap: 2vh;
+    gap: 1vh;
     padding: 2vh;
 
 }
 #ccontato {
   margin-left: 25vh;
-     font-size: 2vh;
+     font-size: 2.5vh;
   
     
 }
 #hh1 {
-font-size: 4vh;
+font-size: 5vh;
 text-align: center;
-color : blue ;
+color : red ;
 
   
 }
 #hp1 {
-font-size: 3vh;
+font-size: 4vh;
 text-align: center;
   
   
