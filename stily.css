@@ -382,7 +382,7 @@ section {
     height: 32rem ;
     width: 23rem;
     margin-top: 5vh; 
-    margin-left: 10vh;
+    margin-left: 20vh;
   }
 
   .slide-container {
@@ -391,7 +391,7 @@ section {
     width: 27rem ;
     margin: 1rem;
     padding: 2rem;
-    margin-left: 10vh;
+    margin-left: 20vh;
 
     
    }
@@ -450,7 +450,7 @@ section {
     padding: 1rem;
     height: 33rem;
     width: 20rem;
-    margin-left: 10vh;
+    margin-left: 15vh;
 
   }
 
@@ -544,7 +544,7 @@ section {
 #hh1 {
 font-size: 5vh;
 text-align: center;
-color : blue ;
+color : red ;
 
   
 }
