@@ -332,6 +332,8 @@ section {
     background-color: #331f19;
     Max-width: 100%;
     margin: 0 auto;
+    text-align: center;
+    
 
   }
   .navegacao {
@@ -463,7 +465,8 @@ section {
     Max-width: 100%;
     margin: 0 auto;
     margin-top: 50vh;
-    margin-left: -1vh;
+    text-align: center;
+    
     
     
    
