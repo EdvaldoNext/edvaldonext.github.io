@@ -331,7 +331,7 @@ section {
     justify-content:center;
     background-color: #331f19;
     width: 132%;
-    margin: auto;
+    margin: auto auto;
 
   }
   .navegacao {
@@ -461,7 +461,7 @@ section {
     justify-content:center;
     background-color: #331f19;
     width: 132%;
-    margin: auto;
+    margin: auto auto;
     margin-top: 50vh;
     margin-left: -1vh;
     
