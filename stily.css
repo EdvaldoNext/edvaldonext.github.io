@@ -330,8 +330,8 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: 132%;
-    margin: auto auto;
+    Max-width: 100%;
+    margin: 0 auto;
 
   }
   .navegacao {
@@ -460,8 +460,8 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    width: 132%;
-    margin: auto auto;
+    Max-width: 100%;
+    margin: 0 auto;
     margin-top: 50vh;
     margin-left: -1vh;
     
