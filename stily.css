@@ -332,7 +332,7 @@ section {
     background-color: #331f19;
     Max-width: 100%;
     margin: 0 auto;
-    margin-right: 30vh;
+    margin-left: 10%;
 
   }
   .navegacao {
@@ -544,7 +544,7 @@ section {
 #hh1 {
 font-size: 6vh;
 text-align: center;
-color: blue ;
+color: red ;
 
 
   
