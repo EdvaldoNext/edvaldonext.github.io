@@ -462,7 +462,7 @@ section {
     align-items: center;
     justify-content:center;
     background-color: #331f19;
-    max-width: 500vh;
+    width: 90vh;
     margin: 0 auto;
     margin-top: 50vh;
     margin-left: 6%;
@@ -545,7 +545,7 @@ section {
 #hh1 {
 font-size: 6vh;
 text-align: center;
-color: blue ;
+color: red ;
 
 
   
