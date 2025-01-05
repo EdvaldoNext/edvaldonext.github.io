@@ -317,7 +317,11 @@ section {
     color: red; /* Cor ao passar o mouse */
     text-decoration: underline;
     }
-    
+
+audio {
+  display: none;
+}
+
 
 
 
@@ -557,6 +561,11 @@ margin: 0 auto;
   
 
 }
+
+audio {
+  display: none;
+}
+
 
 
 }
