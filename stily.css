@@ -14,28 +14,38 @@ body {
     font-style: normal;
 }
 header {
-        display: flex;
-        flex-direction: row; 
-        align-items: center;
-        justify-content: space-between;
-        background-color: #331f19;
-        height: 10rem;
-        width: 100%;
-        flex-wrap: wrap;
-       
+  display: flex;
+  flex-direction: column; /* Altera para coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  background-color: #331f19;
+  width: 100%;
 }
+
 
 
 #resultado {
-  height: 20px; 
-  width: 50%; 
-  margin:  auto auto; 
+  width: 100%; /* Ocupa toda a largura */
   padding: 5%;
-  margin-top: -8% ;
   color: #c7f109;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 3rem;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 1rem; /* Espaço acima da div */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #644311,gray, #c7f109,
+    rgb(22, 1, 1));
+    background-size: 400% 100%;
+    animation:degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
 }
+
 
 
 
@@ -337,229 +347,214 @@ audio {
   display: none;
 }
 
+@keyframes degrade {
+  0%{
+      background-position-x:0%;
+  }
 
+  100% {
+      background-position: 400%;
+  }
+}
 
 
 
 @media screen and (max-width:1000px) {
 
-  header {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content:center;
-    background-color: #331f19;
-    height: 5rem;
-    max-width: 125%;
-    margin: 0 auto;
-    margin-left: 20%;
-
-  }
-  .navegacao {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin: 4rem;
-    font-size: 2.7vh;
-
-  }
-
-  .favic {
-    display: none;
-     
-  }
-
-  
-  #secao1 {
-    display: flex;
-    flex-direction: column-reverse; 
-    justify-content:center;
-    align-items: center;
-
-  }
-
-  .main_01 {
-    display: flex;
-    flex-direction: column-reverse; 
-    justify-content:center;
-    align-items: center;
-    margin: 2rem;
-    gap: 4rem;
-    padding: 2rem;
-    margin: auto;
-    width: auto;
-    height: 90%;
-
-  }
-  #homemferro {
-    height: 20rem ;
-    width: 25rem ;
-    margin: 1rem;
-    padding: 2rem;
-
-  }
-
-  #fotoprincipal {
-    height: 32rem ;
-    width: 23rem;
-    margin-top: 5vh; 
-    margin-left: 20vh;
-  }
-
-  .slide-container {
-  
-    height: 22rem ;
-    width: 27rem ;
-    margin: 1rem;
-    padding: 2rem;
-    margin-left: 20vh;
-
-    
-   }
-   
-   .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-   }
-  
-
-  .main_2 {
-    margin: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
-    width: auto;
-    
-  }
-  #portifolio {
-    margin: auto;
-    padding: auto;
-    width: auto;
-    font-size: 2vh;
-    gap: 15px;
-    font-size: 3vh;
-    margin-left: 2vh;
-
-    
-  }
-  .main_03 {
-    display: flex;
-    flex-direction: column; 
-    justify-content:center;
-    align-items: center;
-    margin: 2rem;
-    gap: 4rem;
-    padding: 2rem;
-    width: auto;
-    
-    
-    
-
-  }
-  #videop {
-    display: flex;
-    flex-direction: column; 
-    justify-content:center;
-    align-items: center;
-    display: flex;
-    flex-direction: column; 
-    justify-content:center;
-    align-items: center;
-    margin: 0.5rem;
-    padding: 1rem;
-    height: 33rem;
-    width: 20rem;
-    margin-left: 15vh;
-
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content:center;
-    background-color: #331f19;
-    width: 60vh;
-    margin: 0 auto;
-    margin-top: 50vh;
-    margin-left: 6%;
-
-
-
-  }
-  #contato {
-    padding-left: 4rem;
-  }
-  #wtz {
-    padding-right: 4rem;
-  }
-  #brincando1 {
-    font-size: 3rem;
-  
-
-  }
-  #bxatribustags {
-    margin: 1.5rem; 
-    color: black; 
-    font-size: 1rem;
-    
-  
-  }
-
-  
-  }
-  #brincandosubir {
-    margin: 1.5rem; 
-    color: black; 
-    font-size: 1.5rem;
-  }
-
-  
-#brincando {
-  font-size: 1.5rem;
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#bxbrincandodos {
+
+header {
+  display: flex;
+  flex-direction: column; /* Altera para coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  background-color: #331f19;
+  width: 100%;
+}
+
+#resultado {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 5%;
+  color: #c7f109;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 1rem; /* Espaço acima da div */
+}
+
+.navegacao {
+  display: flex;
+  flex-direction: column; /* Altera para coluna */
+  gap: 1.1rem;
+  margin: 4rem;
+  font-size: 1.7rem;
+}
+
+.favic {
+  display: none;     
+}
+
+#secao1 {
+  display: flex;
+  flex-direction: column-reverse; 
+  justify-content: center;
+  align-items: center;
+}
+
+.main_01 {
+  display: flex;
+  flex-direction: column-reverse; 
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 4rem;
+  padding: 2rem;
+  margin: auto;
+  width: auto;
+  height: 90%;
+}
+
+#fotoprincipal {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-top: 5vh; 
+}
+
+.slide-container {
+  max-width: 100%; /* Garante que o slide não ultrapasse a largura da tela */
+  height: auto; /* Mantém a proporção do slide */
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.main_2 {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column; /* Altera para coluna */
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+#portifolio {
+  margin: auto;
+  padding: auto;
+  width: auto;
+  font-size: 3vh;
+  gap: 15px;
+}
+
+.main_03 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 4rem;
+  padding: 2rem;
+  width: auto;
+}
+
+#videop {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 1rem;
+  max-width: 100%; /* Garante que o vídeo não ultrapasse a largura da tela */
+  height: auto; /* Mantém a proporção do vídeo */
+}
+
+footer {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  background-color: #331f19;
+  width: 60vh;
+  margin: 0 auto;
+  margin-top: 50vh;
+}
+
+/* Outros estilos permanecem inalterados */
+
+#contato {
+  padding-left: 4rem;
+}
+#wtz {
+  padding-right: 4rem;
+}
+#brincando1 {
+  font-size: 3rem;
+
+
+}
+#bxatribustags {
   margin: 1.5rem; 
   color: black; 
   font-size: 1rem;
+  
+
+}
+
+
+
+#brincandosubir {
+  margin: 1.5rem; 
+  color: black; 
+  font-size: 1.5rem;
+}
+
+
+#brincando {
+font-size: 1.5rem;
+}
+
+#bxbrincandodos {
+margin: 1.5rem; 
+color: black; 
+font-size: 1rem;
 
 }
 
 
 #paragrafocamandos{
-  overflow: auto;
+overflow: auto;
 }
+
 #linhalargura {
-  height: 1rem; 
-  background-color:#644311;
-  width: 800%;
+height: 1rem; 
+background-color:#644311;
+width: 800%;
 
 }
 
 #portifolioestudos {
-    margin: auto;
-    padding: auto;
-    width: auto;
-    font-size: 1.5rem;
-    gap: 15px;
+  margin: auto;
+  padding: auto;
+  width: auto;
+  font-size: 1.5rem;
+  gap: 15px;
 
 
 }
 
 .botao {
-  margin-right: 27vh;
-    gap: 1vh;
-    padding: 2vh;
+margin-right: 27vh;
+  gap: 1vh;
+  padding: 2vh;
 
 }
 #ccontato {
-  margin-left: 25vh;
-     font-size: 2.5vh;
+margin-left: 25vh;
+   font-size: 2.5vh;
+
   
-    
 }
 #hh1 {
 font-size: 6vh;
@@ -567,25 +562,22 @@ text-align: center;
 margin: 0 auto;
 
 
-  
+
 }
 #hp1 {
 font-size: 4vh;
 text-align: center;
 margin: 0 auto;
-  
+
 
 }
 
 audio {
-  display: none;
+display: none;
 }
 
 
 
+
+
 }
-
-
-
-
-
