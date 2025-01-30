@@ -21,8 +21,23 @@ header {
         background-color: #331f19;
         height: 10rem;
         width: 100%;
+        flex-wrap: wrap;
        
 }
+
+
+#resultado {
+  height: 20px; 
+  width: 50%; 
+  margin:  auto auto; 
+  padding: 5%;
+  margin-top: -8% ;
+  color: #c7f109;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+
 
 .favic {
     margin:4rem ;
