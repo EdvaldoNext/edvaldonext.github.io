@@ -475,14 +475,16 @@ header {
 }
 
 footer {
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  justify-content: center;
-  background-color: #331f19;
-  width: 99%;
-  margin: 0 auto;
-  margin-top: 50vh;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content:
+space-around;
+    background-color: #331f19;
+    min-height: 10rem; /* Adiciona altura mínima */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    margin-top: 50vh;
+
 }
 
 /* Outros estilos permanecem inalterados */
