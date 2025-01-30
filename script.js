@@ -13,3 +13,29 @@ function trocarImagem() {
 }
 
 setInterval(trocarImagem, 3000);
+
+// hora e data
+
+
+function saudacaoEData() {
+    const agora = new Date();
+    const horas = agora.getHours();
+    const diaDaSemana = agora.toLocaleString('pt-BR', { weekday: 'long' });
+    const diaDoMes = agora.getDate();
+    const mes = agora.toLocaleString('pt-BR', { month: 'long' });
+    const ano = agora.getFullYear();
+
+    let saudacao;
+    if (horas < 12) {
+        saudacao = "Bom dia!";
+    } else if (horas < 18) {
+        saudacao = "Boa tarde!";
+    } else {
+        saudacao = "Boa noite!";
+    }
+
+    return `${saudacao} Hoje é ${diaDaSemana}, dia ${diaDoMes} de ${mes} de ${ano}.`;
+}
+
+
+document.getElementById("resultado").innerText = saudacaoEData();
