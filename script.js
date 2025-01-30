@@ -20,6 +20,8 @@ setInterval(trocarImagem, 3000);
 function saudacaoEData() {
     const agora = new Date();
     const horas = agora.getHours();
+    const minutos = agora.getMinutes().toString().padStart(2, '0'); // Adiciona um zero à esquerda se necessário
+    const segundos = agora.getSeconds().toString().padStart(2, '0'); // Adiciona um zero à esquerda se necessário
     const diaDaSemana = agora.toLocaleString('pt-BR', { weekday: 'long' });
     const diaDoMes = agora.getDate();
     const mes = agora.toLocaleString('pt-BR', { month: 'long' });
@@ -34,8 +36,9 @@ function saudacaoEData() {
         saudacao = "Boa noite!";
     }
 
-    return `${saudacao} Hoje é ${diaDaSemana}, dia ${diaDoMes} de ${mes} de ${ano}.`;
+    return `${saudacao} Seja bem-vindo à minha página! Agora são exatamente ${horas}:${minutos}:${segundos}. Hoje é ${diaDaSemana}, dia ${diaDoMes} de ${mes} de ${ano}.`;
 }
+
 
 
 document.getElementById("resultado").innerText = saudacaoEData();
