@@ -554,11 +554,12 @@ width: 800%;
 }
 
 .botao {
- width: 1.5vh;
+ width: 1vh;
  height: auto;
 margin-right: 0vh;
   gap: 1vh;
   padding: 0vh;
+font-size: 2vh;
 
 }
 #ccontato {
