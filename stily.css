@@ -374,7 +374,7 @@ header {
   flex-direction: column; /* Altera para coluna */
   align-items: center; /* Centraliza horizontalmente */
   background-color: #331f19;
-  width: 99%;
+  width: 100%;
 }
 
 #resultado {
@@ -390,9 +390,10 @@ header {
 .navegacao {
   display: flex;
   flex-direction: column; /* Altera para coluna */
-  gap: 1.1rem;
+  gap: 0.7rem;
   margin: 4rem;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
 .favic {
@@ -481,7 +482,7 @@ footer {
     justify-content:
 space-around;
     background-color: #331f19;
-    min-height: 10rem; /* Adiciona altura mínima */
+    /* min-height: 10rem; Adiciona altura mínima */
     width: 100%; /* Garante que o footer ocupe toda a largura */
     margin-top: 50vh;
 
@@ -554,12 +555,12 @@ width: 800%;
 .botao {
 margin-right: 0vh;
   gap: 1vh;
-  padding: 2vh;
+  padding: 5vh;
 
 }
 #ccontato {
 margin-left: 0vh;
-   font-size: 2vh;
+   font-size: 3vh;
 
   
 }
