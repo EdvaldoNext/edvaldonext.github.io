@@ -372,6 +372,7 @@ audio {
 header {
   display: flex;
   flex-direction: column; /* Altera para coluna */
+  justify-content: center;
   align-items: center; /* Centraliza horizontalmente */
   background-color: #331f19;
   width: 99%;
@@ -404,6 +405,7 @@ header {
   flex-direction: column-reverse; 
   justify-content: center;
   align-items: center;
+  
 }
 
 .main_01 {
@@ -420,18 +422,18 @@ header {
 }
 
 #fotoprincipal {
-  max-width: 45%; /* Garante que a imagem não ultrapasse a largura da tela */
+  max-width: 95%; /* Garante que a imagem não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção da imagem */
   margin-top: 5vh; 
-  margin-left: -0.5%;
+  margin-left: 0;
 }
 
 .slide-container {
-  max-width: 52%; /* Garante que o slide não ultrapasse a largura da tela */
+  max-width: 95%; /* Garante que o slide não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção do slide */
-  margin: 1rem;
+  margin-top: 2rem;
   padding: 2rem;
-  margin-left: -0.5%;
+  margin-left: 0%;
 }
 
 .main_2 {
@@ -468,7 +470,7 @@ header {
   flex-direction: column; 
   justify-content: center;
   align-items: center;
-  margin: 0.5rem;
+  margin: 0;
   padding: 1rem;
   max-width: 100%; /* Garante que o vídeo não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção do vídeo */
