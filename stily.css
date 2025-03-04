@@ -64,25 +64,25 @@ header {
 }
 .navegacao {
     a:link {
-        color: green;
+        color:  #c7f109;
         background-color: transparent;
         text-decoration: none;
       }
       
       a:visited {
-        color: #c7f109;
+        color:  #c7f109;
         background-color: transparent;
         text-decoration: none;
       }
       
       a:hover {
-        color: red;
+        color: green;
         background-color: transparent;
         text-decoration: underline;
       }
       
       a:active {
-        color: yellow;
+        color:  #c7f109;
         background-color: transparent;
         text-decoration: underline;
       }
@@ -126,25 +126,25 @@ main {
 }
 #portifolio {
     a:link {
-        color: green;
+        color:  #c7f109;
         background-color: transparent;
         text-decoration: none;
       }
       
       a:visited {
-        color: #c7f109;
+        color:  #c7f109;
         background-color: transparent;
         text-decoration: none;
       }
       
       a:hover {
-        color: red;
+        color: green;
         background-color: transparent;
         text-decoration: underline;
       }
       
       a:active {
-        color: yellow;
+        color:  #c7f109;
         background-color: transparent;
         text-decoration: underline;
       }
@@ -374,7 +374,7 @@ header {
   flex-direction: column; /* Altera para coluna */
   align-items: center; /* Centraliza horizontalmente */
   background-color: #331f19;
-  width: 100%;
+  width: 99%;
 }
 
 #resultado {
@@ -390,10 +390,9 @@ header {
 .navegacao {
   display: flex;
   flex-direction: column; /* Altera para coluna */
-  gap: 0.7rem;
+  gap: 1.1rem;
   margin: 4rem;
-  font-size: 2.5rem;
-  margin-top: 1rem;
+  font-size: 1.7rem;
 }
 
 .favic {
@@ -421,14 +420,14 @@ header {
 }
 
 #fotoprincipal {
-  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+  max-width: 45%; /* Garante que a imagem não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção da imagem */
   margin-top: 5vh; 
   margin-left: -0.5%;
 }
 
 .slide-container {
-  max-width: 100%; /* Garante que o slide não ultrapasse a largura da tela */
+  max-width: 52%; /* Garante que o slide não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção do slide */
   margin: 1rem;
   padding: 2rem;
@@ -449,7 +448,7 @@ header {
   margin: auto;
   padding: auto;
   width: auto;
-  font-size: 3.5vh;
+  font-size: 3vh;
   gap: 15px;
 }
 
@@ -476,17 +475,14 @@ header {
 }
 
 footer {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content:
-space-around;
-    background-color: #331f19;
-    /* min-height: 10rem; Adiciona altura mínima */
-    width: 100%; /* Garante que o footer ocupe toda a largura */
-   /*margin-top: 50vh; */
-    height: auto;
-
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  background-color: #331f19;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50vh;
 }
 
 /* Outros estilos permanecem inalterados */
@@ -554,15 +550,14 @@ width: 800%;
 }
 
 .botao {
-margin-right: 0vh;
+margin-right: 27vh;
   gap: 1vh;
-  padding: 0vh;
-font-size: 5vh;
+  padding: 2vh;
 
 }
 #ccontato {
-margin-left: 0vh;
-   font-size: 3vh;
+margin-left: 25vh;
+   font-size: 2vh;
 
   
 }
