@@ -167,7 +167,13 @@ a,ul {
 
  /* Estilos para telas menores (responsivo) */
  @media (max-width: 600px) {
-    .video {
+     * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+     .video {
         flex-direction: column; /* Coloca os elementos em coluna */
         align-items: flex-start; /* Alinha os itens à esquerda */
     }
