@@ -8,7 +8,7 @@
 
 body {
     background-color: LightBlue; 
-    color: black;
+    color: Goldenrod;
     font-family: "Itim", cursive;
     font-weight: 400;
     font-style: normal;
@@ -26,7 +26,7 @@ header {
 #resultado {
   width: 100%; /* Ocupa toda a largura */
   padding: 5%;
-  color: #c7f109;
+  color: Goldenrod;
   font-weight: bold;
   font-size: 3rem;
   text-align: center; /* Centraliza o texto */
@@ -64,13 +64,13 @@ header {
 }
 .navegacao {
     a:link {
-        color:  #c7f109;
+        color:  Goldenrod;
         background-color: transparent;
         text-decoration: none;
       }
       
       a:visited {
-        color:  #c7f109;
+        color:  Goldenrod;
         background-color: transparent;
         text-decoration: none;
       }
@@ -131,13 +131,13 @@ ul {
 }
 #portifolio {
     a:link {
-        color:  #c7f109;
+        color:  Goldenrod;
         background-color: transparent;
         text-decoration: none;
       }
       
       a:visited {
-        color:  #c7f109;
+        color: Goldenrod;
         background-color: transparent;
         text-decoration: none;
       }
