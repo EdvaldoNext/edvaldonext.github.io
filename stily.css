@@ -427,14 +427,14 @@ header {
 }
 
 #fotoprincipal {
-  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+  max-width: 95%; /* Garante que a imagem não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção da imagem */
   margin-top: 5vh; 
   margin-left: 0;
 }
 
 .slide-container {
-  max-width: 100%; /* Garante que o slide não ultrapasse a largura da tela */
+  max-width: 85%; /* Garante que o slide não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção do slide */
   margin-top: 2rem;
   padding: 2rem;
