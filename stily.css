@@ -434,7 +434,7 @@ header {
 }
 
 .slide-container {
-  max-width: 75%; /* Garante que o slide não ultrapasse a largura da tela */
+  max-width: 60%; /* Garante que o slide não ultrapasse a largura da tela */
   height: auto; /* Mantém a proporção do slide */
   margin-top: 2rem;
   padding: 2rem;
