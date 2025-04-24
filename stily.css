@@ -7,8 +7,8 @@
 
 
 body {
-    background-color:  #644311; 
-    color: #c7f109; 
+    background-color: LightBlue; 
+    color: black;
     font-family: "Itim", cursive;
     font-weight: 400;
     font-style: normal;
@@ -17,7 +17,7 @@ header {
   display: flex;
   flex-direction: column; /* Altera para coluna */
   align-items: center; /* Centraliza horizontalmente */
-  background-color: #331f19;
+  background-color: DarkBlue;
   width: 100%;
 }
 
@@ -114,6 +114,11 @@ main {
     
 
 }
+
+ul {
+  list-style-type: none;
+}
+
 #portifolio {
     display: flex;
     flex-direction: row;
@@ -183,7 +188,7 @@ footer {
     flex-direction: row; 
     align-items: center;
     justify-content: space-around;
-    background-color: #331f19;
+    background-color: DarkBlue;
     height: 10rem;
     margin-top: 50vh;
 
