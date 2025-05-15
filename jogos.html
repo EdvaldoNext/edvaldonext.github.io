@@ -19,6 +19,7 @@
             font-weight: 400;
             font-style: normal;
             color: #C7F109;
+            overflow: scroll;
 
         }
 
@@ -27,6 +28,14 @@
             height: 100vh;
             padding-top: 5%;
             padding-bottom: 5%;
+        }
+
+        #rachacuca {
+            width: 100%;
+            height: 300vh;
+            padding-top: 20%;
+            padding-bottom: 5%;
+
         }
 
         header {
@@ -51,14 +60,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100%;
+            overflow: scroll;
         }
 
 
 
         footer {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-around;
             align-items: center;
             position: fixed;
             bottom: 0;
@@ -106,19 +117,37 @@
 <body>
 
     <header>
-        <h1>Jogos</h1>
+        <h1 id="jogospg">Jogos</h1>
         <h2><a href="index.html">Home</a></h2>
     </header>
-    
 
-  <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"  src="https://www.onlinegames.io/crazy-plane-landing/"> </iframe>  
+    <main>
 
-    <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"  src="https://www.onlinegames.io/drift-king/"> </iframe>  
+        <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
+            src="https://www.onlinegames.io/monster-truck-race-arena/"> </iframe>
+
+        <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
+            src="https://www.onlinegames.io/gta-simulator/"> </iframe>
+
+        <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
+            src="https://www.onlinegames.io/google-pacman/"> </iframe>
+
+        <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
+            src="https://www.onlinegames.io/cube-worlds/"> </iframe>
 
 
-   
+        <iframe id="rachacuca" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
+            src="https://rachacuca.com.br/"> </iframe>
+
+    </main>
+
+
+
+
+
     <footer>
         <h2><a href="index.html">Home</a></h2>
+        <h2><a href="#jogospg">Subir</a></h2>
     </footer>
 
 </body>
