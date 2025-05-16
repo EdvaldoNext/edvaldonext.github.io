@@ -9,87 +9,22 @@
         @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
         body {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
-            background-color: #644311;
-            font-family: "Itim", cursive;
-            font-weight: 400;
-            font-style: normal;
-            color: #C7F109;
-            
-
-
-        }
-
-        main {
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-sizing: border-box;
-            width: 100%;
-            
-            overflow-y: hidden;
-        }
+            background-color: #644311;
+            font-family: "Itim", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: #C7F109;
 
-        main::-webkit-scrollbar {
-            width: 35px;
-            /* Aumenta a largura da barra de rolagem */
 
 
         }
 
-        main::-webkit-scrollbar-track {
-            background: yellow;
-            /* Cor de fundo mais clara ou diferente */
-
-        }
-
-        main::-webkit-scrollbar-thumb {
-            background: #644311;
-            /* Cor do "polegar" */
-        }
-
-        main::-webkit-scrollbar-thumb:hover {
-            background: #555;
-            /* Cor do "polegar" ao passar o mouse */
-        }
-
-        main::-webkit-scrollbar-thumb {
-            background: #644311;
-            border-radius: 10px;
-            /* Adiciona bordas arredondadas */
-        }
-
-
-
-
-
-
-        .jogos {
-            width: 100%;
-            height: 70vh;
-            padding-top: 5%;
-            padding-bottom: 10%;
-            
-
-        }
-
-        #rachacuca {
-            width: 100%;
-            height: 100vh;
-            padding-top: 20%;
-            padding-bottom: 5%;
-            
-
-
-        }
 
         header {
             display: flex;
@@ -102,13 +37,35 @@
             margin-bottom: 3rem;
         }
 
+        main {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 40px;
+
+        }
+
         h2 {
             color: #c7f109;
         }
 
-        
+        .jogos {
+            justify-content: center;
+            align-items: center;
+            padding-top: 5%;
+            padding-bottom: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 
-
+        img {
+            width: 60vh;
+            height: 50vh;
+        }
 
         footer {
             display: flex;
@@ -121,39 +78,15 @@
             width: 100%;
             background-color: #331F19;
 
-        }
-
-        a {
-            text-decoration: none;
-            list-style-type: none;
-            text-align: center;
-
-            a:link {
-                color: #c7f109;
-                background-color: transparent;
-                text-decoration: none;
-            }
-
-            a:visited {
-                color: #c7f109;
-                background-color: transparent;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: red;
-                background-color: transparent;
-                text-decoration: underline;
-            }
-
-            a:active {
-                color: yellow;
-                background-color: transparent;
-                text-decoration: underline;
-            }
-
 
         }
+
+
+        button {
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
         }
     </style>
 </head>
@@ -167,21 +100,17 @@
 
     <main>
 
-    <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
-        src="https://www.onlinegames.io/monster-truck-race-arena/"> </iframe>
+        <button><a class="jogos" href="jogo1.html"><img src="moster_truck.jpeg" alt=""></a></button>
 
-    <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
-        src="https://www.onlinegames.io/gta-simulator/"> </iframe>
+        <button><a class="jogos" href="jogo2.html"><img src="GTA-Simulator.jpg" alt=""></a></button>
 
-    <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
-        src="https://www.onlinegames.io/google-pacman/"> </iframe>
+        <button><a class="jogos" href="jogo3.html"><img src="motor_tour.jpeg" alt=""></a></button>
 
-    <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
-        src="https://www.onlinegames.io/cube-worlds/"> </iframe>
+        <button><a class="jogos" href="jogo4.html"><img src="robloks.jpg" alt=""></a></button>
+
+        <button><a class="jogos" href="jogo5.html"><img src="rachacuca.png" alt=""></a></button>
 
 
-    <iframe class="jogos" seamless="seamless" allowtransparency="true" allowfullscreen="true" frameborder="0"
-        src="https://rachacuca.com.br/"> </iframe>
 
 
     </main>
@@ -190,8 +119,10 @@
 
 
     <footer>
+
         <h2><a href="index.html">Home</a></h2>
         <h2><a href="#jogospg">Subir</a></h2>
+
     </footer>
 
 </body>
