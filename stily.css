@@ -376,7 +376,7 @@ audio {
 
 header {
   display: flex;
-  flex-direction: column; /* Altera para coluna */
+  flex-direction: rows; /* Altera para coluna */
   justify-content: center;
   align-items: center; /* Centraliza horizontalmente */
   background-color: DarkBlue;
