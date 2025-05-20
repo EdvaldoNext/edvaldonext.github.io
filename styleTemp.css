@@ -7,13 +7,7 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(#3b82f6,#4a7dff);
-}
+
 
 #containner {
     background-color: #f0f8ff;
@@ -38,7 +32,7 @@ body {
     border: none;
     background-color: transparent;
     font-size: 16px;
-    width: 100%;
+    width: 50%;
 }
 
 #search input:focus-visible {
