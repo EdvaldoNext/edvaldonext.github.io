@@ -45,7 +45,7 @@ function showinfons (json) {
     document.querySelector('#temp_description').innerHTML = `${json.description}`;
     document.querySelector('#temp_img').setAttribute('src',`https://openweathermap.org/img/wn/${json.tempIcon}@2x.png`);
     document.querySelector('#temp_max').innerHTML = `${json.tempMax}`;
-    document.querySelector('#temp_min').innerHTML = `${json.tempMinx}`;
+    document.querySelector('#temp_min').innerHTML = `${json.tempMin}`;
     document.querySelector('#humidity').innerHTML = `${json.humidity} %`;
     document.querySelector('#wind').innerHTML = `${json.windSpeed.toFixed(1)} Km/h`;
     
