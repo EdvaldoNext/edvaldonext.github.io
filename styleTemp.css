@@ -47,8 +47,12 @@
 }
 #lupa {
     font-size: 30px;
-    
-   
+    color: Goldenrod;          
+}
+
+#busca {
+    font-size: 30px;
+    color: Goldenrod; 
     
 }
 
