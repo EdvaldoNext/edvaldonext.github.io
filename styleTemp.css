@@ -9,7 +9,7 @@
 
 
 
-#containner {
+#containner_temp {
     background-color: #f0f8ff;
     border-radius: 20px;
     padding: 18px;
@@ -44,6 +44,12 @@
     border: none;
     cursor: pointer;
 
+}
+#lupa {
+    font-size: 20px;
+    position: absolute;
+    left: 5px;
+    
 }
 
 #weather {
