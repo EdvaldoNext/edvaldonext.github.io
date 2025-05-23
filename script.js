@@ -43,3 +43,19 @@ setInterval(trocarImagem, 3000);
 
         // Atualiza a cada segundo
         setInterval(atualizarSaudacaoEData, 1000);
+
+// Troca cor de Fundo
+
+const colors = ['#ADD8E6', '#90EE90', '#FFFFE0', '#D3D3D3', '#FFFFFF']; // Cores que você quer usar
+        let currentColorIndex = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length; // Avança para a próxima cor
+        }
+
+        // Troca a cor a cada 5 segundos (5000 milissegundos)
+        setInterval(changeBackgroundColor, 5000);
+
+        // Define a cor inicial ao carregar a página
+        changeBackgroundColor();
