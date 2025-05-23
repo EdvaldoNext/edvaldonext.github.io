@@ -45,7 +45,7 @@ setInterval(trocarImagem, 3000);
         setInterval(atualizarSaudacaoEData, 1000);
 
 // Troca cor de Fundo
-
+/*
 const colors = ['#ADD8E6', '#000000', '#FFFFE0', '#D3D3D3', '#FFFFFF']; // Cores que você quer usar
         let currentColorIndex = 0;
 
@@ -59,3 +59,4 @@ const colors = ['#ADD8E6', '#000000', '#FFFFE0', '#D3D3D3', '#FFFFFF']; // Cores
 
         // Define a cor inicial ao carregar a página
         changeBackgroundColor();
+*/
