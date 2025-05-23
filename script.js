@@ -54,8 +54,8 @@ const colors = ['#ADD8E6', '#000000', '#FFFFE0', '#D3D3D3', '#FFFFFF']; // Cores
             currentColorIndex = (currentColorIndex + 1) % colors.length; // Avança para a próxima cor
         }
 
-        // Troca a cor a cada 5 segundos (5000 milissegundos)
-        setInterval(changeBackgroundColor, 5000);
+        // Troca a cor a cada 5 segundos (10000 milissegundos)
+        setInterval(changeBackgroundColor, 10000);
 
         // Define a cor inicial ao carregar a página
         changeBackgroundColor();
