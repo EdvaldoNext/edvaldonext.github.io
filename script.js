@@ -46,7 +46,7 @@ setInterval(trocarImagem, 3000);
 
 // Troca cor de Fundo
 
-const colors = ['#ADD8E6', '#90EE90', '#FFFFE0', '#D3D3D3', '#FFFFFF']; // Cores que você quer usar
+const colors = ['#ADD8E6', '#000000', '#FFFFE0', '#D3D3D3', '#FFFFFF']; // Cores que você quer usar
         let currentColorIndex = 0;
 
         function changeBackgroundColor() {
