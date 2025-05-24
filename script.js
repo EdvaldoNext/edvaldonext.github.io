@@ -26,13 +26,16 @@ setInterval(trocarImagem, 3000);
             const ano = agora.getFullYear();
 
             let saudacao;
-            if (horas < 12) {
-                saudacao = "Bom dia!";
-            } else if (horas < 18) {
-                saudacao = "Boa tarde!";
-            } else {
-                saudacao = "Boa noite!";
-            }
+if (horas >= 0 && horas < 5) {
+    saudacao = "Já é madrugada e você acordado(a) ao invés de dormir, ein!!!";
+} else if (horas < 12) {
+    saudacao = "Bom dia!";
+} else if (horas < 18) {
+    saudacao = "Boa tarde!";
+} else {
+    saudacao = "Boa noite!";
+}
+
 
             return `${saudacao} Seja bem-vindo à minha página! Agora são exatamente ${horas}:${minutos}:${segundos}. Hoje é ${diaDaSemana}, dia ${diaDoMes} de ${mes} de ${ano}.`;
         }
