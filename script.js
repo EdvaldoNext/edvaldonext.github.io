@@ -27,7 +27,7 @@ function saudacaoEData() {
 
     let saudacao;
     if (horas >= 0 && horas < 5) {
-        saudacao = "Já é madrugada e você acordado(a) ao invés de dormir, ein!!!";
+        saudacao = "Já é madrugada e você acordado(a) ao invés de dormir,se apruma rapaz !!! más...";
     } else if (horas < 12) {
         saudacao = "Bom dia!";
     } else if (horas < 18) {
