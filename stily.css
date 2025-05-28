@@ -353,7 +353,7 @@ audio {
   display: none;
 }
 
-#mensagem {
+.mensagem {
   background-color: #ccc;
   color: darkblue;
   display: flex;
