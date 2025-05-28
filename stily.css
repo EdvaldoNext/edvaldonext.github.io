@@ -353,6 +353,16 @@ audio {
   display: none;
 }
 
+#mensagem {
+  background-color: #ccc;
+  color: darkblue;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 40px;
+  border-radius: 10px;
+  border: solid white;
+}
+
 @keyframes degrade {
   0%{
       background-position-x:0%;
