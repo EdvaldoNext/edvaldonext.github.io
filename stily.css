@@ -91,14 +91,7 @@ header {
 main {
       margin: 0;
       padding: 0;
-    width: 100vw ;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-     flex-flow: column;
-     height: auto;
+    
     
  
 }
@@ -362,61 +355,7 @@ audio {
   display: none;
 }
 
-#mensagem {
-  background-color: #ccc;
-  color: darkblue;
-  display: flex;
-  flex-flow: column wrap;
-  padding: 40px;
-  border-radius: 10px;
-  border: solid white;
-}
 
-.mensagem {
-    display: flex;
-    flex-flow: column;
-    background: #ccc ;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-.mensagem { 
-    margin-top: 20px; 
-}
-
-textarea {
-    width: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
-
-}
-
-button {
-    background: green;
-    color: azure;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(15, 228, 15);
-}
-
-.excluir-btn { 
-    color: red; margin-top: 5px; 
-}
-
-input {
-    width: 90%;
-    height: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 10px;
-}
 
 @keyframes degrade {
   0%{
