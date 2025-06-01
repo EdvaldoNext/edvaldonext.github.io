@@ -192,8 +192,9 @@ footer {
     align-items: center;
     justify-content: space-around;
     background-color: DarkBlue;
-    height: 10rem;
+    height: auto;
     margin-top: 50vh;
+    padding: 20px;
 
 }
 
@@ -353,6 +354,24 @@ section {
 
 audio {
   display: none;
+}
+
+#btn-mensagem {
+  background: green;
+  font-size: 5vw;
+  color: Goldenrod;
+  width: 50vw;
+  font-weight: bold; /* ou 'normal' se preferir */
+  border: none;
+  height: auto;
+  border-radius: 15px;
+  padding: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#btn-mensagem:hover {
+  background-color: greenyellow; /* Use 'background-color' em vez de 'background' */
 }
 
 
