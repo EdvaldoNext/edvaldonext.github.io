@@ -176,7 +176,24 @@
 
 
         }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
+        .btnVideoAulas {
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
 
 
 
@@ -228,100 +245,11 @@
 
     <main>
 
+        <button id="btnVideoAulas" onclick="carregarConteudo()"> Video Aulas</button>
+        <div id="videoss"></div>
+        
         <section id="videoss">
-            <div class="container">
-                <div id="gradeVideo">
-                    <h1>Videos fixos</h1>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=_aVt0hI5Zk-uDEcg&amp;list=PL4F_KHjVFSh91QnuecRrCHoCjny98g7JV"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-
-                    <iframe src="https://www.youtube.com/embed/a6cli5oSwto?si=12_SMvJe1AqWV-cS"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br> <br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=3GL_CB-0LyzpAr5r&amp;list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=rFc7o4kmw3bpXeHr&amp;list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <br> <br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=iZ3_DGxVF4hebJcR&amp;list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br> <br>
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=FFGg56CAFfqThVJF&amp;list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe src="https://www.youtube-nocookie.com/embed/Kyw91mqCHD0?si=Ct65BsxYOQj8NS2Q"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=xQf6dvIUABRiFA_r&amp;list=PLO_mlVzHgDw02tItMApdR4MOpZB37162D"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=WvzugY7x10vjBr4Y&amp;list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=o8rEBEFfFHCRsR28&amp;list=PLG_7LYUryUI1coU_8JZffCHspvDwZUbcC"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=Jqi0vBBCAr20nkFV&amp;list=PLg5-aZqPjMmAo-kX-1l6BQS_yIIObGc3C"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br> <br>
-
-
-
-                </div>
-            </div>
+           
         </section>
 
         <section id="link">
@@ -628,6 +556,113 @@
 
 
     <script>
+
+        function carregarConteudo() {
+            document.getElementById("videoss").innerHTML = `
+            
+            
+            <div class="container">
+                <div id="gradeVideo">
+                    <h1>Videos fixos</h1>
+
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/videoseries?si=_aVt0hI5Zk-uDEcg&amp;list=PL4F_KHjVFSh91QnuecRrCHoCjny98g7JV"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br><br>
+
+
+                    <iframe src="https://www.youtube.com/embed/a6cli5oSwto?si=12_SMvJe1AqWV-cS"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br> <br>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=3GL_CB-0LyzpAr5r&amp;list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br><br>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=rFc7o4kmw3bpXeHr&amp;list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br> <br>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=iZ3_DGxVF4hebJcR&amp;list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br> <br>
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/videoseries?si=FFGg56CAFfqThVJF&amp;list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br><br>
+
+                    <iframe src="https://www.youtube-nocookie.com/embed/Kyw91mqCHD0?si=Ct65BsxYOQj8NS2Q"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br><br>
+
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/videoseries?si=xQf6dvIUABRiFA_r&amp;list=PLO_mlVzHgDw02tItMApdR4MOpZB37162D"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br><br>
+
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/videoseries?si=WvzugY7x10vjBr4Y&amp;list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br><br>
+
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/videoseries?si=o8rEBEFfFHCRsR28&amp;list=PLG_7LYUryUI1coU_8JZffCHspvDwZUbcC"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br><br>
+
+                    <iframe
+                        src="https://www.youtube.com/embed/videoseries?si=Jqi0vBBCAr20nkFV&amp;list=PLg5-aZqPjMmAo-kX-1l6BQS_yIIObGc3C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <br> <br>
+
+
+
+                </div>
+            </div>
+            
+            
+            
+            `;
+        }
+
+
+
+        
 
         function addVideo() {
             const link = document.getElementById('videoLink').value;
