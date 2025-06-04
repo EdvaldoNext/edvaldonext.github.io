@@ -21,7 +21,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 10rem;
+            height: auto;
             width: 100%;
             background-color: DarkBlue;
             margin-bottom: 3rem;
@@ -257,22 +257,19 @@
 
     <main>
 
-        <button id="btnVideoAulas" onclick="carregarConteudo()"> Video Aulas</button>
+        <button id="btnVideoAulas" onclick="carregarvideo()"> Video Aulas</button>
         <div id="videoss"></div>
         
         <section id="videoss">
            
         </section>
 
+        <button class="btnVideoAulas" onclick="carregarlink()"> links </button>
+        <div id="link"></div> <br>
+        
         <section id="link">
 
-            <div class="container">
-                <h2>Link de Videos</h2>
-                <input type="text" id="videoLink" placeholder="Link do vídeo">
-                <textarea id="videoDescription" placeholder="Descrição do vídeo"></textarea>
-                <button onclick="addVideo()">Adicionar Vídeo</button>
-                <div class="videos" id="videoList"></div>
-            </div>
+            
 
 
         </section>
@@ -569,7 +566,7 @@
 
     <script>
 
-        function carregarConteudo() {
+        function carregarvideo() {
             document.getElementById("videoss").innerHTML = `
             
             
@@ -672,7 +669,21 @@
             `;
         }
 
+         function carregarlink() {
+            document.getElementById("videoss").innerHTML = `
 
+
+            <div class="container">
+                <h2>Link de Videos</h2>
+                <input type="text" id="videoLink" placeholder="Link do vídeo">
+                <textarea id="videoDescription" placeholder="Descrição do vídeo"></textarea>
+                <button onclick="addVideo()">Adicionar Vídeo</button>
+                <div class="videos" id="videoList"></div>
+            </div>
+
+
+           `;
+        }
 
         
 
