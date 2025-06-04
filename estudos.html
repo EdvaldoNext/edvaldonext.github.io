@@ -25,6 +25,7 @@
             width: 100%;
             background-color: DarkBlue;
             margin-bottom: 3rem;
+
         }
 
         footer {
@@ -196,7 +197,6 @@
 
 
 
-
         /* Estilos para telas menores (responsivo) */
         @media (max-width: 600px) {
             * {
@@ -223,7 +223,7 @@
             }
         }
 
-         #homeh1{
+        #homeh1 {
             padding: auto;
             padding-bottom: 20px;
         }
@@ -232,8 +232,6 @@
             padding: auto;
             margin-bottom: 15px;
         }
-
-        
     </style>
 
     <script>
@@ -257,299 +255,36 @@
 
     <main>
 
-        <button id="btnVideoAulas" onclick="carregarvideo()"> Video Aulas</button>
+        <button class="btnVideoAulas" onclick="carregarvideo()"> Video Aulas </button>
         <div id="videoss"></div>
-        
+
+
         <section id="videoss">
-           
+
         </section>
 
         <button class="btnVideoAulas" onclick="carregarlink()"> links </button>
         <div id="link"></div> <br>
-        
-        <section id="link">
 
-            
+
+        <section id="link">
 
 
         </section>
 
 
-
+        <button class="btnVideoAulas" onclick="carregarlivros()"> livros em Geral </button>
+        <div id="livros"></div> <br>
 
         <section id="livros">
 
-            <div class="container">
-
-                <h1>livros em Geral</h1>
-
-                <nav>
-                    <ul>
-                        <li><a href="https://repositorio.usp.br/directbitstream/4cd7f9b7-7144-40f4-bfd0-7a1d9a6bd748/nd_72.pdf"
-                                target="_blank">Aprendendo JavaScript</a></li>
-
-                        <li><a href="https://www.telecom.uff.br/pet/petws/downloads/apostilas/HTML.pdf"
-                                target="_blank">APOSTILA DE HTML</a></li>
-
-                        <li><a href="https://www.kufunda.net/publicdocs/apostila-html-css-javascript.pdf"
-                                target="_blank">ESTRUTURAÇÃO DE PAGINAS USANDO HTML E CSS </a></li>
-
-                        <li><a href="https://www.ufsm.br/app/uploads/sites/413/2018/12/02_arquitetura_computadores.pdf"
-                                target="_blank">Arquitetura de
-                                Computadores</a></li>
-
-                        <li><a href="https://www.facom.ufu.br/~william/Disciplinas%202018-2/BSI-GSI030-EngenhariaSoftware/Livro/engenhariaSoftwareSommerville.pdf"
-                                target="_blank">Engenharia de Software </a></li>
-
-                        <li><a href="https://ifpr.edu.br/pronatec/wp-content/uploads/sites/46/2012/07/Instalador_e_Reparador_de_Redes_de_Computadores.pdf"
-                                target="_blank">Fundamentos de Redes de
-                                Computadores</a></li>
-
-                        <li><a href="https://www.regilan.com.br/wp-content/uploads/2013/10/Apostila-Programacao-WEB_HTML_CSS.pdf"
-                                target="_blank">Apostila de
-                                programação
-                                para web:
-                                HTML e CSS</a></li>
-
-                        <li><a href="https://docente.ifsc.edu.br/vilson.junior/pi/03_Introducao_CSS.pdf"
-                                target="_blank">Introdução ao CSS</a></li>
-
-                        <li><a href="https://docente.ifsc.edu.br/vilson.junior/pi/04_Introducao_JavaScript.pdf"
-                                target="_blank">Introdução ao JavaScript</a></li>
-
-                        <li><a href="https://www.penguinlivros.pt/wp-content/uploads/2023/11/Pai_Rico_Pai_Pobre_Edicao_Atualizada_25anos_ExcertoSITE.pdf?srsltid=AfmBOoo3G5_qRu5aHPHeEFR6PEEVUG1Ncu1HSZYuxKlF2qGABNIP9YL5"
-                                target="_blank">Pai Rico Pai Pobre </a></li>
-
-                        <li><a href="https://glaucocavalcanti.com.br/wp-content/uploads/2018/05/Glauco%20Cavalcanti%20-%20Linguagem%20Corporal.pdf"
-                                target="_blank">LINGUAGEM CORPORAL NO AMBIENTE DE TRABALHO </a></li>
-
-                        <li><a href="https://www.gileduardo.com.br/ifpr/lp/downloads/tutorial_github.pdf"
-                                target="_blank">Tutorial Básico - Utilizando Git / Github </a></li>
-
-                        <li><a href="https://cdn.prod.website-files.com/5b05e2e1bfcfaa4f92e2ac3a/63e5d3e04404306ceed2e537_Prog%2C%20git%20e%20github.pdf"
-                                target="_blank">Introdução
-                                à Programação,
-                                Git e Github </a></li>
-
-                        <li><a href="https://www.linux.ime.usp.br/~albasalo/Apostila/apostila.pdf" target="_blank">Curso
-                                de Linux </a></li>
-
-                        <li><a href="https://www.inf.ufpr.br/lesoliveira/download/c-completo-total.pdf"
-                                target="_blank">C Completo e Total </a></li>
-
-                        <li><a href="https://www.facom.ufu.br/~gustavo/ED1/Apostila_Linguagem_C.pdf"
-                                target="_blank">Apostila de Linguagem C
-                                (Conceitos Básicos) </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-
-                    </ul>
-                </nav>
-
-
-
-            </div>
 
         </section>
 
-
+        <button class="btnVideoAulas" onclick="carregarFaculdade()"> Faculdade </button>
+        <div id="livrosFacudades"></div> <br>
 
         <section id="livrosFacudades">
-
-
-            <div class="container">
-                <h1>Faculdade Analise e Desenvolvimento de Sistemas</h1> <br> <br>
-
-                <h2>PERSPECTIVAS PROFISSIONAIS</h2>
-                <ul>
-                    <li><a href="PERSPECTIVAS.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/17865_perspectivas_profissionais/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Arquitetura de Computadores</h2>
-                <ul>
-                    <li><a href="ArquiteturaComputaores.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/INF14_arquitetura_de_computadores/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Lógica e Técnicas de Programação</h2>
-                <ul>
-                    <li><a href="LógicaProgramacao.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/ADS05_logica_e_tecnicas_de_programacao/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Segurança em Tecnologia da Informação</h2>
-                <ul>
-                    <li><a href="SegurancaInformacao.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/GTI08_seguranca_em_tecnologia_da_informacao/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Experiência Profissional: Carreira e Sucesso</h2>
-                <ul>
-                    <li><p style="color: #c7f109;;" >NÃO HÁ</p></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/159470_exp_profissional_carreira_e_sucesso/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Produção do Conhecimento Científico e Tecnologias Emergentes</h2>
-                <ul>
-                    <li><a href="Produção do Conhecimento Científico.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/prod_do_conhecimento_tec_emergentes/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Engenharia e Projeto de Software</h2>
-                <ul>
-                    <li><a href="Engenharia e Projeto.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/ADS19_engenharia_e_projeto_de_software/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Fundamentos de Redes de Computadores</h2>
-                <ul>
-                    <li><a href="Fundamentos de Redes de Computadores.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/ADS25_fundamentos_de_redes_de_com/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Introdução ao Desenvolvimento de Sistemas Web</h2>
-                <ul>
-                    <li><a href="Introdução ao Desenvolvimento de Sistemas Web.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/ADS07_introducao_ao_desenvolvimento_de_sistemas_web/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Experiência Profissional: Desafios Contemporâneos</h2>
-                <ul>
-                    <li><p style="color: #c7f109;;" >NÃO HÁ</p></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/159472_experiencia_profissional/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Empreendedorismo Criativo</h2>
-                <ul>
-                    <li><a href="Empreendedorismo Criativo.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/159474_empreendedorismo_criativo/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Banco de Dados</h2>
-                <ul>
-                    <li><a href="Banco de Dados.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/172971_banco_de_dados/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Linguagens de Programação</h2>
-                <ul>
-                    <li><a href="Linguagens de.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/189476_linguagens_de_programacao/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-
-            <div class="container">
-                <h2>Estruturas de Dados</h2>
-                <ul>
-                    <li><a href="ESTRUTURA.pdf"
-                            target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/189474_estrutura_de_dados/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-
-             <div class="container">
-                <h2>Imersão Profissional: Projeto de Banco de Dados</h2>
-                <ul>
-                    <li><p style="color: #c7f109;;" >NÃO HÁ</p></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/173474_projeto_de_banco_de_dados/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-
-             
-
-
-
 
 
         </section>
@@ -669,7 +404,8 @@
             `;
         }
 
-         function carregarlink() {
+
+        function carregarlink() {
             document.getElementById("videoss").innerHTML = `
 
 
@@ -685,7 +421,274 @@
            `;
         }
 
-        
+
+        function carregarlivros() {
+            document.getElementById("videoss").innerHTML = `
+
+            <div class="container">
+
+                <h1>livros em Geral</h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="https://repositorio.usp.br/directbitstream/4cd7f9b7-7144-40f4-bfd0-7a1d9a6bd748/nd_72.pdf"
+                                target="_blank">Aprendendo JavaScript</a></li>
+
+                        <li><a href="https://www.telecom.uff.br/pet/petws/downloads/apostilas/HTML.pdf"
+                                target="_blank">APOSTILA DE HTML</a></li>
+
+                        <li><a href="https://www.kufunda.net/publicdocs/apostila-html-css-javascript.pdf"
+                                target="_blank">ESTRUTURAÇÃO DE PAGINAS USANDO HTML E CSS </a></li>
+
+                        <li><a href="https://www.ufsm.br/app/uploads/sites/413/2018/12/02_arquitetura_computadores.pdf"
+                                target="_blank">Arquitetura de
+                                Computadores</a></li>
+
+                        <li><a href="https://www.facom.ufu.br/~william/Disciplinas%202018-2/BSI-GSI030-EngenhariaSoftware/Livro/engenhariaSoftwareSommerville.pdf"
+                                target="_blank">Engenharia de Software </a></li>
+
+                        <li><a href="https://ifpr.edu.br/pronatec/wp-content/uploads/sites/46/2012/07/Instalador_e_Reparador_de_Redes_de_Computadores.pdf"
+                                target="_blank">Fundamentos de Redes de
+                                Computadores</a></li>
+
+                        <li><a href="https://www.regilan.com.br/wp-content/uploads/2013/10/Apostila-Programacao-WEB_HTML_CSS.pdf"
+                                target="_blank">Apostila de
+                                programação
+                                para web:
+                                HTML e CSS</a></li>
+
+                        <li><a href="https://docente.ifsc.edu.br/vilson.junior/pi/03_Introducao_CSS.pdf"
+                                target="_blank">Introdução ao CSS</a></li>
+
+                        <li><a href="https://docente.ifsc.edu.br/vilson.junior/pi/04_Introducao_JavaScript.pdf"
+                                target="_blank">Introdução ao JavaScript</a></li>
+
+                        <li><a href="https://www.penguinlivros.pt/wp-content/uploads/2023/11/Pai_Rico_Pai_Pobre_Edicao_Atualizada_25anos_ExcertoSITE.pdf?srsltid=AfmBOoo3G5_qRu5aHPHeEFR6PEEVUG1Ncu1HSZYuxKlF2qGABNIP9YL5"
+                                target="_blank">Pai Rico Pai Pobre </a></li>
+
+                        <li><a href="https://glaucocavalcanti.com.br/wp-content/uploads/2018/05/Glauco%20Cavalcanti%20-%20Linguagem%20Corporal.pdf"
+                                target="_blank">LINGUAGEM CORPORAL NO AMBIENTE DE TRABALHO </a></li>
+
+                        <li><a href="https://www.gileduardo.com.br/ifpr/lp/downloads/tutorial_github.pdf"
+                                target="_blank">Tutorial Básico - Utilizando Git / Github </a></li>
+
+                        <li><a href="https://cdn.prod.website-files.com/5b05e2e1bfcfaa4f92e2ac3a/63e5d3e04404306ceed2e537_Prog%2C%20git%20e%20github.pdf"
+                                target="_blank">Introdução
+                                à Programação,
+                                Git e Github </a></li>
+
+                        <li><a href="https://www.linux.ime.usp.br/~albasalo/Apostila/apostila.pdf" target="_blank">Curso
+                                de Linux </a></li>
+
+                        <li><a href="https://www.inf.ufpr.br/lesoliveira/download/c-completo-total.pdf"
+                                target="_blank">C Completo e Total </a></li>
+
+                        <li><a href="https://www.facom.ufu.br/~gustavo/ED1/Apostila_Linguagem_C.pdf"
+                                target="_blank">Apostila de Linguagem C
+                                (Conceitos Básicos) </a></li>
+
+                        <li><a href="" target="_blank">Livro </a></li>
+
+                        <li><a href="" target="_blank">Livro </a></li>
+
+                        <li><a href="" target="_blank">Livro </a></li>
+
+                        <li><a href="" target="_blank">Livro </a></li>
+
+
+                    </ul>
+                </nav>
+
+
+
+            </div>
+
+            
+
+
+           `;
+        }
+
+
+        function carregarFaculdade() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <div class="container">
+                <h1>Faculdade Analise e Desenvolvimento de Sistemas</h1> <br> <br>
+
+                <h2>PERSPECTIVAS PROFISSIONAIS</h2>
+                <ul>
+                    <li><a href="PERSPECTIVAS.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a
+                            href="https://livrodigital.uniasselvi.com.br/disciplina/17865_perspectivas_profissionais/disciplina/inicio.html">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Arquitetura de Computadores</h2>
+                <ul>
+                    <li><a href="ArquiteturaComputaores.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/INF14_arquitetura_de_computadores/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Lógica e Técnicas de Programação</h2>
+                <ul>
+                    <li><a href="LógicaProgramacao.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/ADS05_logica_e_tecnicas_de_programacao/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Segurança em Tecnologia da Informação</h2>
+                <ul>
+                    <li><a href="SegurancaInformacao.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a
+                            href="https://trilhaaprendizagem.uniasselvi.com.br/GTI08_seguranca_em_tecnologia_da_informacao/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Experiência Profissional: Carreira e Sucesso</h2>
+                <ul>
+                    <li>
+                        <p style="color: #c7f109;;">NÃO HÁ</p>
+                    </li>
+                    <br>
+                    <li><a
+                            href="https://trilhaaprendizagem.uniasselvi.com.br/159470_exp_profissional_carreira_e_sucesso/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Produção do Conhecimento Científico e Tecnologias Emergentes</h2>
+                <ul>
+                    <li><a href="Produção do Conhecimento Científico.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a
+                            href="https://livrodigital.uniasselvi.com.br/disciplina/prod_do_conhecimento_tec_emergentes/disciplina/inicio.html">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Engenharia e Projeto de Software</h2>
+                <ul>
+                    <li><a href="Engenharia e Projeto.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/ADS19_engenharia_e_projeto_de_software/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Fundamentos de Redes de Computadores</h2>
+                <ul>
+                    <li><a href="Fundamentos de Redes de Computadores.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/ADS25_fundamentos_de_redes_de_com/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Introdução ao Desenvolvimento de Sistemas Web</h2>
+                <ul>
+                    <li><a href="Introdução ao Desenvolvimento de Sistemas Web.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a
+                            href="https://trilhaaprendizagem.uniasselvi.com.br/ADS07_introducao_ao_desenvolvimento_de_sistemas_web/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Experiência Profissional: Desafios Contemporâneos</h2>
+                <ul>
+                    <li>
+                        <p style="color: #c7f109;;">NÃO HÁ</p>
+                    </li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/159472_experiencia_profissional/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Empreendedorismo Criativo</h2>
+                <ul>
+                    <li><a href="Empreendedorismo Criativo.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a
+                            href="https://livrodigital.uniasselvi.com.br/disciplina/159474_empreendedorismo_criativo/disciplina/inicio.html">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Banco de Dados</h2>
+                <ul>
+                    <li><a href="Banco de Dados.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/172971_banco_de_dados/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+            <div class="container">
+                <h2>Linguagens de Programação</h2>
+                <ul>
+                    <li><a href="Linguagens de.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/189476_linguagens_de_programacao/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+
+            <div class="container">
+                <h2>Estruturas de Dados</h2>
+                <ul>
+                    <li><a href="ESTRUTURA.pdf" target="_blank">LIVRO</a></li>
+                    <br>
+                    <li><a
+                            href="https://livrodigital.uniasselvi.com.br/disciplina/189474_estrutura_de_dados/disciplina/inicio.html">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+
+            <div class="container">
+                <h2>Imersão Profissional: Projeto de Banco de Dados</h2>
+                <ul>
+                    <li>
+                        <p style="color: #c7f109;;">NÃO HÁ</p>
+                    </li>
+                    <br>
+                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/173474_projeto_de_banco_de_dados/">TRILHA
+                            DE ARENDIZAGEM</a></li>
+                </ul>
+            </div> <br><br>
+
+
+
+           `;
+        }
+
+
+
+
 
         function addVideo() {
             const link = document.getElementById('videoLink').value;
