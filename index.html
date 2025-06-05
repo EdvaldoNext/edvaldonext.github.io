@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +16,8 @@
           window.location.href = "paginaDeErro.html"; // Redireciona se a senha estiver errada
         }
         */
-      </script>
-      
+    </script>
+
 
 
     <link rel="shortcut icon" href="apple-icon-60x60.png" type="image/x-icon">
@@ -27,14 +28,15 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
     <header>
-         
 
-        <section  >
+
+        <section>
             <nav class="navegacao">
-                
+
                 <a href="https://www.facebook.com/edvaldo.prieto" target="_blank">Facebook</a>
                 <a href="https://www.instagram.com/edvaldo_prieto_/" target="_blank">Instagram</a>
                 <a href="https://www.linkedin.com/in/edvaldo-prieto-9a4495279/" target="_blank">Linkedin</a>
@@ -44,123 +46,123 @@
 
         </section>
 
-       
-        
+
+
     </header>
 
-     <div id="resultado"></div>
+    <div id="resultado"></div>
 
     <main>
         <div class="main_01">
             <section id="secao1">
-                    <div class="slide-container">
-                    <div class="slide" >
-                    <img src="imgHtml.jpg" alt="imagem do HTML">
-                    <img src="imgCss.jpg" alt="imagem do CSS" style="display:none;">
-                    <img src="imgJavaScrit.jpg" alt="imagem JavaScript" style="display:none;">
-                    <img src="imgIA.jpg" alt="imagem de IA" style="display:none;">
+                <div class="slide-container">
+                    <div class="slide">
+                        <img src="imgHtml.jpg" alt="imagem do HTML">
+                        <img src="imgCss.jpg" alt="imagem do CSS" style="display:none;">
+                        <img src="imgJavaScrit.jpg" alt="imagem JavaScript" style="display:none;">
+                        <img src="imgIA.jpg" alt="imagem de IA" style="display:none;">
                     </div>
-                    </div>
-                   
-            
-            
+                </div>
 
-            
-            <img id="fotoprincipal" src="Polish_20240124_232425072.jpg" alt="imagem principal do autor" >
+
+
+
+
+                <img id="fotoprincipal" src="Polish_20240124_232425072.jpg" alt="imagem principal do autor">
             </section>
         </div>
 
 
 
 
-<div id="containner_temp">
+        <div id="containner_temp">
 
-<label for="search">Saiba a temperatura da sua Cidade</label>
-        <form id="search">
-             <i id="busca" class="fa-solid fa-location-dot"></i>
-           
-            <input type="search" name="city_name" id="city_name" placeholder="Buscar Cidade">
+            <label for="search">Saiba a temperatura da sua Cidade</label>
+            <form id="search">
+                <i id="busca" class="fa-solid fa-location-dot"></i>
 
-            <button type="submit">
-                <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </form>
+                <input type="search" name="city_name" id="city_name" placeholder="Buscar Cidade">
 
-        <div id="weather">
-            <h1 id="title">Varzea Grande,BR </h1>
+                <button type="submit">
+                    <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
 
-            <div id="infos">
-                <div id="temp">
-                    <img id="temp_img" src="#" alt="">
+            <div id="weather">
+                <h1 id="title">Varzea Grande,BR </h1>
 
-                    <div>
-                        <p id="temp_value">
-                            32 <sup>C°</sup>
-                        </p>
-                        <p id="temp_description">
-                            Ensolarado
-                        </p>
-                    </div>
-                </div>
-
-                <div id="other_infos">
-                    <div class="infos">
-                        <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                <div id="infos">
+                    <div id="temp">
+                        <img id="temp_img" src="#" alt="">
 
                         <div>
-                            <h2>Temp. Max</h2>
-
-                            <p id="temp_max">
+                            <p id="temp_value">
                                 32 <sup>C°</sup>
                             </p>
-                        </div>
-                    </div>
-
-                    <div class="infos">
-                        <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
-
-                        <div>
-                            <h2>Temp. Min</h2>
-
-                            <p id="temp_min">
-                                12 <sup>C°</sup>
+                            <p id="temp_description">
+                                Ensolarado
                             </p>
                         </div>
                     </div>
 
-                    <div class="infos">
-                        <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+                    <div id="other_infos">
+                        <div class="infos">
+                            <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
 
-                        <div>
-                            <h2>Humidade</h2>
+                            <div>
+                                <h2>Temp. Max</h2>
 
-                            <p id="humidity">
-                                50%
-                            </p>
+                                <p id="temp_max">
+                                    32 <sup>C°</sup>
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="infos">
-                        <i id="wind_icon" class="fa-solid fa-wind"></i>
+                        <div class="infos">
+                            <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
 
-                        <div>
-                            <h2>Vento</h2>
+                            <div>
+                                <h2>Temp. Min</h2>
 
-                            <p id="wind">
-                                50 km/h
-                            </p>
+                                <p id="temp_min">
+                                    12 <sup>C°</sup>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="infos">
+                            <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+
+                            <div>
+                                <h2>Humidade</h2>
+
+                                <p id="humidity">
+                                    50%
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="infos">
+                            <i id="wind_icon" class="fa-solid fa-wind"></i>
+
+                            <div>
+                                <h2>Vento</h2>
+
+                                <p id="wind">
+                                    50 km/h
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div id="alert"></div>
         </div>
 
-        <div id="alert"></div>
-    </div>
+        <script src="scriptTemp.js">
 
-    <script src="scriptTemp.js">
-
-    </script>
+        </script>
 
 
 
@@ -168,166 +170,184 @@
 
         <div class="main_2">
             <ul id="portifolio">
-              <!--  <li><a href="comandos.html">Comandos</a></li> -->
+                <!--  <li><a href="comandos.html">Comandos</a></li> -->
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="estudos.html">Estudos</a></li>
                 <li><a href="loginfinancas.html">Administrativo</a></li>
                 <li><a href="https://www.dropbox.com/home" target="_blank">Arquivos</a></li>
-
-               <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="noticias.html">Jogos</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
             </ul>
         </div>
 
-       
 
-    <div class="main_03">
-    <section>
-      <video id="videop" src="Dicilina.mp4" loop width="600rem" height="400rem" controls poster="imgIA.jpg"></video>
-    </section>
 
-    <section>
-     
-     <center>
+        <div class="main_03">
+            <section>
+                <video id="videop" src="Dicilina.mp4" loop width="600rem" height="400rem" controls
+                    poster="imgIA.jpg"></video>
+            </section>
 
-        <details>
+            <section>
 
-            
+                <center>
 
-           
-
-            <summary>  <strong> <h1 id ="hh1">Uma breve história da minha vida</h1> </strong> </summary>
-
-                    
-                <p id = "hp1">
-                    Meu nome é Edvaldo. Nasci em 24 de outubro de 1981, em uma família modesta da cidade de Cuiabá, onde desenvolvi valores essenciais à minha formação. Desde cedo, enfrentei desafios financeiros que me impulsionaram a iniciar minha vida profissional precocemente.<br>
-
-                    Após concluir o ensino médio em 1999, trilhei minha carreira profissional com cursos técnicos, voltado a área de informática, manutenção de computadores,Segurança privada, Telemarketing e Vendas.<br> 
-
-                    Em 2011, ingressei na área de Tecnologia com a Faculdade de Segurança da Informação. Infelizmente, circunstâncias adversas me levaram a interromper temporariamente essa trajetória. <br>
-
-                    Trabalhei no setor privado em uma empresa de grande porte do ramo varejista por 5 anos, destacando-me como um dos melhores profissionais de vendas. Desenvolvi diversas habilidades no atendimento ao cliente, solução de problemas. <br>
-
-                    Também trabalhei em uma multinacional conhecida mundialmente, por 5 anos.<br> Conquistando várias premiações por bater metas e desafios. <br>
-                    Adquiri habilidades em marketing, vendas externas, introdução de novos produtos dentro de um mercado cada vez mais competitivo, aprendi técnicas de negociações, foi realmente uma grande caminhada. <br>
-
-                    Em 2017, fui aprovado em um concurso público da Secretaria de Saúde de Várzea Grande, garantindo estabilidade profissional e oportunidade de continuar meus estudos. <br> Tive a oportunidade de obter minha formação em Gestão Pública em 2022. <br>
-                    <br> <br> 
-                    Minhas habilidades como gestor público incluem: <br>
-                    <br> <br>
-                    Habilidades Técnicas <br> <br>
-
-                    1. Conhecimento de políticas públicas <br>
-                    2. Planejamento estratégico <br>
-                    3. Gestão de recursos <br>
-                    4. Análise de dados <br>
-                    5. Tecnologias da informação <br>
-                    6. Legislação e regulamentação  <br> <br>
-
-                    Habilidades Gerenciais  <br> <br>
-
-                    1. Liderança <br>
-                    2. Gestão de projetos <br>
-                    3. Comunicação eficaz <br>
-                    4. Negociação e mediação <br>
-                    5. Gestão de conflitos <br>
-                    6. Desenvolvimento de equipes  <br> <br>
-
-                    Habilidades Comportamentais  <br> <br>
-
-                    1. Ética e integridade <br>
-                    2. Responsabilidade social <br>
-                    3. Adaptação a mudanças <br>
-                    4. Trabalho em equipe <br>
-                    5. Resolução de problemas <br>
-                    6. Aprendizado contínuo <br> <br>
-
-                    Conhecimentos Específicos <br> <br>
-
-                    1. Orçamento público <br>
-                    2. Gestão de riscos <br>
-                    3. Qualidade e produtividade <br>
-                    4. Gestão ambiental <br>
-                    5. Tecnologias emergentes <br>
-                    6. Gestão de crises <br> <br>
-
-                    Não satisfeito com minha formação, parti em busca de um sonho interrompido há anos atrás, a formação na área de tecnologia, com o curso de Análise e Desenvolvimento de Sistemas. <br>
-                    Neste curso, estou obtendo conhecimentos como:
-                    <br> <br>
-                            
-                    Habilidades Técnicas <br> <br>
-
-                    1. Linguagens de programação (Java, Python, C++, JavaScript) <br>
-                    2. Desenvolvimento web (HTML, CSS, React) <br>
-                    3. Banco de dados (MySQL, MongoDB) <br>
-                    4. Sistemas operacionais (Windows, Linux) <br>
-                    5. Ferramentas de desenvolvimento (Visual Studio, Eclipse) <br>
-                    6. Segurança cibernética (Criptografia, autenticação) <br> <br>
-
-                    Habilidades de Desenvolvimento <br> <br>
-
-                    1. Análise de requisitos <br>
-                    2. Projeto de sistemas <br>
-                    3. Desenvolvimento de software <br>
-                    4. Testes e validação <br>
-                    5. Implantação e manutenção <br> <br>
-
-                    Habilidades Gerenciais <br> <br>
-
-                    1. Gestão de projetos <br>
-                    2. Liderança <br>
-                    3. Comunicação técnica <br>
-                    4. Negociação e mediação <br>
-                    5. Gestão de riscos <br> <br>
-
-                    Habilidades Comportamentais <br> <br>
-
-                    1. Trabalho em equipe <br>
-                    2. Aprendizado contínuo <br>
-                    3. Resolução de problemas <br>
-                    4. Adaptação a mudanças <br>
-                    5. Ética profissional <br>
-                    6. Comunicação eficaz <br> <br>
-
-                    Conhecimentos Específicos <br> <br>
-
-                    1. Inteligência Artificial <br>
-                    2. Internet das Coisas (IoT) <br>
-                    3. Realidade Virtual e Aumentada <br>
-                    4. Blockchain <br>
-                    5. Cloud Computing <br>
-                    6. Cybersegurança 
-                    <br><br><br>
+                    <details>
 
 
 
-                    "A busca pelo conhecimento é uma jornada sem fim, e cada descoberta é um degrau para a sabedoria."
-                    <br>
-
-                    Edvaldo N.Prieto
 
 
-          
-      </p>
-            
-             
+                        <summary> <strong>
+                                <h1 id="hh1">Uma breve história da minha vida</h1>
+                            </strong> </summary>
 
-          </details>
-          
-     <br><br>
-       <iframe src="https://bandfmcuiaba.com.br/" frameborder="0"></iframe>
-        <br><br>
-        <iframe src="https://hunter.fm/gospel/" frameborder="0"></iframe>
-        <br><br>
-         <br><br>
 
-          
+                        <p id="hp1">
+                            Meu nome é Edvaldo. Nasci em 24 de outubro de 1981, em uma família modesta da cidade de
+                            Cuiabá, onde desenvolvi valores essenciais à minha formação. Desde cedo, enfrentei desafios
+                            financeiros que me impulsionaram a iniciar minha vida profissional precocemente.<br>
 
-         </center>
+                            Após concluir o ensino médio em 1999, trilhei minha carreira profissional com cursos
+                            técnicos, voltado a área de informática, manutenção de computadores,Segurança privada,
+                            Telemarketing e Vendas.<br>
 
-        
-    </section>
-  </div>
-  
+                            Em 2011, ingressei na área de Tecnologia com a Faculdade de Segurança da Informação.
+                            Infelizmente, circunstâncias adversas me levaram a interromper temporariamente essa
+                            trajetória. <br>
+
+                            Trabalhei no setor privado em uma empresa de grande porte do ramo varejista por 5 anos,
+                            destacando-me como um dos melhores profissionais de vendas. Desenvolvi diversas habilidades
+                            no atendimento ao cliente, solução de problemas. <br>
+
+                            Também trabalhei em uma multinacional conhecida mundialmente, por 5 anos.<br> Conquistando
+                            várias premiações por bater metas e desafios. <br>
+                            Adquiri habilidades em marketing, vendas externas, introdução de novos produtos dentro de um
+                            mercado cada vez mais competitivo, aprendi técnicas de negociações, foi realmente uma grande
+                            caminhada. <br>
+
+                            Em 2017, fui aprovado em um concurso público da Secretaria de Saúde de Várzea Grande,
+                            garantindo estabilidade profissional e oportunidade de continuar meus estudos. <br> Tive a
+                            oportunidade de obter minha formação em Gestão Pública em 2022. <br>
+                            <br> <br>
+                            Minhas habilidades como gestor público incluem: <br>
+                            <br> <br>
+                            Habilidades Técnicas <br> <br>
+
+                            1. Conhecimento de políticas públicas <br>
+                            2. Planejamento estratégico <br>
+                            3. Gestão de recursos <br>
+                            4. Análise de dados <br>
+                            5. Tecnologias da informação <br>
+                            6. Legislação e regulamentação <br> <br>
+
+                            Habilidades Gerenciais <br> <br>
+
+                            1. Liderança <br>
+                            2. Gestão de projetos <br>
+                            3. Comunicação eficaz <br>
+                            4. Negociação e mediação <br>
+                            5. Gestão de conflitos <br>
+                            6. Desenvolvimento de equipes <br> <br>
+
+                            Habilidades Comportamentais <br> <br>
+
+                            1. Ética e integridade <br>
+                            2. Responsabilidade social <br>
+                            3. Adaptação a mudanças <br>
+                            4. Trabalho em equipe <br>
+                            5. Resolução de problemas <br>
+                            6. Aprendizado contínuo <br> <br>
+
+                            Conhecimentos Específicos <br> <br>
+
+                            1. Orçamento público <br>
+                            2. Gestão de riscos <br>
+                            3. Qualidade e produtividade <br>
+                            4. Gestão ambiental <br>
+                            5. Tecnologias emergentes <br>
+                            6. Gestão de crises <br> <br>
+
+                            Não satisfeito com minha formação, parti em busca de um sonho interrompido há anos atrás, a
+                            formação na área de tecnologia, com o curso de Análise e Desenvolvimento de Sistemas. <br>
+                            Neste curso, estou obtendo conhecimentos como:
+                            <br> <br>
+
+                            Habilidades Técnicas <br> <br>
+
+                            1. Linguagens de programação (Java, Python, C++, JavaScript) <br>
+                            2. Desenvolvimento web (HTML, CSS, React) <br>
+                            3. Banco de dados (MySQL, MongoDB) <br>
+                            4. Sistemas operacionais (Windows, Linux) <br>
+                            5. Ferramentas de desenvolvimento (Visual Studio, Eclipse) <br>
+                            6. Segurança cibernética (Criptografia, autenticação) <br> <br>
+
+                            Habilidades de Desenvolvimento <br> <br>
+
+                            1. Análise de requisitos <br>
+                            2. Projeto de sistemas <br>
+                            3. Desenvolvimento de software <br>
+                            4. Testes e validação <br>
+                            5. Implantação e manutenção <br> <br>
+
+                            Habilidades Gerenciais <br> <br>
+
+                            1. Gestão de projetos <br>
+                            2. Liderança <br>
+                            3. Comunicação técnica <br>
+                            4. Negociação e mediação <br>
+                            5. Gestão de riscos <br> <br>
+
+                            Habilidades Comportamentais <br> <br>
+
+                            1. Trabalho em equipe <br>
+                            2. Aprendizado contínuo <br>
+                            3. Resolução de problemas <br>
+                            4. Adaptação a mudanças <br>
+                            5. Ética profissional <br>
+                            6. Comunicação eficaz <br> <br>
+
+                            Conhecimentos Específicos <br> <br>
+
+                            1. Inteligência Artificial <br>
+                            2. Internet das Coisas (IoT) <br>
+                            3. Realidade Virtual e Aumentada <br>
+                            4. Blockchain <br>
+                            5. Cloud Computing <br>
+                            6. Cybersegurança
+                            <br><br><br>
+
+
+
+                            "A busca pelo conhecimento é uma jornada sem fim, e cada descoberta é um degrau para a
+                            sabedoria."
+                            <br>
+
+                            Edvaldo N.Prieto
+
+
+
+                        </p>
+
+
+
+                    </details>
+
+                    <br><br>
+                    <iframe src="https://bandfmcuiaba.com.br/" frameborder="0"></iframe>
+                    <br><br>
+                    <iframe src="https://hunter.fm/gospel/" frameborder="0"></iframe>
+                    <br><br>
+                    <br><br>
+
+
+
+                </center>
+
+
+            </section>
+        </div>
+
 
 
     </main>
@@ -336,7 +356,8 @@
 
         <br>
 
-        <a href="https://edvaldoprieto2.lovestoblog.com/?i=1"><button id="btn-mensagem" >Deixe sua Mensagem ou sugestão.</button></a>
+        <a href="https://edvaldoprieto2.lovestoblog.com/?i=1"><button id="btn-mensagem">Deixe sua Mensagem ou
+                sugestão.</button></a>
 
         <!--
         <div class="foter">
@@ -365,10 +386,10 @@
         -->
 
         <br>
-        
+
     </footer>
-    <script src="script.js"></script>    
+    <script src="script.js"></script>
 
 </body>
-</html>
 
+</html>
