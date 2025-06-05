@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+        body {
+            display: flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: LightBlue;
+            font-family: "Itim", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: goldenrod;
+
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            background-color: DarkBlue;
+            margin-bottom: 50px;
+
+
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: LightBlue;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 7rem;
+            width: 100%;
+            background-color: DarkBlue;
+            margin-top: 6rem;
+        }
+
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* Remove a borda, se desejar */
+            z-index: 9999;
+            /* Garante que o iframe fique na frente de outros elementos */
+        }
+
+        .button {
+            margin-top: 200px;
+            width: 200px;
+            height: 50px;
+            margin-bottom: 100rem;
+            background-color: DarkBlue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: rgb(67, 241, 75);
+            color: rgb(231, 24, 34);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .button a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Noticias</h1>
+
+        <button class="button" style="background-color: green;">
+                       <a  href="index.html">Home</a>
+        </button> <br> 
+
+
+    </header>
+
+    <main>
+
+        <button class="button" onclick="carregarvg()"> vgnoticias </button>
+        <div id="videoss"></div>
+
+        <br>
+
+        <button class="button" onclick="carregarr7()"> R7noticias </button>
+        <div id="videoss"></div>
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        function carregarvg() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://www.vgnoticias.com.br/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+        function carregarr7() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://www.r7.com/" style="background-color: white;" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
