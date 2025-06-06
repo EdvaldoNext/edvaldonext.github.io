@@ -9,10 +9,20 @@
         @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
         body {
+            display: flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
             background-color: LightBlue;
             font-family: "Itim", cursive;
             font-weight: 400;
             font-style: normal;
+            color: goldenrod;
+
 
         }
 
@@ -24,7 +34,7 @@
             height: auto;
             width: 100%;
             background-color: DarkBlue;
-            margin-bottom: 3rem;
+            margin-bottom: 50px;
 
         }
 
@@ -232,6 +242,35 @@
             padding: auto;
             margin-bottom: 15px;
         }
+
+        .button {
+            margin: 0;
+            width: 200px;
+            height: 50px;
+            margin-bottom: 100rem;
+            background-color: DarkBlue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: rgb(67, 241, 75);
+            color: rgb(231, 24, 34);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button a {
+            text-decoration: none;
+        }
     </style>
 
     <script>
@@ -249,13 +288,19 @@
 
     <header>
         <h1 id="homeh1" style="margin-top: 5rem;">Plataforma de Estudos</h1>
-        <button id="homebtn"> <a href="index.html">HOME</a></button>
+        <button class="button" style="background-color: green;">
+            <a href="index.html"
+                style="color: white; text-decoration: none; display: block; padding: 10px 20px; font-weight: bold; ">HOME</a>
+        </button> <br>
+
+
+
 
     </header>
 
     <main>
 
-        
+
 
 
         <section id="videoss">
@@ -263,11 +308,11 @@
         </section>
 
 
-    <button class="btnVideoAulas" onclick="carregarvideo()"> Video Aulas </button>
+        <button class="button" onclick="carregarvideo()"> Video Aulas </button>
         <div id="videoss"></div>
 
 
-        <button class="btnVideoAulas" onclick="carregarlink()"> links </button>
+        <button class="button" onclick="carregarlink()"> links </button>
         <div id="link"></div> <br>
 
 
@@ -277,7 +322,7 @@
         </section>
 
 
-        <button class="btnVideoAulas" onclick="carregarlivros()"> livros em Geral </button>
+        <button class="button" onclick="carregarlivros()"> livros em Geral </button>
         <div id="livros"></div> <br>
 
         <section id="livros">
@@ -285,7 +330,7 @@
 
         </section>
 
-        <button class="btnVideoAulas" onclick="carregarFaculdade()"> Faculdade </button>
+        <button class="button" onclick="carregarFaculdade()"> Faculdade </button>
         <div id="livrosFacudades"></div> <br>
 
         <section id="livrosFacudades">
