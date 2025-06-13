@@ -82,7 +82,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
+        /*
         button {
 
             padding: 10px 20px;
@@ -92,6 +92,25 @@
             border-radius: 5px;
             cursor: pointer;
 
+        }
+        */
+          .button {
+            margin: 0;
+            width: 200px;
+            height: 50px;
+            margin-bottom: 100rem;
+            background-color: DarkBlue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
         }
 
 
@@ -324,7 +343,7 @@
 
     <main>
 
-        <button class="btnVideoAulas" onclick="carregarvideo()"> Video Aulas </button>
+        <button class="button" onclick="carregarvideo()"> Video Aulas </button>
         <div id="videoss"></div>
 
 
@@ -332,7 +351,7 @@
 
         </section>
 
-        <button class="btnVideoAulas" onclick="carregarlink()"> links </button>
+        <button class="button" onclick="carregarlink()"> links </button>
         <div id="link"></div> <br>
 
 
@@ -342,7 +361,7 @@
         </section>
 
 
-        <button class="btnVideoAulas" onclick="carregarlivros()"> livros em Geral </button>
+        <button class="button" onclick="carregarlivros()"> livros em Geral </button>
         <div id="livros"></div> <br>
 
         <section id="livros">
@@ -350,7 +369,7 @@
 
         </section>
 
-        <button class="btnVideoAulas" onclick="carregarFaculdade()"> Faculdade </button>
+        <button class="button" onclick="carregarFaculdade()"> Faculdade </button>
         <div id="livrosFacudades"></div> <br>
 
         <section id="livrosFacudades">
@@ -358,7 +377,7 @@
 
         </section>
 
-        <button class="btnVideoAulas" onclick="carregarmedia()"> Simulador Media </button>
+        <button class="button" onclick="carregarmedia()"> Simulador Media </button>
         <div id="livrosFacudades"></div> <br>
 
         <section id="livrosFacudades">
@@ -887,7 +906,7 @@
         <div id="corf">
             <label for="">Defina a Cor do fundo</label>
             <input id="cor" type="color">
-            <button onclick="corfundo()">Selecionar Cor Fundo</button>
+            <button class="button"  onclick="corfundo()">Selecionar Cor Fundo</button>
         </div>
         <br><br>
 
