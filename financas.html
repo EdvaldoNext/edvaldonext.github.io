@@ -2,133 +2,222 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finanças</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrativo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-    body {
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: LightBlue;
-      font-family: "Itim", cursive;
-      font-weight: 400;
-      font-style: normal;
-      color: #C7F109;
-      height: auto;
-
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 10rem;
-      width: 100%;
-      background-color: DarkBlue;
-      ;
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      color: #c7f109;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 15vh;
-     
-    }
-
-    .btnGranazen {
-      background-color: green;
-      color: white;
-      font-weight: bold;
-      font-size: 2rem;
-      border-radius: 30px;
-      height: 6rem;
-      width: 12rem;
-     ;
-
-    }
-
-    footer {
-      position: fixed;
-      bottom: 0;
-      height: 10rem;
-      width: 100%;
-      background-color: DarkBlue;
-      
-
-    }
-
-    a {
-      text-decoration: none;
-      list-style-type: none;
-      text-align: center;
-
-      a:link {
-        color: #c7f109;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      a:visited {
-        color: #c7f109;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-
-      a:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
+        body {
+            display: flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: LightBlue;
+            font-family: "Itim", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: goldenrod;
 
 
-    }
-    }
-  </style>
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            background-color: DarkBlue;
+            margin-bottom: 50px;
+
+
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: LightBlue;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 7rem;
+            width: 100%;
+            background-color: DarkBlue;
+            margin-top: 6rem;
+        }
+
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* Remove a borda, se desejar */
+            z-index: 9999;
+            /* Garante que o iframe fique na frente de outros elementos */
+        }
+
+        .button {
+            margin-top: 200px;
+            width: 200px;
+            height: 50px;
+            margin-bottom: 100rem;
+            background-color: DarkBlue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+
+        .button:hover {
+            background-color: rgb(67, 241, 75);
+            color: rgb(238, 235, 235);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button a {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            list-style-type: none;
+            text-align: center;
+
+            a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: white;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            a:active {
+                color: white;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Finanças</h1>
-    <h2><a href="index.html">Home</a></h2>
-  </header>
+    <header>
+        <h1>FINANÇAS</h1>
 
-  
-  <main>
-    <
-    
-    <button class="btnGranazen"  > <a href="https://granazen.com/painel" target="_blank"> Granazen </a> </button>
+        <button class="button" style="background-color: rgb(67, 241, 75);">
+            <a href="index.html">Home</a>
+        </button> <br>
 
-    <br> <br> <br>
 
-    
-    <button class="btnGranazen" > <a href="https://edvaldoprieto2.lovestoblog.com/mensagem.php" target="_blank"> Mensagem </a> </button>
+    </header>
 
-      <button class="btnGranazen"  > <a href="https://granazen.com/painel" target="_blank"> Granazen </a> </button>
+    <main>
 
-    <br> <br> <br>
-  </main>
-  
-  <footer></footer>
+        <button class="button"> <a href="https://granazen.com/painel" target="_blank"> Granazen </a> </button>
+
+        <br>
+
+        <button class="button"> <a href="https://edvaldoprieto2.lovestoblog.com/mensagem.php" target="_blank"> Mensagem
+            </a> </button>
+
+
+        <br>
+
+        <button class="button"> <a href="https://pascoalrodas.github.io/amarzenamento.github.io/" target="_blank">
+                Documentos </a> </button>
+
+        <br>
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        function carregargranazen() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://granazen.com/painel" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+        function carregarr7() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://www.r7.com/" style="background-color: white;" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+
+
+        function carregarcnn() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://www.cnnbrasil.com.br" style="background-color: white;" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+
+
+
+    </script>
+
 
 </body>
 
