@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Estudos</title>
+    <title>Noticias</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
         body {
+            display: flexbox;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0;
             background-color: LightBlue;
             font-family: "Itim", cursive;
             font-weight: 400;
             font-style: normal;
+            color: goldenrod;
 
         }
 
@@ -24,7 +33,8 @@
             height: auto;
             width: 100%;
             background-color: DarkBlue;
-            margin-bottom: 3rem;
+            margin-bottom: 50px;
+
 
         }
 
@@ -82,20 +92,79 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        /*
-        button {
 
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            background-color: LightBlue;
+        }
+
+        input[type="color"] {
+            width: 50px;
+            /* Ajuste o tamanho conforme necessário */
+            height: 50px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0;
+            /* Remova o padding para garantir que o tamanho seja correto */
+            -webkit-appearance: none;
+            /* Remove a aparência padrão no Chrome */
+            -moz-appearance: none;
+            /* Remove a aparência padrão no Firefox */
+            appearance: none;
+            cursor: pointer;
+        }
+
+        input[type="color"]::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+
+        input[type="color"]::-webkit-color-swatch {
             border: none;
             border-radius: 5px;
-            cursor: pointer;
+        }
+
+
+        #corf {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 50%;
+            /* Ajustei para 50% para ocupar mais espaço */
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
 
         }
+
+
+
+
+
+        /* iframe tela cheia
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            // Remove a borda, se desejar 
+            z-index: 9999;
+            // Garante que o iframe fique na frente de outros elementos 
+        }
         */
-          .button {
-            margin: 0;
+
+        .button {
+            margin-top: 200px;
             width: 200px;
             height: 50px;
             margin-bottom: 100rem;
@@ -112,6 +181,7 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         .button:hover {
             background-color: rgb(67, 241, 75);
             color: rgb(231, 24, 34);
@@ -122,33 +192,10 @@
             text-decoration: none;
         }
 
-
-        #videoss {
-            margin-bottom: 8rem;
-
-        }
-
-        .videos {
-            margin-top: 20px;
-        }
-
-        .video {
-            margin-bottom: 15px;
-            padding: 10px;
-            background: #e9ecef;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .video button {
-            background-color: #dc3545;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
+        audio {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #gradeVideo {
@@ -164,18 +211,30 @@
 
         }
 
-        #livros {
-            margin-top: 8rem;
-            font-size: 1.5rem;
+        #videoss {}
+
+        .videos {
+            margin-top: 20px;
         }
 
-        #livrosFacudades {
-            margin-top: 8rem;
-            font-size: 1.5rem;
-
+        .video {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-
+        .video button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
         a,
         ul {
@@ -209,124 +268,6 @@
 
 
         }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btnVideoAulas {
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        #corf {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            width: 50%;
-            /* Ajustei para 50% para ocupar mais espaço */
-            height: 100%;
-            margin-left: auto;
-            margin-right: auto;
-
-
-        }
-
-        input[type="color"] {
-            width: 50px;
-            /* Ajuste o tamanho conforme necessário */
-            height: 50px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 0;
-            /* Remova o padding para garantir que o tamanho seja correto */
-            -webkit-appearance: none;
-            /* Remove a aparência padrão no Chrome */
-            -moz-appearance: none;
-            /* Remove a aparência padrão no Firefox */
-            appearance: none;
-            cursor: pointer;
-        }
-
-        input[type="color"]::-webkit-color-swatch-wrapper {
-            padding: 0;
-        }
-
-        input[type="color"]::-webkit-color-swatch {
-            border: none;
-            border-radius: 5px;
-        }
-
-
-
-
-        audio {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-
-
-        /* Estilos para telas menores (responsivo) */
-        @media (max-width: 600px) {
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                overflow-x: hidden;
-            }
-
-            .video {
-                flex-direction: column;
-                /* Coloca os elementos em coluna */
-                align-items: flex-start;
-                /* Alinha os itens à esquerda */
-            }
-
-            .video button {
-                margin-top: 10px;
-                /* Adiciona um espaço acima do botão */
-                align-self: center;
-                /* Centraliza o botão */
-                width: 100%;
-                /* Faz o botão ocupar toda a largura */
-            }
-        }
-
-        #homeh1 {
-            padding: auto;
-            padding-bottom: 20px;
-        }
-
-        #homebtn {
-            padding: auto;
-            margin-bottom: 15px;
-        }
-
-        footer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: auto;
-            width: auto;
-            background-color: DarkBlue;
-
-            position: relative;
-            bottom: 0;
-
-        }
     </style>
 
     <script>
@@ -340,13 +281,18 @@
         */
     </script>
 
+
 </head>
 
 <body>
 
     <header>
-        <h1 id="homeh1" style="margin-top: 5rem;">Plataforma de Estudos</h1>
-        <button id="homebtn"> <a href="index.html">HOME</a></button>
+        <h1>Plataforma de Estudos</h1>
+
+        <button class="button" style="background-color: rgb(67, 241, 75);">
+            <a href="index.html">Home</a>
+        </button> <br>
+
 
     </header>
 
@@ -518,7 +464,7 @@
                 <h2>Link de Videos</h2>
                 <input type="text" id="videoLink" placeholder="Link do vídeo">
                 <textarea id="videoDescription" placeholder="Descrição do vídeo"></textarea>
-                <button onclick="addVideo()">Adicionar Vídeo</button>
+                <button class="button" style="background-color: rgb(67, 241, 75);" onclick="addVideo()">Adicionar Vídeo</button>
                 <div class="videos" id="videoList"></div>
             </div>
 
@@ -845,7 +791,7 @@
             document.getElementById("videoss").innerHTML = `
 
 
-             <div id="mediaFacu" style="text-align: center; margin-top: 20px;">
+             <div id="mediaFacu" style="text-align: center; margin-top: 20px; color: black; font-size: 1.5rem;">
         <h1>Calculadora de Média Ponderada</h1>
         <p>Preencha as notas abaixo para calcular a média ponderada.</p>                                  
     <form id="formNotas">
@@ -861,7 +807,7 @@
         <label for="n4">Quarta Nota:</label>
         <input style="font-size: 1rem; width: 25vh; " id="n4" type="number" placeholder="Digite a quarta nota" min="0" max="10" required> <br>
 
-        <button type="button" onclick="calcularMedia()">Calcular Média</button>
+        <button class="button" style="background-color: rgb(67, 241, 75);" type="button" onclick="calcularMedia()">Calcular Média</button>
     </form>
 
     <p id="media"></p>
@@ -915,7 +861,8 @@
         <div id="corf">
             <label for="">Defina a Cor do fundo</label>
             <input id="cor" type="color">
-            <button class="button"  onclick="corfundo()">Selecionar Cor Fundo</button>
+            <button class="button" style="background-color: rgb(67, 241, 75);" onclick="corfundo()">Selecionar Cor
+                Fundo</button>
         </div>
         <br><br>
 
@@ -929,945 +876,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-<!--
-    
-        
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Estudos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .videos {
-            margin-top: 20px;
-        }
-        .video {
-            margin-bottom: 15px;
-            padding: 10px;
-            background: #e9ecef;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Plataforma de Estudos</h1>
-        <input type="text" id="videoLink" placeholder="Link do vídeo">
-        <textarea id="videoDescription" placeholder="Descrição do vídeo"></textarea>
-        <button onclick="addVideo()">Adicionar Vídeo</button>
-        <div class="videos" id="videoList"></div>
-    </div>
-    <script>
-        function addVideo() {
-            const link = document.getElementById('videoLink').value;
-            const description = document.getElementById('videoDescription').value;
-            if (link && description) {
-                const videoList = document.getElementById('videoList');
-                const videoDiv = document.createElement('div');
-                videoDiv.className = 'video';
-                videoDiv.innerHTML = `<a href="${link}" target="_blank">${link}</a><p>${description}</p>`;
-                videoList.appendChild(videoDiv);
-                saveVideo(link, description); // Salva no localStorage
-                document.getElementById('videoLink').value = '';
-                document.getElementById('videoDescription').value = '';
-            } else {
-                alert('Por favor, preencha ambos os campos.');
-            }
-        }
-
-        function saveVideo(link, description) {
-            let videos = JSON.parse(localStorage.getItem('videos') || '[]');
-            videos.push({ link: link, description: description });
-            localStorage.setItem('videos', JSON.stringify(videos));
-            loadVideos(); // Atualiza a lista de vídeos na página
-        }
-
-        function loadVideos() {
-            const videoList = document.getElementById('videoList');
-            videoList.innerHTML = ''; // Limpa a lista atual
-            let videos = JSON.parse(localStorage.getItem('videos') || '[]');
-            videos.forEach(video => {
-                const videoDiv = document.createElement('div');
-                videoDiv.className = 'video';
-                videoDiv.innerHTML = `<a href="${video.link}" target="_blank">${video.link}</a><p>${video.description}</p>`;
-                videoList.appendChild(videoDiv);
-            });
-        }
-
-        // Carrega os vídeos ao carregar a página
-        window.onload = loadVideos;
-    </script>
-</body>
-</html>
-
-iframe src="https://www.r7.com/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
-
--->
-
-
-
-
-
-
-
-
-<!--
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Estudos</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-
-        body {
-            display: flexbox;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: LightBlue;
-            font-family: "Itim", cursive;
-            font-weight: 400;
-            font-style: normal;
-            color: goldenrod;
-
-
-        }
-
-        header {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            width: 100%;
-            background-color: DarkBlue;
-            margin-bottom: 50px;
-
-        }
-
-        footer {
-            text-align: center;
-            justify-content: center;
-            height: 7rem;
-            width: 100%;
-            background-color: DarkBlue;
-            margin-top: 6rem;
-        }
-
-        #home {
-            font-family: "Itim", cursive;
-            font-weight: 400;
-            font-style: normal;
-            color: white;
-            background-color: Goldenrod;
-            margin-bottom: 5rem;
-            text-decoration: none;
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: bold;
-            font-size: 2rem;
-            color: Goldenrod;
-        }
-
-        h2 {
-            text-align: center;
-            font-weight: bold;
-            font-size: 2rem;
-            color: Goldenrod;
-
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: DarkBlue;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        input,
-        textarea {
-            width: 97%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-
-        }
-
-
-        #videoss {
-            margin-bottom: 8rem;
-
-        }
-
-        .videos {
-            margin-top: 20px;
-        }
-
-        .video {
-            margin-bottom: 15px;
-            padding: 10px;
-            background: #e9ecef;
-            border-radius: 5px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .video button {
-            background-color: #dc3545;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        #gradeVideo {
-            display: flex;
-            flex-direction: column;
-            /* Para que os vídeos fiquem um embaixo do outro */
-            align-items: center;
-            /* Centraliza os vídeos horizontalmente */
-            width: 100%;
-            height: auto;
-            margin-top: 3rem;
-            font-size: 1.5rem;
-
-        }
-
-        #livros {
-            margin-top: 8rem;
-            font-size: 1.5rem;
-        }
-
-        #livrosFacudades {
-            margin-top: 8rem;
-            font-size: 1.5rem;
-
-        }
-
-
-
-        a,
-        ul {
-            text-decoration: none;
-            list-style-type: none;
-            text-align: center;
-
-            a:link {
-                color: #c7f109;
-                background-color: transparent;
-                text-decoration: none;
-            }
-
-            a:visited {
-                color: #c7f109;
-                background-color: transparent;
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: red;
-                background-color: transparent;
-                text-decoration: underline;
-            }
-
-            a:active {
-                color: yellow;
-                background-color: transparent;
-                text-decoration: underline;
-            }
-
-
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btnVideoAulas {
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-
-
-        /* Estilos para telas menores (responsivo) */
-        @media (max-width: 600px) {
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                overflow-x: hidden;
-            }
-
-            .video {
-                flex-direction: column;
-                /* Coloca os elementos em coluna */
-                align-items: flex-start;
-                /* Alinha os itens à esquerda */
-            }
-
-            .video button {
-                margin-top: 10px;
-                /* Adiciona um espaço acima do botão */
-                align-self: center;
-                /* Centraliza o botão */
-                width: 100%;
-                /* Faz o botão ocupar toda a largura */
-            }
-        }
-
-        #homeh1 {
-            padding: auto;
-            padding-bottom: 20px;
-        }
-
-        #homebtn {
-            padding: auto;
-            margin-bottom: 15px;
-        }
-
-        .button {
-            margin: 0;
-            width: 200px;
-            height: 50px;
-            margin-bottom: 100rem;
-            background-color: DarkBlue;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .button:hover {
-            background-color: rgb(67, 241, 75);
-            color: rgb(231, 24, 34);
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .button a {
-            text-decoration: none;
-        }
-    </style>
-
-    <script>
-        /*
-        var password = prompt("Voce esta prestes a viver uma das maiores experiências da sua vida! Por favor, digite a senha:");
-        if (password != "gostozo") {
-          window.location.href = "paginaDeErro.html"; // Redireciona se a senha estiver errada
-        }
-        */
-    </script>
-
-</head>
-
-<body>
-
-    <header>
-        <h1 id="homeh1" style="margin-top: 5rem;">Plataforma de Estudos</h1>
-        <button class="button" style="background-color: green;">
-            <a href="index.html"
-                style="color: white; text-decoration: none; display: block; padding: 10px 20px; font-weight: bold; ">HOME</a>
-        </button> <br>
-
-
-
-
-    </header>
-
-    <main>
-
-
-
-
-        <section id="videoss">
-
-        </section>
-
-
-        <button class="button" onclick="carregarvideo()"> Video Aulas </button>
-        <div id="videoss"></div>
-
-
-        <button class="button" onclick="carregarlink()"> links </button>
-        <div id="link"></div> <br>
-
-
-        <section id="link">
-
-
-        </section>
-
-
-        <button class="button" onclick="carregarlivros()"> livros em Geral </button>
-        <div id="livros"></div> <br>
-
-        <section id="livros">
-
-
-        </section>
-
-        <button class="button" onclick="carregarFaculdade()"> Faculdade </button>
-        <div id="livrosFacudades"></div> <br>
-
-        <section id="livrosFacudades">
-
-
-        </section>
-
-    </main>
-
-
-
-
-
-
-
-
-
-    <script>
-
-        function carregarvideo() {
-            document.getElementById("videoss").innerHTML = `
-            
-            
-            <div class="container">
-                <div id="gradeVideo">
-                    <h1>Videos fixos</h1>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=_aVt0hI5Zk-uDEcg&amp;list=PL4F_KHjVFSh91QnuecRrCHoCjny98g7JV"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-
-                    <iframe src="https://www.youtube.com/embed/a6cli5oSwto?si=12_SMvJe1AqWV-cS"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br> <br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=3GL_CB-0LyzpAr5r&amp;list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=rFc7o4kmw3bpXeHr&amp;list=PL2Fdisxwzt_f5C7Mv0kg1EAHhy2VJLf1c"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <br> <br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=iZ3_DGxVF4hebJcR&amp;list=PL2Fdisxwzt_d590u3uad46W-kHA0PTjjw"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br> <br>
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=FFGg56CAFfqThVJF&amp;list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe src="https://www.youtube-nocookie.com/embed/Kyw91mqCHD0?si=Ct65BsxYOQj8NS2Q"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=xQf6dvIUABRiFA_r&amp;list=PLO_mlVzHgDw02tItMApdR4MOpZB37162D"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=WvzugY7x10vjBr4Y&amp;list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube-nocookie.com/embed/videoseries?si=o8rEBEFfFHCRsR28&amp;list=PLG_7LYUryUI1coU_8JZffCHspvDwZUbcC"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br><br>
-
-                    <iframe
-                        src="https://www.youtube.com/embed/videoseries?si=Jqi0vBBCAr20nkFV&amp;list=PLg5-aZqPjMmAo-kX-1l6BQS_yIIObGc3C"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br> <br>
-
-                    <iframe 
-                    src="https://www.youtube.com/embed/videoseries?si=aGiEq4SnsJvbNCsL&amp;list=PLesCEcYj003SwVdufCQM5FIbrOd0GG1M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                     
-                    <br> <br>
-
-                    <iframe  
-                    src="https://www.youtube.com/embed/videoseries?si=C-CW_4iff49hNq_e&amp;list=PLpaKFn4Q4GMOBAeqC1S5_Fna_Y5XaOQS2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    
-                    <br> <br>
-
-                    <iframe  src="https://www.youtube.com/embed/videoseries?si=Hnsyvl2VKSiXycWC&amp;list=PLHz_AreHm4dm4beCCCmW4xwpmLf6EHY9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-                    <br> <br>
-
-                    <iframe  
-                    src="https://www.youtube.com/embed/videoseries?si=EucNEj3t4d0bgcXv&amp;list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <br> <br>
-
-                </div>
-            </div>
-            
-            
-            
-            `;
-        }
-
-
-        function carregarlink() {
-            document.getElementById("videoss").innerHTML = `
-
-
-            <div class="container">
-                <h2>Link de Videos</h2>
-                <input type="text" id="videoLink" placeholder="Link do vídeo">
-                <textarea id="videoDescription" placeholder="Descrição do vídeo"></textarea>
-                <button onclick="addVideo()">Adicionar Vídeo</button>
-                <div class="videos" id="videoList"></div>
-            </div>
-
-
-           `;
-        }
-
-
-        function carregarlivros() {
-            document.getElementById("videoss").innerHTML = `
-
-            <div class="container">
-
-                <h1>livros em Geral</h1>
-
-                <nav>
-                    <ul>
-                        <li><a href="https://repositorio.usp.br/directbitstream/4cd7f9b7-7144-40f4-bfd0-7a1d9a6bd748/nd_72.pdf"
-                                target="_blank">Aprendendo JavaScript</a></li>
-
-                        <li><a href="https://www.telecom.uff.br/pet/petws/downloads/apostilas/HTML.pdf"
-                                target="_blank">APOSTILA DE HTML</a></li>
-
-                        <li><a href="https://www.kufunda.net/publicdocs/apostila-html-css-javascript.pdf"
-                                target="_blank">ESTRUTURAÇÃO DE PAGINAS USANDO HTML E CSS </a></li>
-
-                        <li><a href="https://www.ufsm.br/app/uploads/sites/413/2018/12/02_arquitetura_computadores.pdf"
-                                target="_blank">Arquitetura de
-                                Computadores</a></li>
-
-                        <li><a href="https://www.facom.ufu.br/~william/Disciplinas%202018-2/BSI-GSI030-EngenhariaSoftware/Livro/engenhariaSoftwareSommerville.pdf"
-                                target="_blank">Engenharia de Software </a></li>
-
-                        <li><a href="https://ifpr.edu.br/pronatec/wp-content/uploads/sites/46/2012/07/Instalador_e_Reparador_de_Redes_de_Computadores.pdf"
-                                target="_blank">Fundamentos de Redes de
-                                Computadores</a></li>
-
-                        <li><a href="https://www.regilan.com.br/wp-content/uploads/2013/10/Apostila-Programacao-WEB_HTML_CSS.pdf"
-                                target="_blank">Apostila de
-                                programação
-                                para web:
-                                HTML e CSS</a></li>
-
-                        <li><a href="https://docente.ifsc.edu.br/vilson.junior/pi/03_Introducao_CSS.pdf"
-                                target="_blank">Introdução ao CSS</a></li>
-
-                        <li><a href="https://docente.ifsc.edu.br/vilson.junior/pi/04_Introducao_JavaScript.pdf"
-                                target="_blank">Introdução ao JavaScript</a></li>
-
-                        <li><a href="https://www.penguinlivros.pt/wp-content/uploads/2023/11/Pai_Rico_Pai_Pobre_Edicao_Atualizada_25anos_ExcertoSITE.pdf?srsltid=AfmBOoo3G5_qRu5aHPHeEFR6PEEVUG1Ncu1HSZYuxKlF2qGABNIP9YL5"
-                                target="_blank">Pai Rico Pai Pobre </a></li>
-
-                        <li><a href="https://glaucocavalcanti.com.br/wp-content/uploads/2018/05/Glauco%20Cavalcanti%20-%20Linguagem%20Corporal.pdf"
-                                target="_blank">LINGUAGEM CORPORAL NO AMBIENTE DE TRABALHO </a></li>
-
-                        <li><a href="https://www.gileduardo.com.br/ifpr/lp/downloads/tutorial_github.pdf"
-                                target="_blank">Tutorial Básico - Utilizando Git / Github </a></li>
-
-                        <li><a href="https://cdn.prod.website-files.com/5b05e2e1bfcfaa4f92e2ac3a/63e5d3e04404306ceed2e537_Prog%2C%20git%20e%20github.pdf"
-                                target="_blank">Introdução
-                                à Programação,
-                                Git e Github </a></li>
-
-                        <li><a href="https://www.linux.ime.usp.br/~albasalo/Apostila/apostila.pdf" target="_blank">Curso
-                                de Linux </a></li>
-
-                        <li><a href="https://www.inf.ufpr.br/lesoliveira/download/c-completo-total.pdf"
-                                target="_blank">C Completo e Total </a></li>
-
-                        <li><a href="https://www.facom.ufu.br/~gustavo/ED1/Apostila_Linguagem_C.pdf"
-                                target="_blank">Apostila de Linguagem C
-                                (Conceitos Básicos) </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-                        <li><a href="" target="_blank">Livro </a></li>
-
-
-                    </ul>
-                </nav>
-
-
-
-            </div>
-
-            
-
-
-           `;
-        }
-
-
-        function carregarFaculdade() {
-            document.getElementById("videoss").innerHTML = `
-
-
-            <div class="container">
-                <h1>Faculdade Analise e Desenvolvimento de Sistemas</h1> <br> <br>
-
-                <h2>PERSPECTIVAS PROFISSIONAIS</h2>
-                <ul>
-                    <li><a href="PERSPECTIVAS.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/17865_perspectivas_profissionais/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Arquitetura de Computadores</h2>
-                <ul>
-                    <li><a href="ArquiteturaComputaores.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/INF14_arquitetura_de_computadores/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Lógica e Técnicas de Programação</h2>
-                <ul>
-                    <li><a href="LógicaProgramacao.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/ADS05_logica_e_tecnicas_de_programacao/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Segurança em Tecnologia da Informação</h2>
-                <ul>
-                    <li><a href="SegurancaInformacao.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/GTI08_seguranca_em_tecnologia_da_informacao/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Experiência Profissional: Carreira e Sucesso</h2>
-                <ul>
-                    <li>
-                        <p style="color: #c7f109;;">NÃO HÁ</p>
-                    </li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/159470_exp_profissional_carreira_e_sucesso/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Produção do Conhecimento Científico e Tecnologias Emergentes</h2>
-                <ul>
-                    <li><a href="Produção do Conhecimento Científico.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/prod_do_conhecimento_tec_emergentes/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Engenharia e Projeto de Software</h2>
-                <ul>
-                    <li><a href="Engenharia e Projeto.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/ADS19_engenharia_e_projeto_de_software/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Fundamentos de Redes de Computadores</h2>
-                <ul>
-                    <li><a href="Fundamentos de Redes de Computadores.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/ADS25_fundamentos_de_redes_de_com/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Introdução ao Desenvolvimento de Sistemas Web</h2>
-                <ul>
-                    <li><a href="Introdução ao Desenvolvimento de Sistemas Web.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://trilhaaprendizagem.uniasselvi.com.br/ADS07_introducao_ao_desenvolvimento_de_sistemas_web/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Experiência Profissional: Desafios Contemporâneos</h2>
-                <ul>
-                    <li>
-                        <p style="color: #c7f109;;">NÃO HÁ</p>
-                    </li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/159472_experiencia_profissional/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Empreendedorismo Criativo</h2>
-                <ul>
-                    <li><a href="Empreendedorismo Criativo.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/159474_empreendedorismo_criativo/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Banco de Dados</h2>
-                <ul>
-                    <li><a href="Banco de Dados.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/172971_banco_de_dados/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-            <div class="container">
-                <h2>Linguagens de Programação</h2>
-                <ul>
-                    <li><a href="Linguagens de.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/189476_linguagens_de_programacao/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-
-            <div class="container">
-                <h2>Estruturas de Dados</h2>
-                <ul>
-                    <li><a href="ESTRUTURA.pdf" target="_blank">LIVRO</a></li>
-                    <br>
-                    <li><a
-                            href="https://livrodigital.uniasselvi.com.br/disciplina/189474_estrutura_de_dados/disciplina/inicio.html">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-
-            <div class="container">
-                <h2>Imersão Profissional: Projeto de Banco de Dados</h2>
-                <ul>
-                    <li>
-                        <p style="color: #c7f109;;">NÃO HÁ</p>
-                    </li>
-                    <br>
-                    <li><a href="https://trilhaaprendizagem.uniasselvi.com.br/173474_projeto_de_banco_de_dados/">TRILHA
-                            DE ARENDIZAGEM</a></li>
-                </ul>
-            </div> <br><br>
-
-
-
-           `;
-        }
-
-
-
-
-
-        function addVideo() {
-            const link = document.getElementById('videoLink').value;
-            const description = document.getElementById('videoDescription').value;
-            if (link && description) {
-                saveVideo(link, description);
-                document.getElementById('videoLink').value = '';
-                document.getElementById('videoDescription').value = '';
-            } else {
-                alert('Por favor, preencha ambos os campos.');
-            }
-        }
-
-        function saveVideo(link, description) {
-            let videos = JSON.parse(localStorage.getItem('videos') || '[]');
-            videos.push({ link: link, description: description });
-            localStorage.setItem('videos', JSON.stringify(videos));
-            loadVideos();
-        }
-
-        function deleteVideo(index) {
-            let videos = JSON.parse(localStorage.getItem('videos') || '[]');
-            videos.splice(index, 1);
-            localStorage.setItem('videos', JSON.stringify(videos));
-            loadVideos();
-        }
-
-        function loadVideos() {
-            const videoList = document.getElementById('videoList');
-            videoList.innerHTML = '';
-            let videos = JSON.parse(localStorage.getItem('videos') || '[]');
-            videos.forEach((video, index) => {
-                const videoDiv = document.createElement('div');
-                videoDiv.className = 'video';
-                videoDiv.innerHTML = `
-            <div>
-                <a href="${video.link}" target="_blank">${video.link}</a>
-                <p>${video.description}</p>
-            </div>
-            <button onclick="deleteVideo(${index})">Excluir</button>
-        `;
-                videoList.appendChild(videoDiv);
-            });
-        }
-
-        window.onload = loadVideos;
-
-    </script>
-    <footer>
-
-        <br><br>
-        <audio src="audio_528hz.MP3" controls loop></audio>
-        <br><br>
-    </footer>
-
-
-
-</body>
-
-</html>
-
-
--->
-
