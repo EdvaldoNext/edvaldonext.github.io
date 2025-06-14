@@ -138,6 +138,11 @@
 <br>
 
 
+<button class="button" onclick="carregarcxtv()"> Vg-noticias </button>
+        <div id="videoss"></div>
+
+<br>
+
 
 
 
@@ -185,7 +190,15 @@ function carregarcnn() {
         }
 
 
+function carregarcxtv() {
+            document.getElementById("videoss").innerHTML = `
 
+
+            <iframe src="  https://www.cxtv.com.br/"  style="background-color: white;" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
 
 
     </script>
