@@ -1,86 +1,182 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Repositorio</title>
-    <link rel="shortcut icon" href="apple-icon-60x60.png" type="image/x-icon">
-    <link rel="stylesheet" href="stily.css">
+    <title>Meus Projetos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: lightblue;
+            font-family: "Itim", cursive, sans-serif;
+            color: goldenrod;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-color: darkblue;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            gap: 1.5rem;
+            min-height: fit-content;
+        }
+
+        footer {
+            background-color: darkblue;
+            padding: 1rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        .iframe-container {
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
+            margin-top: 1rem;
+            border: none;
+        }
+
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* Remove a borda, se desejar */
+            z-index: 9999;
+            /* Garante que o iframe fique na frente de outros elementos */
+        }
+
+        .button {
+            width: 200px;
+            padding: 0.75rem;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: "Itim", cursive, sans-serif;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(67, 241, 75);
+            color: rgb(231, 24, 34);
+        }
+
+        .button a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1 {
+            color: goldenrod;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .button {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .iframe-container {
+                height: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <section class="favic">
-            <img src="android-icon-96x96.png" alt="imagem do autor">
-
-
-        </section>
-
-        <section >
-            <nav class="navegacao">
-                <a href="index.html">Home</a>
-                <a href="https://www.facebook.com/edvaldo.prieto" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/edvaldo_prieto_/" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/edvaldo-prieto-9a4495279/" target="_blank">Linkidin</a>
-
-            </nav>
-
-        </section>
+        <h1>Meus Projetos</h1>
+        <button class="button" style= " background-color: rgb(67, 241, 75);">
+            <a href="index.html">Home</a>
+        </button> <br>
+        
     </header>
+
     <main>
-        <div class="main_2">
-            <ul id="portifolio">
-                <li><a href="https://pascoalrodas.github.io/Pascoal_rodas.github.io/" target="_blank">Pascoal Rodas</a></li>
-                 <li><a href="https://edvaldonext.github.io/listatarefas.github.io/" target="_blank">Lista de Tarefas</a></li>
-                <li><a href="https://edvaldonext.github.io/lista.github.io/" target="_blank">Lista de Compras integrada</a></li>
-                 <li><a href="https://edvaldonext.github.io/planilhagasto/" target="_blank">Planilha de Gastos</a></li>
-              
-               
-                
-                
-            </ul>
-        </div>
-
-
+        <button class="button" onclick="projeto1()" aria-label="Ver projeto Pascoal Rodas">Pascoal Rodas</button>
+        <button class="button" onclick="projeto2()" aria-label="Ver projeto Lista de Tarefas">Lista de Tarefas</button>
+        <button class="button" onclick="projeto3()" aria-label="Ver projeto Lista de Compras Integrada">Lista de Compras Integrada</button>
+        <button class="button" onclick="projeto4()" aria-label="Ver projeto Planilha de Gastos">Planilha de Gastos</button>
+        
+        <div id="videoss" class="iframe-container"></div>
     </main>
 
     <footer>
-
-<!--
-
-        <div class="foter">
-            <section id="contato" >
-                <h2>  </h2><br> <br> <br>
-                <p id="ccontato">
-                Celular: (65)99290-7235 <br>
-                Emails :   <br> <a href="mailto:edvaldoprieto@gmail.com">edvaldoprieto@gmail.com</a> <br>
-                Emails :  <br>  <a href="mailto:edvaldomil@gmail.com">edvaldomil@gmail.com</a> 
-                </p>
-
-            </section>
-
-        </div>
-
-
-        <div class="botao">
-            <section id="wtz" >
-                <button> <a href="Https://wa.me/5565992907235?text=Olá+Edvaldo+tudo+bem!...+👍🏽+" target="_blank"><img src="android-icon-48x48.png" alt="botao whatzap"></a>
-                </button>
-
-            </section>
-
-        </div>
--->
-         <!--
-        <audio src="musicaironeditado.mp3" autoplay loop controls></audio>
-         -->
-
+        <p>© 2024 Meus Projetos. Todos os direitos reservados.</p>
     </footer>
 
+    <script>
+        function projeto1() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            
+            
+
+            <iframe src="https://pascoalrodas.github.io/Pascoal_rodas.github.io/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+        function projeto2() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://edvaldonext.github.io/listatarefas.github.io/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
 
 
 
 
+        function projeto3() {
+            document.getElementById("videoss").innerHTML = `
 
 
+            <iframe src="https://edvaldonext.github.io/lista.github.io/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+        function projeto4() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://edvaldonext.github.io/planilhagasto/"  allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+    </script>
 </body>
 </html>
