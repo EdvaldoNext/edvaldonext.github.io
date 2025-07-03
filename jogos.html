@@ -93,6 +93,29 @@ DarkBlue;
 
         }
 
+         .button {
+            width: 200px;
+            padding: 0.75rem;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: "Itim", cursive, sans-serif;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(67, 241, 75);
+            color: rgb(231, 24, 34);
+        }
+
+        .button a {
+            color: inherit;
+            text-decoration: none;
+        }
+
 a:link {
         color:  Goldenrod;
         background-color: transparent;
@@ -115,7 +138,9 @@ a:link {
 
     <header>
         <h1 id="jogospg">Jogos</h1>
-        <h2><a href="index.html">Home</a></h2>
+       <button class="button" style= " background-color: rgb(67, 241, 75);">
+            <a href="index.html">Home</a>
+        </button> <br>
     </header>
 
     <main>
