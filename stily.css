@@ -358,7 +358,7 @@ audio {
 
 #btn-mensagem {
   background: green;
-  font-size: 5vw;
+  font-size: 2rem;
   color: Goldenrod;
   width: 50vw;
   font-weight: bold; /* ou 'normal' se preferir */
@@ -372,7 +372,10 @@ audio {
 
 #btn-mensagem:hover {
   background-color: greenyellow; /* Use 'background-color' em vez de 'background' */
+  
 }
+
+
 
 
 
@@ -611,6 +614,25 @@ margin: 0 auto;
 
 audio {
 display: none;
+}
+
+#btn-mensagem {
+  background: green;
+  font-size: 1rem;
+  color: Goldenrod;
+  width: 50vw;
+  font-weight: bold; /* ou 'normal' se preferir */
+  border: none;
+  height: auto;
+  border-radius: 15px;
+  padding: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#btn-mensagem:hover {
+  background-color: greenyellow; /* Use 'background-color' em vez de 'background' */
+  
 }
 
 
