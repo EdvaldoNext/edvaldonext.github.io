@@ -121,6 +121,12 @@
 
     <main>
 
+
+<button class="button" onclick="carregarempallador()"> O Empallador </button>
+        <div id="videoss"></div>
+
+        <br>
+
         <button class="button" onclick="carregarvg()"> Vg-noticias </button>
         <div id="videoss"></div>
 
@@ -155,6 +161,19 @@
     </footer>
 
     <script>
+
+        function carregarempallador() {
+            document.getElementById("videoss").innerHTML = `
+
+
+            <iframe src="https://oempallador.com.br/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+
+
+           `;
+        }
+
+
+
         function carregarvg() {
             document.getElementById("videoss").innerHTML = `
 
