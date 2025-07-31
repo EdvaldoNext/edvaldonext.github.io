@@ -1,0 +1,253 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canais de TV Online</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: LightBlue;
+            font-family: "Itim", cursive;
+            font-weight: 400;
+            font-style: normal;
+            color: Goldenrod;
+        }
+
+        .indice {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: DarkBlue;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: Goldenrod;
+            margin: 0;
+        }
+
+        .conteudoo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 7rem;
+            background-color: DarkBlue;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 100%;
+            height: 50px;
+            background-color: DarkBlue;
+            color: white;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgb(67, 241, 75);
+            color: rgb(231, 24, 34);
+        }
+
+        #videoContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        #videoContainer iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #closeButton {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: rgb(231, 24, 34);
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 10000;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            .button {
+                font-size: 14px;
+                height: 45px;
+            }
+        }
+    </style>
+
+   
+</head>
+<body>
+    <div class="indice">
+        <h1>Canais de filmes </h1>
+
+    </div>
+
+    <div class="conteudoo">
+
+         <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/runtime-acao')">Runtime Ação</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/multi-canais')">Multi Canais</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tvi-ficcao')">TVI Ficção</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/1980-channel')">1980 Channel Ao Vivo</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/filmes-online')">Filmes Online</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/web-tv-cine')">Web Tv Cine</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/bons-tempos')">Bons Tempos</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/web-tv-classicos-do-cinema')">Web Tv Clássicos</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-loading')"> Tv Loading </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-classicos')">Tv Clássicos </button>	
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/rede-clone')">Rede Clouding</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/sony-one-cinema#google_vignette')">Sony One Cinema</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-aracati-hd')">Tv Aracati </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/moviesphere-brazil')">Moviesphere Brazil</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/cinepix-tv')">CinePIX </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-carioca-net')">Tv Carioca Internacional</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/lucas-tv')"> Lucas Tv  </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/viva-web-tv')"> Viva Web Tv </button>
+
+    </div>
+
+     <div class="indice">
+        <h1>Canais de noticias e Alta Definição </h1>
+
+    </div>
+
+    <div class="conteudoo">
+
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/record-news')"> Record News </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/band-news')"> Band News </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/rs-news')"> RS NEWS  </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/mundo-tv')"> Rede Mundo </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/rede-tv')"> Rede TV </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/awcchannel')"> AWTV  </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/rede-manchete')"> Rede Manchete </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-gazeta')"> TV Gazeta </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/sbt-brasilia')"> SBT Brasília </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/rede-minas')"> Rede Minas </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/wording-tv')"> Wording Tv </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/rede-brasil-de-televisao-rbtv')">Rede Brasil de Televisão</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-brasil')"> TV Brasil </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-cultura')"> TV Cultura </button>
+
+
+    </div>
+
+    <div class="indice">
+        <h1>Canais de musica </h1>
+
+    </div>
+
+    <div class="conteudoo">
+
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/top-tv')"> Top Tv Ao Vivo </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/kpop-tv-play')"> Kpop TV Play </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/deluxe-music-tv')"> Deluxe Music </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/spirit-television')">Spirit Television</button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/now-80s')"> NOW 80's </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/trace-urban')"> Trace Urban </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/seven-tv')"> Seven Tv </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/sobrenatural-tv')"> Sobrenatural TV </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/rock-tv')"> ROCK TV </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/gospel-music-television')"> Gospel Music </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/radio-capital-tivu')"> Radio Capital TiVù </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/retro-music-television')"> Retro Music </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/now-rock')"> Now Rock  </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/tv-max-90')"> Tv Max 90 Ao Vivo </button>
+        <button class="button" onclick="carregarCanal('https://www.cxtv.com.br/tv-ao-vivo/89-a-radio-rock')"> 89 A Rádio Rock </button>
+
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Canais de TV Online</p>
+    </footer>
+
+    <div id="videoContainer">
+        <button id="closeButton" onclick="fecharCanal()">Fechar</button>
+        <iframe id="videoIframe" allowfullscreen sandbox="allow-same-origin allow-scripts allow-top-navigation"></iframe>
+    </div>
+
+    <script>
+        const videoContainer = document.getElementById('videoContainer');
+        const videoIframe = document.getElementById('videoIframe');
+
+        function carregarCanal(url) {
+            videoIframe.src = url;
+            videoContainer.style.display = 'block';
+            /* chamada da funcao ativarTelacheia, que eu retirei*/
+        }
+
+        function ativarTelaCheia() {
+            if (videoIframe.requestFullscreen) {
+                videoIframe.requestFullscreen();
+            } else if (videoIframe.webkitRequestFullscreen) {
+                videoIframe.webkitRequestFullscreen();
+            } else if (videoIframe.msRequestFullscreen) {
+                videoIframe.msRequestFullscreen();
+            }
+        }
+
+        function fecharCanal() {
+            videoContainer.style.display = 'none';
+            videoIframe.src = '';
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
