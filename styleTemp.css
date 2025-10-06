@@ -153,3 +153,70 @@
     color: #7c3aed;
 
 }
+
+ /* Weather Section */
+    #weather {
+      background: rgba(20, 40, 80, 0.3);
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+
+    #weather form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #weather input {
+      padding: 0.5rem;
+      border: 2px solid #d4a017;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #e0e0e0;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    #weather button {
+      background: #d4a017;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #weather button:hover {
+      background: #b8860b;
+    }
+
+    #weather #infos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    #weather .infos {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    #weather .infos i {
+      font-size: 1.5rem;
+      color: #d4a017;
+    }
+
+    #weather p, #weather h2 {
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      color: #c0c0c0;
+    }
+
