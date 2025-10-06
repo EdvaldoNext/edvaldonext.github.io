@@ -1,425 +1,677 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHFSDP7MP9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HHFSDP7MP9');
+  </script>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HHFSDP7MP9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Edvaldo Prieto - Desenvolvedor e Gestor Público. Site: https://edvaldonext.github.io/" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>Edvaldo Prieto - Portfólio</title>
+  <link rel="shortcut icon" href="apple-icon-60x60.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSB7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  gtag('config', 'G-HHFSDP7MP9');
-</script>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a1a3b, #1a2b5a);
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
 
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="Edevaldo Edvaldo do Nascimento Prieto - Site: https://edvaldonext.github.io/">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
+    /* Header e Navegação */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(10, 26, 59, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      z-index: 100;
+    }
 
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-    <title>Edvaldo Prieto</title>
-    <script>
+    nav a, nav button {
+      background: transparent;
+      border: 2px solid #d4a017;
+      border-radius: 30px;
+      padding: 0.5rem 1.5rem;
+      color: #e0e0e0;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: clamp(0.9rem, 2.5vw, 1rem);
+    }
 
+    nav a:hover, nav button:hover,
+    nav button.active {
+      background: linear-gradient(135deg, #d4a017, #b8860b);
+      color: #0a1a3b;
+      border-color: #d4a017;
+      box-shadow: 0 0 10px rgba(212, 160, 23, 0.5);
+    }
 
-        /*
-        var password = prompt("Voce esta prestes a viver uma das maiores experiências da sua vida! Por favor, digite a senha:");
-        if (password != "gostozo") {
-          window.location.href = "paginaDeErro.html"; // Redireciona se a senha estiver errada
-        }
-        */
+    nav a:focus, nav button:focus {
+      outline: 2px solid #d4a017;
+      outline-offset: 2px;
+    }
 
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: #e0e0e0;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
 
-    </script>
+    /* Main Content */
+    main {
+      padding: 5rem 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
+    section {
+      min-height: 60vh;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.5s ease forwards;
+    }
 
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-    <link rel="shortcut icon" href="apple-icon-60x60.png" type="image/x-icon">
-    <link rel="stylesheet" href="stily.css">
+    h1, h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
 
-    <link rel="stylesheet" href="styleTemp.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    /* Home Section */
+    #home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      min-height: 80vh;
+    }
+
+    #home h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      color: #d4a017;
+      text-shadow: 2px 2px 8px rgba(184, 134, 11, 0.5);
+    }
+
+    #home p {
+      max-width: 600px;
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+      line-height: 1.6;
+      text-align: center;
+      color: #c0c0c0;
+    }
+
+    .slide-container {
+      width: 100%;
+      max-width: 600px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .slide {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    #fotoprincipal {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 50%;
+      margin-top: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Weather Section */
+    #weather {
+      background: rgba(20, 40, 80, 0.3);
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+
+    #weather form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #weather input {
+      padding: 0.5rem;
+      border: 2px solid #d4a017;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #e0e0e0;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+
+    #weather button {
+      background: #d4a017;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #weather button:hover {
+      background: #b8860b;
+    }
+
+    #weather #infos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    #weather .infos {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    #weather .infos i {
+      font-size: 1.5rem;
+      color: #d4a017;
+    }
+
+    #weather p, #weather h2 {
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      color: #c0c0c0;
+    }
+
+    /* Projetos Section */
+    #projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .projeto-card {
+      background: rgba(20, 40, 80, 0.3);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .projeto-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .projeto-card h3 {
+      margin-bottom: 0.5rem;
+      color: #d4a017;
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+    }
+
+    .projeto-card a {
+      display: inline-block;
+      color: #d4a017;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid #d4a017;
+      padding: 0.4rem 1.2rem;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .projeto-card a:hover {
+      background: #d4a017;
+      color: #0a1a3b;
+    }
+
+    /* Quem Sou Eu Section */
+    #quem-sou-eu {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+      line-height: 1.6;
+      color: #c0c0c0;
+      background: rgba(20, 40, 80, 0.4);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    #quem-sou-eu details {
+      margin: 1rem 0;
+    }
+
+    #quem-sou-eu summary {
+      font-size: clamp(1.2rem, 3vw, 1.5rem);
+      color: #d4a017;
+      cursor: pointer;
+    }
+
+    /* Extras Section */
+    #extras {
+      text-align: center;
+    }
+
+    #extras video {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 1rem;
+    }
+
+    #extras iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      border-radius: 10px;
+      margin: 1rem auto;
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(10, 26, 59, 0.95);
+      color: #c0c0c0;
+    }
+
+    footer a {
+      color: #d4a017;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .botao img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background: rgba(10, 26, 59, 0.95);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+
+      main {
+        padding: 4rem 1rem 2rem;
+      }
+
+      section {
+        min-height: auto;
+      }
+
+      #home h1 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+      }
+
+      #projetos {
+        grid-template-columns: 1fr;
+      }
+
+      #weather #infos {
+        flex-direction: column;
+      }
+
+      #extras iframe {
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1, h2 {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+      }
+
+      .projeto-card {
+        padding: 1rem;
+      }
+
+      .projeto-card a {
+        padding: 0.3rem 1rem;
+      }
+
+      #fotoprincipal {
+        max-width: 200px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <button class="hamburger" aria-label="Toggle Menu">☰</button>
+    <nav>
+      <button class="nav-btn active" data-target="home">Home</button>
+      <button class="nav-btn" data-target="projetos">Projetos</button>
+      <button class="nav-btn" data-target="quem-sou-eu">Quem Sou Eu</button>
+      <a href="https://www.facebook.com/edvaldo.prieto" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/edvaldo_prieto_/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/edvaldo-prieto-9a4495279/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </header>
 
-    <!--<header>
-
-
-        <section>
-            <nav class="navegacao">
-
-                <a href="https://www.facebook.com/edvaldo.prieto" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/edvaldo_prieto_/" target="_blank">Instagram</a>
-                <a href="https://www.linkedin.com/in/edvaldo-prieto-9a4495279/" target="_blank">Linkedin</a>
-
-
-            </nav>
-
-        </section>
-
-
-
-    </header> -->
-
-   <div id="resultado"></div>
-
-   
-
-    <main>
-        <div class="main_01">
-            <section id="secao1">
-                <div class="slide-container">
-                    <div class="slide">
-                        <img src="imgHtml.jpg" alt="imagem do HTML">
-                        <img src="imgCss.jpg" alt="imagem do CSS" style="display:none;">
-                        <img src="imgJavaScrit.jpg" alt="imagem JavaScript" style="display:none;">
-                        <img src="imgIA.jpg" alt="imagem de IA" style="display:none;">
-                    </div>
-                </div>
-
-
-
-
-
-                <img id="fotoprincipal" src="Polish_20240124_232425072.jpg" alt="imagem principal do autor">
-
-
-            </section>
+  <main>
+    <section id="home">
+      <h1>Edvaldo Prieto</h1>
+      <p>Desenvolvedor e Gestor Público apaixonado por tecnologia e inovação. Explore meu portfólio e conheça minha trajetória.</p>
+      <div class="slide-container">
+        <div class="slide">
+          <img src="imgHtml.jpg" alt="Imagem representando HTML" class="slide-img">
+          <img src="imgCss.jpg" alt="Imagem representando CSS" class="slide-img">
+          <img src="imgJavaScrit.jpg" alt="Imagem representando JavaScript" class="slide-img">
+          <img src="imgIA.jpg" alt="Imagem representando Inteligência Artificial" class="slide-img">
         </div>
+      </div>
+      <img id="fotoprincipal" src="Polish_20240124_232425072.jpg" alt="Foto de Edvaldo Prieto">
+    </section>
 
-
-
-
-        <div id="containner_temp">
-
-            <label for="search">Saiba a temperatura da sua Cidade</label>
-            <form id="search">
-                <i id="busca" class="fa-solid fa-location-dot"></i> 
-
-                <input type="search" name="city_name" id="city_name" placeholder="Buscar Cidade" value="várzea grande">
-
-<button type="submit">
-                    <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
-                </button>
-
-                
-            </form>
-
-
-
-            <div id="weather">
-                <h1 id="title">Varzea Grande,BR </h1>
-
-                <div id="infos">
-                    <div id="temp">
-                        <img id="temp_img" src="#" alt="">
-
-                        <div>
-                            <p id="temp_value">
-                                32 <sup>C°</sup>
-                            </p>
-                            <p id="temp_description">
-                                Ensolarado
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="other_infos">
-                        <div class="infos">
-                            <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
-
-                            <div>
-                                <h2>Temp. Max</h2>
-
-                                <p id="temp_max">
-                                    32 <sup>C°</sup>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="infos">
-                            <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
-
-                            <div>
-                                <h2>Temp. Min</h2>
-
-                                <p id="temp_min">
-                                    12 <sup>C°</sup>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="infos">
-                            <i id="humidity_icon" class="fa-solid fa-droplet"></i>
-
-                            <div>
-                                <h2>Humidade</h2>
-
-                                <p id="humidity">
-                                    50%
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="infos">
-                            <i id="wind_icon" class="fa-solid fa-wind"></i>
-
-                            <div>
-                                <h2>Vento</h2>
-
-                                <p id="wind">
-                                    50 km/h
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="weather">
+      <h2>Consulte a Temperatura</h2>
+      <form id="search">
+        <i id="busca" class="fa-solid fa-location-dot"></i>
+        <input type="search" name="city_name" id="city_name" placeholder="Buscar Cidade" value="Várzea Grande">
+        <button type="submit">
+          <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <div id="weather">
+        <h1 id="title">Várzea Grande, BR</h1>
+        <div id="infos">
+          <div id="temp">
+            <img id="temp_img" src="#" alt="Ícone do clima">
+            <div>
+              <p id="temp_value">32 <sup>C°</sup></p>
+              <p id="temp_description">Ensolarado</p>
             </div>
-
-            <div id="alert"></div>
+          </div>
+          <div id="other_infos">
+            <div class="infos">
+              <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+              <div>
+                <h2>Temp. Max</h2>
+                <p id="temp_max">32 <sup>C°</sup></p>
+              </div>
+            </div>
+            <div class="infos">
+              <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+              <div>
+                <h2>Temp. Min</h2>
+                <p id="temp_min">12 <sup>C°</sup></p>
+              </div>
+            </div>
+            <div class="infos">
+              <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+              <div>
+                <h2>Humidade</h2>
+                <p id="humidity">50%</p>
+              </div>
+            </div>
+            <div class="infos">
+              <i id="wind_icon" class="fa-solid fa-wind"></i>
+              <div>
+                <h2>Vento</h2>
+                <p id="wind">50 km/h</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <script src="scriptTemp.js">
-
-        </script>
-
-
-
-
-
-        <div class="main_2">
-            <ul id="portifolio">
-                <!--  <li><a href="comandos.html">Comandos</a></li> -->
-                <li><a href="loginfinancas.html">Administrativo</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="estudos.html">Estudos</a></li>
-               <!-- <li><a href="https://www.dropbox.com/home" target="_blank">Arquivos</a></li>  -->
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="jogos.html">Jogos</a></li>
-            </ul>
-        </div>
-
-
-
-        <div class="main_03">
-            <section>
-                <video id="videop" src="Dicilina.mp4" loop width="600rem" height="400rem" controls
-                    poster="imgIA.jpg"></video>
-            </section>
-
-            <section>
-
-                <center>
-
-                    <details>
-
-
-
-
-
-                        <summary> <strong>
-                                <h1 id="hh1">Uma breve história da minha vida</h1>
-                            </strong> </summary>
-
-
-                        <p id="hp1">
-                            Meu nome é Edvaldo. Nasci em 24 de outubro de 1981, em uma família modesta da cidade de
-                            Cuiabá, onde desenvolvi valores essenciais à minha formação. Desde cedo, enfrentei desafios
-                            financeiros que me impulsionaram a iniciar minha vida profissional precocemente.<br>
-
-                            Após concluir o ensino médio em 1999, trilhei minha carreira profissional com cursos
-                            técnicos, voltado a área de informática, manutenção de computadores,Segurança privada,
-                            Telemarketing e Vendas.<br>
-
-                            Em 2011, ingressei na área de Tecnologia com a Faculdade de Segurança da Informação.
-                            Infelizmente, circunstâncias adversas me levaram a interromper temporariamente essa
-                            trajetória. <br>
-
-                            Trabalhei no setor privado em uma empresa de grande porte do ramo varejista por 5 anos,
-                            destacando-me como um dos melhores profissionais de vendas. Desenvolvi diversas habilidades
-                            no atendimento ao cliente, solução de problemas. <br>
-
-                            Também trabalhei em uma multinacional conhecida mundialmente, por 5 anos.<br> Conquistando
-                            várias premiações por bater metas e desafios. <br>
-                            Adquiri habilidades em marketing, vendas externas, introdução de novos produtos dentro de um
-                            mercado cada vez mais competitivo, aprendi técnicas de negociações, foi realmente uma grande
-                            caminhada. <br>
-
-                            Em 2017, fui aprovado em um concurso público da Secretaria de Saúde de Várzea Grande,
-                            garantindo estabilidade profissional e oportunidade de continuar meus estudos. <br> Tive a
-                            oportunidade de obter minha formação em Gestão Pública em 2022. <br>
-                            <br> <br>
-                            Minhas habilidades como gestor público incluem: <br>
-                            <br> <br>
-                            Habilidades Técnicas <br> <br>
-
-                            1. Conhecimento de políticas públicas <br>
-                            2. Planejamento estratégico <br>
-                            3. Gestão de recursos <br>
-                            4. Análise de dados <br>
-                            5. Tecnologias da informação <br>
-                            6. Legislação e regulamentação <br> <br>
-
-                            Habilidades Gerenciais <br> <br>
-
-                            1. Liderança <br>
-                            2. Gestão de projetos <br>
-                            3. Comunicação eficaz <br>
-                            4. Negociação e mediação <br>
-                            5. Gestão de conflitos <br>
-                            6. Desenvolvimento de equipes <br> <br>
-
-                            Habilidades Comportamentais <br> <br>
-
-                            1. Ética e integridade <br>
-                            2. Responsabilidade social <br>
-                            3. Adaptação a mudanças <br>
-                            4. Trabalho em equipe <br>
-                            5. Resolução de problemas <br>
-                            6. Aprendizado contínuo <br> <br>
-
-                            Conhecimentos Específicos <br> <br>
-
-                            1. Orçamento público <br>
-                            2. Gestão de riscos <br>
-                            3. Qualidade e produtividade <br>
-                            4. Gestão ambiental <br>
-                            5. Tecnologias emergentes <br>
-                            6. Gestão de crises <br> <br>
-
-                            Não satisfeito com minha formação, parti em busca de um sonho interrompido há anos atrás, a
-                            formação na área de tecnologia, com o curso de Análise e Desenvolvimento de Sistemas. <br>
-                            Neste curso, estou obtendo conhecimentos como:
-                            <br> <br>
-
-                            Habilidades Técnicas <br> <br>
-
-                            1. Linguagens de programação (Java, Python, C++, JavaScript) <br>
-                            2. Desenvolvimento web (HTML, CSS, React) <br>
-                            3. Banco de dados (MySQL, MongoDB) <br>
-                            4. Sistemas operacionais (Windows, Linux) <br>
-                            5. Ferramentas de desenvolvimento (Visual Studio, Eclipse) <br>
-                            6. Segurança cibernética (Criptografia, autenticação) <br> <br>
-
-                            Habilidades de Desenvolvimento <br> <br>
-
-                            1. Análise de requisitos <br>
-                            2. Projeto de sistemas <br>
-                            3. Desenvolvimento de software <br>
-                            4. Testes e validação <br>
-                            5. Implantação e manutenção <br> <br>
-
-                            Habilidades Gerenciais <br> <br>
-
-                            1. Gestão de projetos <br>
-                            2. Liderança <br>
-                            3. Comunicação técnica <br>
-                            4. Negociação e mediação <br>
-                            5. Gestão de riscos <br> <br>
-
-                            Habilidades Comportamentais <br> <br>
-
-                            1. Trabalho em equipe <br>
-                            2. Aprendizado contínuo <br>
-                            3. Resolução de problemas <br>
-                            4. Adaptação a mudanças <br>
-                            5. Ética profissional <br>
-                            6. Comunicação eficaz <br> <br>
-
-                            Conhecimentos Específicos <br> <br>
-
-                            1. Inteligência Artificial <br>
-                            2. Internet das Coisas (IoT) <br>
-                            3. Realidade Virtual e Aumentada <br>
-                            4. Blockchain <br>
-                            5. Cloud Computing <br>
-                            6. Cybersegurança
-                            <br><br><br>
-
-
-
-                            "A busca pelo conhecimento é uma jornada sem fim, e cada descoberta é um degrau para a
-                            sabedoria."
-                            <br>
-
-                            Edvaldo N.Prieto
-
-
-
-                        </p>
-
-
-
-                    </details>
-
-                    <br><br>
-                    <iframe src="https://bandfmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts" ></iframe>
-                    <br><br>
-                    <iframe src="https://hunter.fm/gospel/" frameborder="0" sandbox="allow-same-origin allow-scripts" ></iframe>
-                    <br><br>
-                    <br><br>
-
-
-
-                </center>
-
-
-            </section>
-        </div>
-
-
-
-    </main>
-
-    <footer>
-
-        <br>
-<!--
-
-        <a href="https://edvaldoprieto2.lovestoblog.com/?i=1"><button id="btn-mensagem">Deixe sua Mensagem ou
-                sugestão.</button></a>
-
-        
-        <div class="foter">
-            <section id="contato" >
-                <h2>  </h2><br> <br> <br>
-                <p id="ccontato">
-                <br>
-                Emails : <br> <a href="mailto:edvaldoprieto@gmail.com">edvaldoprieto@gmail.com</a> <br>
-                Emails : <br>  <a href="mailto:edvaldomil@gmail.com">edvaldomil@gmail.com</a> 
-                </p>
-    
-            </section>
--->
-
-        </div>
-        
-<center> <p> Fale Comigo </p>  </center>
-        <div class="botao">
-            <section id="wtz" >
-                <button> <a href="Https://wa.me/5565992907235?text=Olá+Edvaldo+tudo+bem!...+👍🏽+" target="_blank"><img src="android-icon-48x48.png" alt="botao whatzap"></a>
-                </button>
-                
-            </section>
-
-        </div>
-
-        
-
-        <br>
-
-    </footer>
-    <script src="script.js"></script>
-
+      </div>
+      <div id="alert"></div>
+    </section>
+
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="projeto-card">
+        <h3>Administrativo</h3>
+        <a href="loginfinancas.html" target="_blank" rel="noopener">Ver projeto</a>
+      </div>
+      <div class="projeto-card">
+        <h3>Projetos</h3>
+        <a href="projetos.html" target="_blank" rel="noopener">Ver projeto</a>
+      </div>
+      <div class="projeto-card">
+        <h3>Estudos</h3>
+        <a href="estudos.html" target="_blank" rel="noopener">Ver projeto</a>
+      </div>
+      <div class="projeto-card">
+        <h3>Notícias</h3>
+        <a href="noticias.html" target="_blank" rel="noopener">Ver projeto</a>
+      </div>
+      <div class="projeto-card">
+        <h3>Jogos</h3>
+        <a href="jogos.html" target="_blank" rel="noopener">Ver projeto</a>
+      </div>
+    </section>
+
+    <section id="quem-sou-eu">
+      <h2>Quem Sou Eu</h2>
+      <details>
+        <summary>Uma Breve História da Minha Vida</summary>
+        <p>
+          Meu nome é Edvaldo. Nasci em 24 de outubro de 1981, em uma família modesta da cidade de Cuiabá, onde desenvolvi valores essenciais à minha formação. Desde cedo, enfrentei desafios financeiros que me impulsionaram a iniciar minha vida profissional precocemente.<br><br>
+          Após concluir o ensino médio em 1999, trilhei minha carreira profissional com cursos técnicos, voltado a área de informática, manutenção de computadores, Segurança privada, Telemarketing e Vendas.<br><br>
+          Em 2011, ingressei na área de Tecnologia com a Faculdade de Segurança da Informação. Infelizmente, circunstâncias adversas me levaram a interromper temporariamente essa trajetória.<br><br>
+          Trabalhei no setor privado em uma empresa de grande porte do ramo varejista por 5 anos, destacando-me como um dos melhores profissionais de vendas. Desenvolvi diversas habilidades no atendimento ao cliente, solução de problemas.<br><br>
+          Também trabalhei em uma multinacional conhecida mundialmente, por 5 anos. Conquistando várias premiações por bater metas e desafios.<br>
+          Adquiri habilidades em marketing, vendas externas, introdução de novos produtos dentro de um mercado cada vez mais competitivo, aprendi técnicas de negociações, foi realmente uma grande caminhada.<br><br>
+          Em 2017, fui aprovado em um concurso público da Secretaria de Saúde de Várzea Grande, garantindo estabilidade profissional e oportunidade de continuar meus estudos. Tive a oportunidade de obter minha formação em Gestão Pública em 2022.<br><br>
+          Minhas habilidades como gestor público incluem:<br><br>
+          <strong>Habilidades Técnicas</strong><br>
+          1. Conhecimento de políticas públicas<br>
+          2. Planejamento estratégico<br>
+          3. Gestão de recursos<br>
+          4. Análise de dados<br>
+          5. Tecnologias da informação<br>
+          6. Legislação e regulamentação<br><br>
+          <strong>Habilidades Gerenciais</strong><br>
+          1. Liderança<br>
+          2. Gestão de projetos<br>
+          3. Comunicação eficaz<br>
+          4. Negociação e mediação<br>
+          5. Gestão de conflitos<br>
+          6. Desenvolvimento de equipes<br><br>
+          <strong>Habilidades Comportamentais</strong><br>
+          1. Ética e integridade<br>
+          2. Responsabilidade social<br>
+          3. Adaptação a mudanças<br>
+          4. Trabalho em equipe<br>
+          5. Resolução de problemas<br>
+          6. Aprendizado contínuo<br><br>
+          <strong>Conhecimentos Específicos</strong><br>
+          1. Orçamento público<br>
+          2. Gestão de riscos<br>
+          3. Qualidade e produtividade<br>
+          4. Gestão ambiental<br>
+          5. Tecnologias emergentes<br>
+          6. Gestão de crises<br><br>
+          Não satisfeito com minha formação, parti em busca de um sonho interrompido há anos atrás, a formação na área de tecnologia, com o curso de Análise e Desenvolvimento de Sistemas.<br><br>
+          Neste curso, estou obtendo conhecimentos como:<br><br>
+          <strong>Habilidades Técnicas</strong><br>
+          1. Linguagens de programação (Java, Python, C++, JavaScript)<br>
+          2. Desenvolvimento web (HTML, CSS, React)<br>
+          3. Banco de dados (MySQL, MongoDB)<br>
+          4. Sistemas operacionais (Windows, Linux)<br>
+          5. Ferramentas de desenvolvimento (Visual Studio, Eclipse)<br>
+          6. Segurança cibernética (Criptografia, autenticação)<br><br>
+          <strong>Habilidades de Desenvolvimento</strong><br>
+          1. Análise de requisitos<br>
+          2. Projeto de sistemas<br>
+          3. Desenvolvimento de software<br>
+          4. Testes e validação<br>
+          5. Implantação e manutenção<br><br>
+          <strong>Habilidades Gerenciais</strong><br>
+          1. Gestão de projetos<br>
+          2. Liderança<br>
+          3. Comunicação técnica<br>
+          4. Negociação e mediação<br>
+          5. Gestão de riscos<br><br>
+          <strong>Habilidades Comportamentais</strong><br>
+          1. Trabalho em equipe<br>
+          2. Aprendizado contínuo<br>
+          3. Resolução de problemas<br>
+          4. Adaptação a mudanças<br>
+          5. Ética profissional<br>
+          6. Comunicação eficaz<br><br>
+          <strong>Conhecimentos Específicos</strong><br>
+          1. Inteligência Artificial<br>
+          2. Internet das Coisas (IoT)<br>
+          3. Realidade Virtual e Aumentada<br>
+          4. Blockchain<br>
+          5. Cloud Computing<br>
+          6. Cybersegurança<br><br>
+          "A busca pelo conhecimento é uma jornada sem fim, e cada descoberta é um degrau para a sabedoria."<br>
+          <strong>Edvaldo N. Prieto</strong>
+        </p>
+      </details>
+    </section>
+
+    <section id="extras">
+      <h2>Conteúdo Adicional</h2>
+      <video id="videop" src="Dicilina.mp4" loop controls poster="imgIA.jpg"></video>
+      <iframe src="https://bandfmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
+      <iframe src="https://hunter.fm/gospel/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fale Comigo</p>
+    <p>
+      Emails: <a href="mailto:edvaldoprieto@gmail.com">edvaldoprieto@gmail.com</a> |
+      <a href="mailto:edvaldomil@gmail.com">edvaldomil@gmail.com</a>
+    </p>
+    <div class="botao">
+      <a href="https://wa.me/5565992907235?text=Olá+Edvaldo+tudo+bem!...+👍🏽+" target="_blank" rel="noopener">
+        <img src="android-icon-48x48.png" alt="Botão do WhatsApp">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Navegação suave
+    const buttons = document.querySelectorAll('.nav-btn');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const targetId = button.getAttribute('data-target');
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+        if (window.innerWidth <= 768) {
+          document.querySelector('nav').classList.remove('active');
+          document.querySelector('.hamburger').textContent = '☰';
+        }
+      });
+    });
+
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      hamburger.textContent = nav.classList.contains('active') ? '✕' : '☰';
+    });
+
+    // Fechar menu ao clicar fora
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+        nav.classList.remove('active');
+        hamburger.textContent = '☰';
+      }
+    });
+
+    // Image Slider
+    const slides = document.querySelectorAll('.slide-img');
+    let currentSlide = 0;
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+      });
+    }
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+    showSlide(currentSlide);
+    setInterval(nextSlide, 3000); // Muda a cada 3 segundos
+  </script>
 </body>
-
 </html>
-
