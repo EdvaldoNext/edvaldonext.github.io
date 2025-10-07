@@ -107,6 +107,8 @@
       animation: fadeIn 0.5s ease forwards;
     }
 
+  
+
     @keyframes fadeIn {
       to { opacity: 1; transform: translateY(0); }
     }
@@ -171,71 +173,7 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
-    /* Weather Section */
-    #weather {
-      background: rgba(20, 40, 80, 0.3);
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(10px);
-      text-align: center;
-    }
-
-    #weather form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-    }
-
-    #weather input {
-      padding: 0.5rem;
-      border: 2px solid #d4a017;
-      border-radius: 25px;
-      background: rgba(255, 255, 255, 0.1);
-      color: #e0e0e0;
-      font-size: clamp(0.9rem, 2vw, 1rem);
-    }
-
-    #weather button {
-      background: #d4a017;
-      border: none;
-      padding: 0.5rem;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    #weather button:hover {
-      background: #b8860b;
-    }
-
-    #weather #infos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    #weather .infos {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      border-radius: 10px;
-    }
-
-    #weather .infos i {
-      font-size: 1.5rem;
-      color: #d4a017;
-    }
-
-    #weather p, #weather h2 {
-      font-size: clamp(0.8rem, 2vw, 0.95rem);
-      color: #c0c0c0;
-    }
+    
 
     /* Projetos Section */
     #projetos {
@@ -311,12 +249,13 @@
     }
 
     #extras video {
-      width: 100%;
+      width: 90%;
       max-width: 600px;
       height: auto;
-      border-radius: 15px;
+      border-radius: 30px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
     }
 
     #extras iframe {
@@ -427,9 +366,11 @@
       <button class="nav-btn active" data-target="home">Home</button>
       <button class="nav-btn" data-target="projetos">Projetos</button>
       <button class="nav-btn" data-target="quem-sou-eu">Quem Sou Eu</button>
+      <!--
       <a href="https://www.facebook.com/edvaldo.prieto" target="_blank" rel="noopener">Facebook</a>
       <a href="https://www.instagram.com/edvaldo_prieto_/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.linkedin.com/in/edvaldo-prieto-9a4495279/" target="_blank" rel="noopener">LinkedIn</a>
+      -->
     </nav>
   </header>
 
@@ -471,13 +412,13 @@
 
                 <div id="infos">
                     <div id="temp">
-                        <img id="temp_img" src="#" alt="">
+                        <img style="font-size: 1.5rem;" id="temp_img" src="#" alt="">
 
                         <div>
-                            <p id="temp_value">
+                            <p style="font-size: 1.5rem;" id="temp_value">
                                 32 <sup>C°</sup>
                             </p>
-                            <p id="temp_description">
+                            <p style="font-size: 1.5rem;" id="temp_description">
                                 Ensolarado
                             </p>
                         </div>
@@ -490,7 +431,7 @@
                             <div>
                                 <h2>Temp. Max</h2>
 
-                                <p id="temp_max">
+                                <p style="font-size: 1rem;" id="temp_max">
                                     32 <sup>C°</sup>
                                 </p>
                             </div>
@@ -502,7 +443,7 @@
                             <div>
                                 <h2>Temp. Min</h2>
 
-                                <p id="temp_min">
+                                <p style="font-size: 1rem;"  id="temp_min">
                                     12 <sup>C°</sup>
                                 </p>
                             </div>
@@ -514,7 +455,7 @@
                             <div>
                                 <h2>Humidade</h2>
 
-                                <p id="humidity">
+                                <p style="font-size: 1rem;"  id="humidity">
                                     50%
                                 </p>
                             </div>
@@ -526,7 +467,7 @@
                             <div>
                                 <h2>Vento</h2>
 
-                                <p id="wind">
+                                <p style="font-size: 1rem;"  id="wind">
                                     50 km/h
                                 </p>
                             </div>
@@ -544,13 +485,10 @@
 
         
 
-
+ <h2>Meus Projetos</h2>
     <section id="projetos">
-      <h2>Meus Projetos</h2>
-      <div class="projeto-card">
-        <h3>Administrativo</h3>
-        <a href="loginfinancas.html" target="_blank" rel="noopener">Ver projeto</a>
-      </div>
+     
+      
       <div class="projeto-card">
         <h3>Projetos</h3>
         <a href="projetos.html" target="_blank" rel="noopener">Ver projeto</a>
@@ -567,10 +505,16 @@
         <h3>Jogos</h3>
         <a href="jogos.html" target="_blank" rel="noopener">Ver projeto</a>
       </div>
+      <div class="projeto-card">
+        <h3>Administrativo</h3>
+        <a href="loginfinancas.html" target="_blank" rel="noopener">Ver projeto</a>
+      </div>
     </section>
 
+    <h2>Quem Sou Eu</h2>
+
     <section id="quem-sou-eu">
-      <h2>Quem Sou Eu</h2>
+      
       <details>
         <summary>Uma Breve História da Minha Vida</summary>
         <p>
@@ -652,26 +596,33 @@
     </section>
 
     <section id="extras">
-      <h2>Conteúdo Adicional</h2>
-      <video id="videop" src="Dicilina.mp4" loop controls poster="imgIA.jpg"></video>
+     <!--<h2>Conteúdo Adicional</h2> --> 
+      <video id="videop" src="Dicilina.mp4" autoplay loop controls controlsList="nodownload" poster="imgIA.jpg"></video>
       <iframe src="https://bandfmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
       <iframe src="https://hunter.fm/gospel/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
     </section>
   </main>
 
   <footer>
-    <p>Fale Comigo</p>
-    <!--
-    <p>
-      Emails: <a href="mailto:edvaldoprieto@gmail.com">edvaldoprieto@gmail.com</a> |
-      <a href="mailto:edvaldomil@gmail.com">edvaldomil@gmail.com</a>
-    </p>
-    -->
-    <div class="botao">
+    <p style="font-size: 1rem; font-weight: bold;">Fale Comigo</p> <br>
+    
+   
+    
+    <div >
       <a href="https://wa.me/5565992907235?text=Olá+Edvaldo+tudo+bem!...+👍🏽+" target="_blank" rel="noopener">
-        <img src="android-icon-48x48.png" alt="Botão do WhatsApp">
+        <img width="70" src="android-icon-48x48.png" alt="Botão do WhatsApp">
       </a>
     </div>
+
+     <p>
+      Email: <br> 
+      <a href="mailto:edvaldoprieto@gmail.com">edvaldoprieto@gmail.com</a> <br> 
+      Telefone: <br>
+      (65) 99290-7235 / (66) 99813-0266
+      
+    </p>
+
+    <p>© 2024 Todos os direitos reservados.</p>
   </footer>
 
   <script>
@@ -720,6 +671,8 @@
     }
     showSlide(currentSlide);
     setInterval(nextSlide, 3000); // Muda a cada 3 segundos
+
+   
   </script>
 </body>
 </html>
