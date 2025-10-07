@@ -47,6 +47,30 @@
       z-index: 100;
     }
 
+    /*div resultado*/
+    #resultado {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 5%;
+  color: Goldenrod;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 1rem; /* Espaço acima da div */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #644311,gray, #c7f109,
+    rgb(22, 1, 1));
+    background-size: 400% 100%;
+    animation:degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
     nav {
       display: flex;
       justify-content: center;
@@ -377,7 +401,14 @@
   <main>
     <section id="home">
       <h1>Edvaldo Prieto</h1>
-      <p>Desenvolvedor e Gestor Público apaixonado por tecnologia e inovação. Explore meu portfólio e conheça minha trajetória.</p>
+      
+      <p>Desenvolvedor e Gestor Público apaixonado por tecnologia e inovação. Explore meu portfólio e conheça minha trajetória.
+        <div id="resultado"></div></p>
+      
+      <script src="sauda.js" ></script> 
+      
+
+
       <div class="slide-container">
         <div class="slide">
           <img src="imgHtml.jpg" alt="Imagem representando HTML" class="slide-img">
@@ -483,9 +514,9 @@
 
         </script>
 
-        
+       
 
- <h2>Meus Projetos</h2>
+ <h2>Acompanhe Meu Trabalho</h2>
     <section id="projetos">
      
       
@@ -493,22 +524,33 @@
         <h3>Projetos</h3>
         <a href="projetos.html" target="_blank" rel="noopener">Ver projeto</a>
       </div>
+      
+      
       <div class="projeto-card">
-        <h3>Estudos</h3>
-        <a href="estudos.html" target="_blank" rel="noopener">Ver projeto</a>
+        <h3>Administrativo</h3>
+        <a href="loginfinancas.html" target="_blank" rel="noopener">Setor Administrativo</a>
       </div>
+
+      <div class="projeto-card">
+        <h3>Entreterimentos</h3>
+        <a href="entreterimento.html" target="_blank" rel="noopener">Noticias,jogos,Canais e Musicas</a>
+      </div>
+
+      <!--
+      
+
       <div class="projeto-card">
         <h3>Notícias</h3>
         <a href="noticias.html" target="_blank" rel="noopener">Ver projeto</a>
       </div>
+
       <div class="projeto-card">
         <h3>Jogos</h3>
         <a href="jogos.html" target="_blank" rel="noopener">Ver projeto</a>
       </div>
-      <div class="projeto-card">
-        <h3>Administrativo</h3>
-        <a href="loginfinancas.html" target="_blank" rel="noopener">Ver projeto</a>
-      </div>
+      
+      -->
+
     </section>
 
     <h2>Quem Sou Eu</h2>
@@ -598,8 +640,8 @@
     <section id="extras">
      <!--<h2>Conteúdo Adicional</h2> --> 
       <video id="videop" src="Dicilina.mp4" autoplay loop controls controlsList="nodownload" poster="imgIA.jpg"></video>
-      <iframe src="https://bandfmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
-      <iframe src="https://hunter.fm/gospel/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
+
+      
     </section>
   </main>
 
@@ -626,6 +668,9 @@
   </footer>
 
   <script>
+
+  
+
     // Navegação suave
     const buttons = document.querySelectorAll('.nav-btn');
     buttons.forEach(button => {
