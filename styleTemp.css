@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -16,6 +18,8 @@
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
     color: #e0e0e0;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -230,5 +234,6 @@
       font-size: clamp(0.8rem, 2vw, 0.95rem);
       color: #c0c0c0;
     }
+
 
 
