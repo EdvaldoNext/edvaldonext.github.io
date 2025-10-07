@@ -5,15 +5,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: bold;
+    color: #fff;
 }
 
 
 
 #containner_temp {
-    background-color: #f0f8ff;
-    border-radius: 20px;
+    background-color: rgba(20, 40, 80, 0.3);
+    border-radius: 15px;
     padding: 18px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    margin: 5rem;
+
+}
+
+#city_name {
+    color: #e0e0e0;
+    
 
 }
 
@@ -31,8 +40,9 @@
 #search input {
     border: none;
     background-color: transparent;
-    font-size: 16px;
+    font-size: 1rem;
     width: 60%;
+    color: #fff;
 }
 
 #search input:focus-visible {
@@ -40,6 +50,7 @@
 }
 
 #search button {
+    margin-left: 3rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -47,12 +58,12 @@
 }
 #lupa {
     font-size: 30px;
-    color: Goldenrod;          
+    color: #e0e0e0;          
 }
 
 #busca {
     font-size: 30px;
-    color: Goldenrod; 
+    color: #e0e0e0; 
     
 }
 
@@ -91,14 +102,15 @@
 
 #temp_value {
     font-weight: bold;
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 5rem;
+    line-height: 60px;
 
 }
 
 #temp_description {
     font-weight: 500;
     text-transform: capitalize;
+    font-size: 5rem;
 
 }
 
