@@ -36,18 +36,6 @@
       overflow-x: hidden;
     }
 
-.rotate-image {
-  animation: rotateY 5s linear infinite;
-}
-
-@keyframes rotateY {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
 
     /* Header e Navegação */
     header {
@@ -210,34 +198,32 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
 
-    animation: rotateY 5s linear infinite; /* Duração inicial */
+    animation: rotateY 4s linear infinite; /* Ajustei a duração total */
 }
 
 @keyframes rotateY {
   0% {
     transform: rotateY(0deg);
-    animation-timing-function: linear; /* Velocidade constante */
+    animation-timing-function: linear;
+    animation-duration: 0.1s; /* Rotação super rápida */
   }
   25% {
     transform: rotateY(90deg);
-    animation-duration: 0.5s; /* Gira mais rápido */
+    animation-duration: 0.1s; /* Rotação super rápida */
   }
   50% {
     transform: rotateY(180deg);
-    animation-timing-function: linear; /* Velocidade constante */
-    animation-duration: 5s; /* Volta à velocidade inicial */
+    animation-duration: 2s; /* Pausa de 2 segundos */
   }
   75% {
     transform: rotateY(270deg);
-    animation-duration: 2.5s; /* Gira mais rápido */
+    animation-duration: 0.1s; /* Rotação super rápida */
   }
   100% {
     transform: rotateY(360deg);
-    animation-timing-function: linear; /* Velocidade constante */
-    animation-duration: 5s; /* Volta à velocidade inicial */
+    animation-duration: 2s; /* Pausa de 2 segundos */
   }
 }
-    
 
     
 
