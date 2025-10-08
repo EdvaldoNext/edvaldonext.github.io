@@ -363,24 +363,11 @@
         <button class="button"> <a href="cxtv.html">
                 Canais </a> </button> <br> <br>
 
-        
-        <section id="radios">
-
-        <iframe src="https://bandfmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe> <br> <br>
-
-<iframe src="https://radioculturafm.com.br/ouvir/
-" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe> <br> <br>
+        <button class="button" onclick="carregarRadios()"> Rádios </button>
 
 
-
-      <iframe src="https://hunter.fm/gospel/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
-      </section>
-
-<iframe height: 300 src="https://www.gazetafmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe> <br> <br>
-
-        
-
-        </section>
+     <section id="radios">
+</section>
 
     </main>
 
@@ -393,6 +380,30 @@
 
 
     <script>
+
+
+function carregarRadios() {
+            document.getElementById("radios").innerHTML = `
+<iframe src="https://bandfmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe> <br> <br>
+
+<iframe src="https://radioculturafm.com.br/ouvir/
+" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe> <br> <br>
+
+
+
+      <iframe src="https://hunter.fm/gospel/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe>
+      </section>
+
+<iframe height: 300 src="https://www.gazetafmcuiaba.com.br/" frameborder="0" sandbox="allow-same-origin allow-scripts"></iframe> <br> <br>
+
+            
+
+
+           `;
+        }
+
+
+
 
         // Navegação suave
     const buttons = document.querySelectorAll('.nav-btn');
