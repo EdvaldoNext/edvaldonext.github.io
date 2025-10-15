@@ -1,7 +1,7 @@
 document.querySelector('#search').addEventListener('submit',async (event)=>{
     event.preventDefault();
 
-    const cityName = document.querySelector('#city_name').value;
+    const cityName = document.querySelector('#city_name').value.trim();
 
     if (! cityName) {
         return showAlert('voce precisa digitar uma cidade...');
@@ -57,3 +57,4 @@ function showAlert(msg) {
     document.querySelector('#alert').innerHTML = msg;
 
 };
+
