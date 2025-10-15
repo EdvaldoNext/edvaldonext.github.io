@@ -11,7 +11,7 @@
 
             let saudacao;
             if (horas >= 0 && horas < 5) {
-                saudacao = "Já é madrugada e você acordado(a) ao invés de dormir, se apruma rapaz !!! bom ";
+                saudacao = "Madrugada e você acordado(a) ao invés de dormir, vai descansar 😉! bom ";
             } else if (horas < 12) {
                 saudacao = "Bom dia!";
             } else if (horas < 18) {
