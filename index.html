@@ -56,7 +56,8 @@
     }
 
     /*div resultado*/
-   #resultado {
+   
+#resultado {
   align-items: center;
   justify-content: center;
   margin-left: 2rem;
@@ -66,15 +67,25 @@
   color: Goldenrod;
   font-weight: bold;
   font-size: 2.5rem;
-  text-align:justify;
+  text-align: justify;
   margin-top: 0;
   text-transform: uppercase;
-  background: linear-gradient(45deg, #516abd, gold, #c7f109, rgb(180, 17, 17));
+  background: linear-gradient(45deg, rgb(87, 23, 206), rgb(214, 111, 14), #c7f109, rgb(221, 213, 213));
   background-size: 400% 100%;
-  animation: degrade 10s linear infinite alternate;
+  animation: degrade 5s linear infinite alternate; /* Ajustei o tempo para 5s e mantive o alternate */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@keyframes degrade {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 
 
     nav {
