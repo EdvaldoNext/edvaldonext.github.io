@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHFSDP7MP9"></script>
@@ -12,19 +13,20 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Edvaldo Prieto - Desenvolvedor e Gestor Público. Site: https://edvaldonext.github.io/" />
+  <meta name="description"
+    content="Edvaldo Prieto - Desenvolvedor e Gestor Público. Site: https://edvaldonext.github.io/" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>Edvaldo Prieto - Portfólio</title>
+  <link rel="manifest" href="manifest.json">
 
   <link rel="shortcut icon" href="eplogo60x60.png" type="image/x-icon">
   <link rel="icon" href="eplogo60x60.png" type="image/png">
-  
-    <link rel="stylesheet" href="styleTemp.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!--linl manifesto-->
-        <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styleTemp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--linl manifesto-->
+
 
   <style>
     /* Reset básico */
@@ -55,27 +57,30 @@
 
     /*div resultado*/
     #resultado {
-  width: 100%; /* Ocupa toda a largura */
-  padding: 5%;
-  color: Goldenrod;
-  font-weight: bold;
-  font-size: 3rem;
-  text-align: center; /* Centraliza o texto */
-  margin-top: 1rem; /* Espaço acima da div */
+      width: 100%;
+      /* Ocupa toda a largura */
+      padding: 5%;
+      color: Goldenrod;
+      font-weight: bold;
+      font-size: 3rem;
+      text-align: center;
+      /* Centraliza o texto */
+      margin-top: 1rem;
+      /* Espaço acima da div */
 
-    text-align: center;
-    text-transform: uppercase;
+      text-align: center;
+      text-transform: uppercase;
 
-    background: linear-gradient(45deg, #644311,gray, #c7f109,
-    rgb(22, 1, 1));
-    background-size: 400% 100%;
-    animation:degrade 10s linear infinite alternate;
+      background: linear-gradient(45deg, #644311, gray, #c7f109,
+          rgb(22, 1, 1));
+      background-size: 400% 100%;
+      animation: degrade 10s linear infinite alternate;
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
 
-}
+    }
 
     nav {
       display: flex;
@@ -86,7 +91,8 @@
       margin: 0 auto;
     }
 
-    nav a, nav button {
+    nav a,
+    nav button {
       background: transparent;
       border: 2px solid #d4a017;
       border-radius: 30px;
@@ -99,7 +105,8 @@
       font-size: clamp(0.9rem, 2.5vw, 1rem);
     }
 
-    nav a:hover, nav button:hover,
+    nav a:hover,
+    nav button:hover,
     nav button.active {
       background: linear-gradient(135deg, #d4a017, #b8860b);
       color: #0a1a3b;
@@ -107,7 +114,8 @@
       box-shadow: 0 0 10px rgba(212, 160, 23, 0.5);
     }
 
-    nav a:focus, nav button:focus {
+    nav a:focus,
+    nav button:focus {
       outline: 2px solid #d4a017;
       outline-offset: 2px;
     }
@@ -137,13 +145,17 @@
       animation: fadeIn 0.5s ease forwards;
     }
 
-  
+
 
     @keyframes fadeIn {
-      to { opacity: 1; transform: translateY(0); }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       font-weight: 700;
       margin-bottom: 1rem;
       text-align: center;
@@ -203,7 +215,46 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
-    
+    .rotate-image {
+      animation: rotateY 4s linear infinite;
+      /* Ajustei a duração total */
+    }
+
+    @keyframes rotateY {
+      0% {
+        transform: rotateY(0deg);
+        animation-timing-function: linear;
+        animation-duration: 0.1s;
+        /* Rotação super rápida */
+      }
+
+      25% {
+        transform: rotateY(90deg);
+        animation-duration: 0.1s;
+        /* Rotação super rápida */
+      }
+
+      50% {
+        transform: rotateY(180deg);
+        animation-duration: 2s;
+        /* Pausa de 2 segundos */
+      }
+
+      75% {
+        transform: rotateY(270deg);
+        animation-duration: 0.1s;
+        /* Rotação super rápida */
+      }
+
+      100% {
+        transform: rotateY(360deg);
+        animation-duration: 2s;
+        /* Pausa de 2 segundos */
+      }
+    }
+
+
+
 
     /* Projetos Section */
     #projetos {
@@ -371,7 +422,9 @@
     }
 
     @media (max-width: 480px) {
-      h1, h2 {
+
+      h1,
+      h2 {
         font-size: clamp(1.2rem, 4vw, 1.8rem);
       }
 
@@ -389,6 +442,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <button class="hamburger" aria-label="Toggle Menu">☰</button>
@@ -407,12 +461,14 @@
   <main>
     <section id="home">
       <h1>Edvaldo Prieto</h1>
-      
-      <p>Desenvolvedor e Gestor Público apaixonado por tecnologia e inovação. Explore meu portfólio e conheça minha trajetória.
-        <div id="resultado"></div></p>
-      
-      <script src="sauda.js" ></script> 
-      
+
+      <p>Desenvolvedor e Gestor Público apaixonado por tecnologia e inovação. Explore meu portfólio e conheça minha
+        trajetória.
+      <div id="resultado"></div>
+      </p>
+
+      <script src="sauda.js"></script>
+
 
 
       <div class="slide-container">
@@ -423,115 +479,118 @@
           <img src="imgIA.jpg" alt="Imagem representando Inteligência Artificial" class="slide-img">
         </div>
       </div>
-      <img id="fotoprincipal" src="Polish_20240124_232425072.jpg" alt="Foto de Edvaldo Prieto">
+      <img id="fotoprincipal" src="Polish_20240124_232425072.jpg" class="rotate-image"
+        alt="Foto de Edvaldo Prieto Imagem girando">
+
+
     </section>
 
-     
-      <div id="containner_temp">
 
-            <label for="search">Saiba a temperatura da sua Cidade</label>
-            <form id="search">
-                <i id="busca" class="fa-solid fa-location-dot"></i> 
+    <div id="containner_temp">
 
-                <input type="search" name="city_name" id="city_name" placeholder="Buscar Cidade" value="várzea grande">
+      <label for="search">Saiba a temperatura da sua Cidade</label>
+      <form id="search">
+        <i id="busca" class="fa-solid fa-location-dot"></i>
 
-<button type="submit">
-                    <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
-                </button>
+        <input type="search" name="city_name" id="city_name" placeholder="Buscar Cidade" value="várzea grande">
 
-                
-            </form>
+        <button type="submit">
+          <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+        </button>
 
 
+      </form>
 
-            <div id="weather">
-                <h1 id="title">Varzea Grande,BR </h1>
 
-                <div id="infos">
-                    <div id="temp">
-                        <img style="font-size: 1.5rem;" id="temp_img" src="#" alt="">
 
-                        <div>
-                            <p style="font-size: 1.5rem;" id="temp_value">
-                                32 <sup>C°</sup>
-                            </p>
-                            <p style="font-size: 1.5rem;" id="temp_description">
-                                Ensolarado
-                            </p>
-                        </div>
-                    </div>
+      <div id="weather">
+        <h1 id="title">Varzea Grande,BR </h1>
 
-                    <div id="other_infos">
-                        <div class="infos">
-                            <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+        <div id="infos">
+          <div id="temp">
+            <img style="font-size: 1.5rem;" id="temp_img" src="#" alt="">
 
-                            <div>
-                                <h2>Temp. Max</h2>
+            <div>
+              <p style="font-size: 1.5rem;" id="temp_value">
+                32 <sup>C°</sup>
+              </p>
+              <p style="font-size: 1.5rem;" id="temp_description">
+                Ensolarado
+              </p>
+            </div>
+          </div>
 
-                                <p style="font-size: 1rem;" id="temp_max">
-                                    32 <sup>C°</sup>
-                                </p>
-                            </div>
-                        </div>
+          <div id="other_infos">
+            <div class="infos">
+              <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
 
-                        <div class="infos">
-                            <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+              <div>
+                <h2>Temp. Max</h2>
 
-                            <div>
-                                <h2>Temp. Min</h2>
-
-                                <p style="font-size: 1rem;"  id="temp_min">
-                                    12 <sup>C°</sup>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="infos">
-                            <i id="humidity_icon" class="fa-solid fa-droplet"></i>
-
-                            <div>
-                                <h2>Humidade</h2>
-
-                                <p style="font-size: 1rem;"  id="humidity">
-                                    50%
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="infos">
-                            <i id="wind_icon" class="fa-solid fa-wind"></i>
-
-                            <div>
-                                <h2>Vento</h2>
-
-                                <p style="font-size: 1rem;"  id="wind">
-                                    50 km/h
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p style="font-size: 1rem;" id="temp_max">
+                  32 <sup>C°</sup>
+                </p>
+              </div>
             </div>
 
-            <div id="alert"></div>
+            <div class="infos">
+              <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+
+              <div>
+                <h2>Temp. Min</h2>
+
+                <p style="font-size: 1rem;" id="temp_min">
+                  12 <sup>C°</sup>
+                </p>
+              </div>
+            </div>
+
+            <div class="infos">
+              <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+
+              <div>
+                <h2>Humidade</h2>
+
+                <p style="font-size: 1rem;" id="humidity">
+                  50%
+                </p>
+              </div>
+            </div>
+
+            <div class="infos">
+              <i id="wind_icon" class="fa-solid fa-wind"></i>
+
+              <div>
+                <h2>Vento</h2>
+
+                <p style="font-size: 1rem;" id="wind">
+                  50 km/h
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <script src="scriptTemp.js">
+      <div id="alert"></div>
+    </div>
 
-        </script>
+    <script src="scriptTemp.js">
 
-       
+    </script>
 
- <h2>Acompanhe Meu Trabalho</h2>
+
+
+    <h2>Acompanhe Meu Trabalho</h2>
     <section id="projetos">
-     
-      
+
+
       <div class="projeto-card">
         <h3>Projetos</h3>
         <a href="projetos.html" target="_blank" rel="noopener">Ver projeto</a>
       </div>
-      
-      
+
+
       <div class="projeto-card">
         <h3>Administrativo</h3>
         <a href="loginfinancas.html" target="_blank" rel="noopener">Setor Administrativo</a>
@@ -539,7 +598,7 @@
 
       <div class="projeto-card">
         <h3>Entreterimentos</h3>
-        <a href="entreterimento.html" target="_blank" rel="noopener">Noticias,jogos,Canais e Musicas</a>
+        <a href="entreterimento.html" target="_blank" rel="noopener">Noticias, jogos, Canais e Musicas</a>
       </div>
 
       <!--
@@ -562,17 +621,27 @@
     <h2>Quem Sou Eu</h2>
 
     <section id="quem-sou-eu">
-      
+
       <details>
         <summary>Uma Breve História da Minha Vida</summary>
         <p>
-          Meu nome é Edvaldo. Nasci em 24 de outubro de 1981, em uma família modesta da cidade de Cuiabá, onde desenvolvi valores essenciais à minha formação. Desde cedo, enfrentei desafios financeiros que me impulsionaram a iniciar minha vida profissional precocemente.<br><br>
-          Após concluir o ensino médio em 1999, trilhei minha carreira profissional com cursos técnicos, voltado a área de informática, manutenção de computadores, Segurança privada, Telemarketing e Vendas.<br><br>
-          Em 2011, ingressei na área de Tecnologia com a Faculdade de Segurança da Informação. Infelizmente, circunstâncias adversas me levaram a interromper temporariamente essa trajetória.<br><br>
-          Trabalhei no setor privado em uma empresa de grande porte do ramo varejista por 5 anos, destacando-me como um dos melhores profissionais de vendas. Desenvolvi diversas habilidades no atendimento ao cliente, solução de problemas.<br><br>
-          Também trabalhei em uma multinacional conhecida mundialmente, por 5 anos. Conquistando várias premiações por bater metas e desafios.<br>
-          Adquiri habilidades em marketing, vendas externas, introdução de novos produtos dentro de um mercado cada vez mais competitivo, aprendi técnicas de negociações, foi realmente uma grande caminhada.<br><br>
-          Em 2017, fui aprovado em um concurso público da Secretaria de Saúde de Várzea Grande, garantindo estabilidade profissional e oportunidade de continuar meus estudos. Tive a oportunidade de obter minha formação em Gestão Pública em 2022.<br><br>
+          Meu nome é Edvaldo. Nasci em 24 de outubro de 1981, em uma família modesta da cidade de Cuiabá, onde
+          desenvolvi valores essenciais à minha formação. Desde cedo, enfrentei desafios financeiros que me
+          impulsionaram a iniciar minha vida profissional precocemente.<br><br>
+          Após concluir o ensino médio em 1999, trilhei minha carreira profissional com cursos técnicos, voltado a área
+          de informática, manutenção de computadores, Segurança privada, Telemarketing e Vendas.<br><br>
+          Em 2011, ingressei na área de Tecnologia com a Faculdade de Segurança da Informação. Infelizmente,
+          circunstâncias adversas me levaram a interromper temporariamente essa trajetória.<br><br>
+          Trabalhei no setor privado em uma empresa de grande porte do ramo varejista por 5 anos, destacando-me como um
+          dos melhores profissionais de vendas. Desenvolvi diversas habilidades no atendimento ao cliente, solução de
+          problemas.<br><br>
+          Também trabalhei em uma multinacional conhecida mundialmente, por 5 anos. Conquistando várias premiações por
+          bater metas e desafios.<br>
+          Adquiri habilidades em marketing, vendas externas, introdução de novos produtos dentro de um mercado cada vez
+          mais competitivo, aprendi técnicas de negociações, foi realmente uma grande caminhada.<br><br>
+          Em 2017, fui aprovado em um concurso público da Secretaria de Saúde de Várzea Grande, garantindo estabilidade
+          profissional e oportunidade de continuar meus estudos. Tive a oportunidade de obter minha formação em Gestão
+          Pública em 2022.<br><br>
           Minhas habilidades como gestor público incluem:<br><br>
           <strong>Habilidades Técnicas</strong><br>
           1. Conhecimento de políticas públicas<br>
@@ -602,7 +671,8 @@
           4. Gestão ambiental<br>
           5. Tecnologias emergentes<br>
           6. Gestão de crises<br><br>
-          Não satisfeito com minha formação, parti em busca de um sonho interrompido há anos atrás, a formação na área de tecnologia, com o curso de Análise e Desenvolvimento de Sistemas.<br><br>
+          Não satisfeito com minha formação, parti em busca de um sonho interrompido há anos atrás, a formação na área
+          de tecnologia, com o curso de Análise e Desenvolvimento de Sistemas.<br><br>
           Neste curso, estou obtendo conhecimentos como:<br><br>
           <strong>Habilidades Técnicas</strong><br>
           1. Linguagens de programação (Java, Python, C++, JavaScript)<br>
@@ -644,30 +714,31 @@
     </section>
 
     <section id="extras">
-     <!--<h2>Conteúdo Adicional</h2> --> 
-      <video id="videop" src="Dicilina.mp4" muted autoplay loop controls controlsList="nodownload" poster="imgIA.jpg"></video>
+      <!--<h2>Conteúdo Adicional</h2> -->
+      <video id="videop" src="Dicilina.mp4" autoplay loop controls controlsList="nodownload" poster="imgIA.jpg"></video>
 
-      
+
     </section>
   </main>
 
   <footer>
     <p style="font-size: 1rem; font-weight: bold;">Fale Comigo</p> <br>
-    
-   
-    
-    <div >
+
+
+
+    <div>
       <a href="https://wa.me/5565992907235?text=Olá+Edvaldo+tudo+bem!...+👍🏽+" target="_blank" rel="noopener">
         <img width="70" src="android-icon-48x48.png" alt="Botão do WhatsApp">
       </a>
     </div>
 
-     <p>
-      Email: <br> 
-      <a href="mailto:edvaldoprieto@gmail.com">edvaldoprieto@gmail.com</a> <br> 
+    <p>
+      Email: <br>
+      <a href="mailto:edevaldoprieto@gmail.com">edevaldoprieto@gmail.com</a> <br>
       Telefone: <br>
-      (65) 99290-7235 / (66) 99813-0266
-      
+      (65) 99290-7235 <br>
+      (66) 99813-0266
+
     </p>
 
     <p>© 2024 Todos os direitos reservados.</p>
@@ -675,7 +746,7 @@
 
   <script>
 
-  
+
 
     // Navegação suave
     const buttons = document.querySelectorAll('.nav-btn');
@@ -723,30 +794,23 @@
     showSlide(currentSlide);
     setInterval(nextSlide, 3000); // Muda a cada 3 segundos
 
-   
+
   </script>
 
-<!--script service workes-->
+  <!--script service workes-->
   <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then((registration) => {
-        console.log('Service Worker registrado com sucesso:', registration);
-      })
-      .catch((error) => {
-        console.log('Erro ao registrar o Service Worker:', error);
-      });
-  }
-</script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registrado com sucesso:', registration);
+        })
+        .catch((error) => {
+          console.log('Erro ao registrar o Service Worker:', error);
+        });
+    }
+  </script>
+
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
