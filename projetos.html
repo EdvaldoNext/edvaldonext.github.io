@@ -76,13 +76,13 @@
 
         iframe {
             position: fixed;
-            top: 2;
+            top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+
             /* Remove a borda, se desejar */
-           z-index: 9999;
+            z-index: 9999;
             /* Garante que o iframe fique na frente de outros elementos */
         }
 
@@ -130,7 +130,8 @@
             /* Adiciona um espaço entre os botões */
             padding: 1rem;
             /* Adiciona um preenchimento ao redor dos botões */
-             flex-wrap: wrap; /* Adiciona a quebra de linha */
+            flex-wrap: wrap;
+            /* Adiciona a quebra de linha */
 
         }
 
@@ -186,8 +187,10 @@
 
             <button class="button" onclick="projeto0()" aria-label="Ver projeto Pascoal Rodas">Associação Aguia</button>
             <button class="button" onclick="projeto1()" aria-label="Ver projeto Pascoal Rodas">Pascoal Rodas</button>
-            <button class="button" onclick="projeto2()" aria-label="Ver projeto Lista de Tarefas">Estacionamento Inteligente</button>
-            <button class="button" onclick="projeto3()" aria-label="Ver projeto Lista de Compras Integrada">Jogo da Velha</button>
+            <button class="button" onclick="projeto2()" aria-label="Ver projeto Lista de Tarefas">Estacionamento
+                Inteligente</button>
+            <button class="button" onclick="projeto3()" aria-label="Ver projeto Lista de Compras Integrada">Jogo da
+                Velha</button>
             <button class="button" onclick="projeto4()" aria-label="Ver projeto Planilha de Gastos">Planilha de
                 Gastos</button>
             <button class="button" onclick="projeto5()" aria-label="Ver projeto Matfic">MatFic</button>
@@ -196,7 +199,7 @@
 
         <div id="videoss" class="iframe-container"></div>
 
-        
+
 
     </main>
 
@@ -205,14 +208,15 @@
     </footer>
 
     <script>
-         function projeto0() {
+        function projeto0() {
             document.getElementById("videoss").innerHTML = `
 
 
             
             
 
-            <iframe src="https://idyllic-cupcake-e46ab4.netlify.app/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://idyllic-cupcake-e46ab4.netlify.app/" style="background-color: white;" allowfullscreen sandbox="allow-same-origin allow-scripts allow-top-navigation"
+></iframe>
 
 
            `;
@@ -226,7 +230,7 @@
             
             
 
-            <iframe src="https://pascoalrodas.github.io/Pascoal_rodas.github.io/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://pascoalrodas.github.io/Pascoal_rodas.github.io/" allowfullscreen ></iframe>
 
 
            `;
@@ -237,7 +241,7 @@
             document.getElementById("videoss").innerHTML = `
 
 
-            <iframe src="https://edvaldonext.github.io/listatarefas.github.io/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://edvaldonext.github.io/listatarefas.github.io/" allowfullscreen ></iframe>
 
 
            `;
@@ -250,7 +254,7 @@
             document.getElementById("videoss").innerHTML = `
 
 
-            <iframe src="https://edvaldonext.github.io/lista.github.io/" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://edvaldonext.github.io/lista.github.io/" allowfullscreen ></iframe>
 
 
            `;
@@ -261,7 +265,7 @@
             document.getElementById("videoss").innerHTML = `
 
 
-            <iframe src="https://edvaldonext.github.io/planilhagasto/"  allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://edvaldonext.github.io/planilhagasto/"  allowfullscreen ></iframe>
 
 
            `;
@@ -271,7 +275,7 @@
             document.getElementById("videoss").innerHTML = `
 
 
-            <iframe src="https://edvaldonext.github.io/matfic/"  allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+            <iframe src="https://edvaldonext.github.io/matfic/"  allowfullscreen ></iframe>
 
 
            `;
@@ -280,10 +284,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
