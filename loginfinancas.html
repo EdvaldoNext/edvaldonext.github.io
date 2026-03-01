@@ -1,71 +1,198 @@
-<!DOCTYPE html> 
+<!-- esse eo codigo original da pagina financa.html antes do https://robinmoisson.github.io/staticrypt/ -->
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-  <style>
-  body {
-    background-color: black;
-    color: white;
-    
-    align-items: center;
+    <title>Administrativo</title>
 
-}
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHFSDP7MP9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HHFSDP7MP9');
+    </script>
 
-}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
 
-label {
-  font-size: 2rem;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-#loginForm {
-    text-align: center;
-}
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0a1a3b, #1a2b5a);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
 
-#password {
-    font-size: 2rem;
-}
+        header {
+            background: rgba(10, 26, 59, 0.85);
+            backdrop-filter: blur(4px);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.25);
+        }
 
-#botao {
-    font-size: 2rem; 
-}
+        header h1 {
+            font-family: 'Itim', cursive;
+            color: #d4a017;
+            margin-bottom: 1rem;
+            font-size: 2.1rem;
+        }
 
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.8rem;
+            padding: 2rem 1rem;
+        }
 
-</style>
+        .button {
+            width: 240px;
+            height: 54px;
+            background: transparent;
+            border: 2px solid #d4a017;
+            border-radius: 30px;
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
 
+        .button:hover {
+            background: linear-gradient(135deg, #d4a017, #b8860b);
+            color: #0a1a3b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 160, 23, 0.35);
+        }
+
+        .button a {
+            color: inherit;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background: rgba(10, 26, 59, 0.9);
+            padding: 1.2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #a0a0c0;
+            border-top: 1px solid rgba(212, 160, 23, 0.15);
+        }
+
+        /* Área para iframes (quando for usada) */
+        #videoss {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: #000;
+            display: none;
+        }
+
+        #videoss iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Para fechar o iframe (opcional) */
+        #videoss.active {
+            display: block;
+        }
+    </style>
 </head>
-
-
 <body>
 
-<h1> <strong style="color: red;"> ATENÇÃO</strong> <br> Você não tem autorização para acessar esse conteúdo</h1>
-<form id="loginForm">
-<label for="password">Senha:</label>
-<input type="password" id="password" name="password">
-<button id="botao" type="submit">Entrar</button>
-</form>
-<p id="errorMessage" style="color: red;"></p>
+    <header>
+        <h1>Administrativo</h1>
+        <div class="button">
+            <a href="index.html">Home</a>
+        </div>
+    </header>
 
-<script>
+    <main>
 
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Impede o envio padrão do formulário
-  var password = document.getElementById("password").value;
-  if (password === "Prietoedy") {
-    window.location.href = "financas.html"; // Redireciona para a página desejada
-  } else {
-    document.getElementById("errorMessage").textContent = "Senha incorreta. Tente novamente.";
-  }
-});
-</script>
+        <div class="button">
+            <a href="https://pascoalrodas.github.io/amarzenamento.github.io/" target="_blank">Documentos</a>
+        </div>
 
+        <div class="button">
+            <a href="estudos.html">Estudos</a>
+        </div>
 
+        <!-- Exemplos comentados - descomente quando precisar -->
+        <!--
+        <div class="button">
+            <a href="https://granazen.com/painel" target="_blank">Granazen</a>
+        </div>
 
+        <div class="button">
+            <a href="https://edvaldoprieto2.lovestoblog.com/mensagem.php" target="_blank">Mensagem</a>
+        </div>
+        -->
+
+    </main>
+
+    <footer>
+        <!-- Aqui pode colocar copyright, links úteis, etc -->
+        &copy; 2025 - Área Administrativa
+    </footer>
+
+    <!-- Container para carregar iframes (se ainda for usar) -->
+    <div id="videoss"></div>
+
+    <script>
+        // Funções mantidas (caso ainda queira usar)
+        function carregargranazen() {
+            const area = document.getElementById("videoss");
+            area.innerHTML = `<iframe src="https://granazen.com/painel" allowfullscreen></iframe>`;
+            area.classList.add("active");
+        }
+
+        function carregarr7() {
+            const area = document.getElementById("videoss");
+            area.innerHTML = `<iframe src="https://www.r7.com/" allowfullscreen></iframe>`;
+            area.classList.add("active");
+        }
+
+        function carregarcnn() {
+            const area = document.getElementById("videoss");
+            area.innerHTML = `<iframe src="https://www.cnnbrasil.com.br" allowfullscreen></iframe>`;
+            area.classList.add("active");
+        }
+
+        // Opcional: clicar fora ou teclar ESC para fechar
+        document.getElementById("videoss").addEventListener("click", function(e) {
+            if (e.target === this) {
+                this.classList.remove("active");
+                this.innerHTML = "";
+            }
+        });
+    </script>
 
 </body>
 </html>
